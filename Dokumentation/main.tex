@@ -1,0 +1,26 @@
+%Main Document
+\documentclass[a4paper, 11pt, oneside]{AuProjectHandin}
+\usepackage{AuPreamble}
+\include{config}
+\begin{document}
+
+\input{titlepage}
+\frontmatter
+\input{versionhistory}
+\tableofcontents
+%generate  table of content etc here
+\mainmatter
+%include content sections here
+%\input{content}	
+\input{projektformulering.tex}
+%\input{Risikoanalyse}
+\input{Kravspecifikation}
+\input{Accepttestspecifikation}
+\input{SystemArk.tex}
+\input{hwarkitektur.tex}
+\input{swarkitektur.tex}
+\input{Implementering.tex}
+\backmatter
+% added a comment here to test slack integration
+%appendix, biblography, index etc here.
+\end{document}

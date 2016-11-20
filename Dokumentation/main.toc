@@ -1,0 +1,54 @@
+\select@language {danish}
+\contentsline {chapter}{Versions Historik}{i}{chapter*.1}
+\contentsline {chapter}{Indhold}{ii}{section*.2}
+\contentsline {chapter}{\chapternumberline {1}Indledning}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Projektformulering}{1}{section.1.1}
+\contentsline {subsection}{Projektdefinition}{1}{section*.3}
+\contentsline {chapter}{\chapternumberline {2}Kravspecifikation}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Usecase Diagram}{3}{section.2.1}
+\contentsline {subsection}{Akt\IeC {\o }r Beskrivelser}{3}{section*.4}
+\contentsline {paragraph}{Bruger:}{3}{section*.5}
+\contentsline {section}{\numberline {2.2}Use-Cases}{4}{section.2.2}
+\contentsline {subsection}{Use-case 1: \IeC {\r A}ben Vinflaske}{4}{section*.6}
+\contentsline {subsection}{Use-case 2: Planl\IeC {\ae }g \IeC {\r A}bning}{6}{section*.7}
+\contentsline {subsection}{Use-case 3: Indstil tid}{8}{section*.8}
+\contentsline {section}{\numberline {2.3}Ikke-funktionelle krav}{11}{section.2.3}
+\contentsline {subsection}{Brugervenlighed}{11}{section*.9}
+\contentsline {subsection}{Ydeevne}{11}{section*.10}
+\contentsline {subsection}{Vedligeholdelse}{11}{section*.11}
+\contentsline {chapter}{\chapternumberline {3}Accepttest Specifikation}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Test af Use-case 1}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Test af use-case 2}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Test af Use-case 3}{17}{section.3.3}
+\contentsline {section}{\numberline {3.4}Test ikke-funktionelle krav}{18}{section.3.4}
+\contentsline {chapter}{\chapternumberline {4}System Arkitektur}{22}{chapter.4}
+\contentsline {section}{\numberline {4.1}System Sekvens Diagrammer}{22}{section.4.1}
+\contentsline {subsection}{System Sekvens Diagram for use-case 1}{22}{section*.12}
+\contentsline {subsection}{System Sekvens Diagram for use-case 2}{23}{section*.13}
+\contentsline {chapter}{\chapternumberline {5}Hardware Arkitektur}{24}{chapter.5}
+\contentsline {section}{\numberline {5.1}Block Definition Diagram}{24}{section.5.1}
+\contentsline {subsubsection}{Blok beskrivelser}{25}{section*.14}
+\contentsline {paragraph}{WinePrep}{25}{section*.15}
+\contentsline {paragraph}{Embedded Linux Platform}{25}{section*.16}
+\contentsline {paragraph}{PSoC 5 Platform}{25}{section*.17}
+\contentsline {paragraph}{Str\IeC {\o }mforsyning}{25}{section*.18}
+\contentsline {paragraph}{Positioneringsmekanisme}{25}{section*.19}
+\contentsline {paragraph}{\IeC {\r A}bningsmekanisme}{25}{section*.20}
+\contentsline {paragraph}{Motorstyring}{25}{section*.21}
+\contentsline {paragraph}{Sensor1}{25}{section*.22}
+\contentsline {paragraph}{Sensor2}{25}{section*.23}
+\contentsline {paragraph}{Motor}{26}{section*.24}
+\contentsline {subsection}{Ting der f\IeC {\o }rst bliver fast besluttet p\IeC {\r a} senere iterationer/sprints}{26}{section*.25}
+\contentsline {section}{\numberline {5.2}Internal Block Diagram}{27}{section.5.2}
+\contentsline {subsection}{Signal Beskrivelser}{28}{section*.26}
+\contentsline {chapter}{\chapternumberline {6}Software Arkitektur}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}CPU matrix}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}UC1: \IeC {\r A}bn vinflaske}{30}{section.6.2}
+\contentsline {subsection}{Linux Platform / DevKit8000}{30}{section*.27}
+\contentsline {subsection}{PSoC 5}{32}{section*.28}
+\contentsline {section}{\numberline {6.3}UC2: Planl\IeC {\ae }g \IeC {\r a}bning}{34}{section.6.3}
+\contentsline {subsection}{Linux Platform / DevKit8000}{34}{section*.29}
+\contentsline {subsection}{PSoC 5}{36}{section*.30}
+\contentsline {section}{\numberline {6.4}UC3: Indstil tid}{38}{section.6.4}
+\contentsline {subsection}{Linux Platform / DevKit8000}{38}{section*.31}
+\contentsline {subsection}{Sekvensdiagrammer der anvendes i applikationsmodel for PSoC 5}{40}{section*.32}
