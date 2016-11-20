@@ -1,0 +1,35 @@
+\begin{longtable}{>{\bfseries}TX TX}
+	
+	Navn & \bfseries{\nameref{UC2}} \\
+	Mål & Vinen er drikkeklar til et forudbestemt tidspunkt\\
+	Initiering & Bruger trykker Planlæg åbning-knappen på brugergrænsefladen\\
+	Aktører & Primær: Bruger \\
+	Antal Samtidige forekomster & 1 \\
+	Prækondition & Vinflasken er anbragt i systemet og systemet er klar til brug. Desuden er vinflasken uåbnet og forseglingen er fjernet. \\
+	Postkondition & Vinflasken er drikkeklar til det valgte tidspunkt\\
+	Hovedscenarie & \begin{enumerate}
+		\item Bruger trykker Planlæg åbning-knappen på brugergrænsefladen	
+		\item Bruger vælger tidspunkt på systemet
+		\subitem [Ext. 1: Bruger ønsker ikke at åbne vin] 
+		\item Bruger bekræfter valgt tidspunkt
+		\subitem [Ext. 2: Vinen kan ikke iltes korrekt til det valgte tidspunkt]
+		\item System venter til iltningstidspunktet
+		\subitem [Ext. 3: Bruger annullerer planlagt åbning af vin]
+		\item fortsæt med Usecase 1	
+	\end{enumerate} \\
+	Udvidelser/Undtagelser & \begin{enumerate}
+		\item[Ext.1] Bruger ønsker ikke at åbne vin
+		\subitem[1.1a] Bruger trykker på tilbage
+		\subitem[1.2b] UC afsluttes
+		\item[Ext.2] Vinen kan ikke iltes korrekt til det valgte tidspunkt
+		\subitem[2.1] System beder bruger bekræfte valg af tidspunkt
+		\subitem[2.2a] Bruger trykker bekræft
+		\subitem[2.3a] UC fortsættes fra punkt 1 i UC 1
+		\subitem[2.2b] bruger trykker annuller
+		\subitem[2.3b] UC afsluttes
+		\item[Ext.3] Bruger annullerer planlagt åbning af vin
+		\subitem[3.1] Bruger trykker stop
+		\subitem[3.2] System beder bruger bekræfte valg
+		\subitem[3.3] Bruger trykker bekræft
+	\end{enumerate}
+\end{longtable}

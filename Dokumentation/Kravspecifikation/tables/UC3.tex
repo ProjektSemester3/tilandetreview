@@ -1,0 +1,41 @@
+\begin{longtable}{>{\bfseries}TX TX}
+%	\caption[Tabel]{Fully dressed use-case 1}
+	Navn & \bfseries{UC 3: Indstil tid} \\
+	Mål & At indstille tiden på systemets indbyggede ur\\
+	Initiering & Bruger vælger indstillinger \\
+	Aktører & Primær: Bruger \\
+	Antal Samtidige forekomster & 1 \\
+	Prækondition & Bruger befinder sig i hovedmenuen på brugergrænsefladen\\
+	Postkondition & Tiden er indstillet korrekt \\
+	Hovedscenarie & \begin{enumerate}
+		\item Bruger trykker på indstillinger
+		\item Brugergrænsefladen skifter til indstillingsmenu.
+		\item Bruger trykker på dropdownmenu for timer.
+		\subitem [Ext. 1: Bruger trykker på tilbageknap.]
+		\item Bruger vælger antal timer.
+		\subitem [Ext. 1: Bruger trykker på tilbageknap.]
+		\item System gør bekræftelsesknappen tilgængelig.
+		\item Bruger trykker på dropdownmenu for minutter.
+		\subitem [Ext. 2: Bruger trykker på bekræftelsesknap]
+		\subitem [Ext. 1: Bruger trykker på tilbageknap.]
+		\item Bruger vælger antal minutter.
+		\item Bruger trykker på bekræftelsesknappen 
+		\subitem [Ext. 1: Bruger trykker på tilbageknap.]
+		\item System viser valgt klokkeslet på brugergrænsefladen
+	\end{enumerate} \\
+	Udvidelser/Undtagelser & 
+	\begin{enumerate}{}{}
+		\item[Ext.1]:Bruger trykker på tilbageknap.
+		\subitem[1.1] Bruger trykker på tilbageknappen.
+		\subitem[1.2] System kommer tilbage til hovedmenu.	 
+		\subitem[1.3]UC afsluttes. \newline 
+	\end{enumerate}
+	\begin{enumerate}{}{}
+		\item[Ext.1]:Bruger trykker på tilbageknap.
+		\subitem[1.1] Bruger trykker på tilbageknappen.
+		\subitem[1.2] System kommer tilbage til hovedmenu.	 
+		\subitem[1.3]UC afsluttes. \newline 
+		\item [Ext. 2]: Bruger trykker på bekræftelsesknap.
+		\subitem: Spring til punkt 8 i UC 3.
+	\end{enumerate}
+\end{longtable}

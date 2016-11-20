@@ -1,0 +1,33 @@
+
+\begin{longtable}{>{\bfseries} TX TX}
+%	\caption[Tabel]{Fully dressed use-case 1}
+	Navn & \bfseries{\nameref{UC1}} \\
+	Mål & At åbne vinflasken og dermed tillade brugeren adgang til vinen\\
+	Initiering & Bruger trykker \emph{Åbn nu} på brugergrænsefladen\\
+	Aktører & Primær: Bruger \\
+	Antal Samtidige forekomster & 1 \\
+	Prækondition & Vinflasken er anbragt i maskinen og systemet er klar til brug. Desuden er vinflasken uåbnet og forseglingen er fjernet\\
+	Postkondition & Vinflasken er åbnet og proppen er fjernet\\
+	Hovedscenarie & \begin{enumerate}
+		\item Bruger trykker Åbn nu på brugergrænsefladen
+		\item System detekterer vinflaskens type og position
+		\subitem [Ext. 1: System registrerer ugyldig type af vinflaske]
+		\subitem [Ext. 2: System kan ikke registrere en vinflaske] 
+		\item System låser vinflasken i dens position
+		\item System fjerner prop fra vinflasken
+		\item System frigiver vinflasken
+		\item System meddeler brugeren om at vinflasken er åbnet og klar til brug.
+		\item System dispenserer prop.
+	\end{enumerate} \\
+	Udvidelser/Undtagelser & 
+	\begin{enumerate}{}{}
+	\item[Ext.1] System registrerer ugyldig type af vinflaske
+		\subitem[1.1] System meddeler brugeren om at typen af vinflaske er ugyldig.
+		\subitem[1.2] UC1 Afsluttes.
+	\item[Ext.2] System kan ikke registrere en vinflaske
+		\subitem[2.1] {System meddeler brugeren om at ingen vinflaske \newline er
+		registreret
+}
+		\subitem[2.2] UC1 afsluttes
+	\end{enumerate}\\
+\end{longtable}

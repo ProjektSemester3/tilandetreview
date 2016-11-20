@@ -1,0 +1,34 @@
+\begin{longtable}{ TX TX TX TX TX }
+	\rowcolor{white}\caption{Test af ikke-funktionelle krav}
+    \label{AT:ikke-funktionelle-krav}\\
+	\rowcolor{white}\textbf{Hvad skal testes} & \textbf{Hvordan udføres testen}& \textbf{Forventet resultat} & \textbf{Observa-tion/-resultat} & \textbf{Vurdering (OK/FAIL)} \\
+	\toprule
+   \endfirsthead
+   \rowcolor{white}
+   \textbf{Hvad skal testes} & \textbf{Hvordan udføres testen}& \textbf{Forventet resultat} & \textbf{Observa-tion/-resultat} & \textbf{Vurdering (OK/FAIL)} \\
+   \toprule
+   \endhead
+
+    GUIs virtuelle knapper skal have areal på min. 2.5 x 2.5 cm. & Knapper måles med lineal. & Knapperne har et areal på min. 2.5 x 2.5 cm.  & &\\ 
+    
+    Systemet skal give beskeder om vinens status via tekst på touch skærmen. & Efter åbning af vinen, udføres en visuel test på touch skærmen. & Der står en tekstbesked på touch skærmen om at vinen er åbnet og klar til brug. & &\\
+    
+    GUI skal have en reaktionstid på MAX. 1 sekund. & Der trykkes på GUIs virtuelle knapper og filmes således der bagefter på baggrund af klippet kan konluderes om der er gået et sekund. & Der går max 1. sekund fra tryk til opdatering af det grafiske layout. & &\\
+    
+	Systemet skal starte op og være klar til at modtage brugerinput på MAX. 2 minutter.& Systemet tændes og der tages tid med stopur.& Systemet starter op og er klar til at modtage brugerinput på MAX. 2 minutter. & &\\
+	
+	Systemet skal kunne starte motorer til fastlåsning af vinen indenfor max 5 sekunder efter brugerinput "Åben nu".& Der indsættes en vinflaske og trykkes på knappen "åben nu", hvorefter der tages tid med stopur.& Motorer til fastlåsning af vinen starter inden for MAX. 5 sekunder. & &\\
+	
+	Systemet skal kunne færdiggøre åbningen af vinen indenfor max 1 minut efter brugerinput.& Der indsættes en vinflaske i systemet og trykkes på knappen "Åbn nu", hvorefter der tages tid med stop ur.& Vinen åbnes på MAX. 1 minut. & &\\
+	
+	Systemet skal kunne åbne vinflaksen med en afvigelse på max 1 minut fra det indstillede åbningstidspunkt.& "Planlæg åbning" vælges, og der indtastes et åbningstidspunkt. Der tages tid med stopur fra åbningstidspunkt til åbning af vinen påbegyndes.& Der går MAX. 1 minut fra åbningstidspunkt til åbning af vinen påbegyndes. & &\\ 
+	  
+	Koden til systemet skal skrives i programmerings sprogene c og c++.& Koden kompiletes med en c/c++ kompiler& Kompileringen af koden er succesfuld. & &\\ 
+	
+	Systemet skal betjenes via et embedded system hvorpå en Linux platform er installeret.& Visuel test af OS på embedded system.& Der er installeret en Linux platform på embedded system. & &\\ 
+	
+	Motor- og sensorstyring skal foregå via en PSoC.& Visuel test af systemet.& En PSoC er benyttet til Motor- og sensorstyring.& & \\  
+
+
+
+\end{longtable}
