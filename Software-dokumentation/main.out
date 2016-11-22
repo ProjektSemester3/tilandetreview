@@ -1,1 +1,10 @@
 \BOOKMARK [0][-]{section*.1}{Indhold}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Dokumentation for brugergr\346nseflade}{}% 2
+\BOOKMARK [1][-]{section.1.1}{Indleding}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Design og implementering}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Dokumentation for SPI forbindelse imellem Devit8000 og PSoC}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Indleding}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Design og implementering}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Test}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.4}{Resultater}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.5}{Diskussion}{chapter.2}% 10
