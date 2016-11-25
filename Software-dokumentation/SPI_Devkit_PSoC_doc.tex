@@ -86,42 +86,44 @@ en fejl, opdateres Tx-bufferen med en relevant status-meddelelse. Dette sker lø
  
 \section{Test}
 
-\subsection{Test af SPI forbindelse mellem PSoC master og PSoC slave}
+\subsection{Test af SPI forbindelse mellem MASTER og PSoC-slave}
 
-Testen for forbindelsen mellem PSoC master og PSoC slave gennemføres vha. en terminal og logic analizer på Analog Discovery. De to PSoc enheder bliver sat 
-til hver ders PC, og der laves en UART forbindelse så det kan ses på et terminal-vindue hvilke data der bliver sendt og modtaget. Derefter forbindes de to PSoC
-enheder til hinanden med SPI, og der tilføjet desuden en fælles GND forbindelser. På billedet ses en også en VDD forbindelse fra PSoC master, denne er dog kun 
-nødvendig hvis slaven ikke får VDD fra PC. 
+Testen for forbindelsen mellem MASTER og PSoC-slave gennemføres vha. en terminal og logic analizer på Analog Discovery. De to PSoC-enheder bliver sat 
+til hver deres PC, og der laves en UART-forbindelse, så det kan ses på et terminalvindue, hvilke data, der bliver sendt og modtaget. Derefter forbindes de to PSoC-
+enheder til hinanden med SPI, og der tilføjes desuden en fælles stelforbindelse. Hvor MASTER normalvist modtager sine kommandoer fra DK8k, vil den i denne test
+modtage disse fra brugeren via terminalvinduet på den ene PC. PSoC-slave er blot en test-dummy, som modtager denne kommando og udskriver den på terminalvinduet
+på den anden PC, og skriver den i Tx-bufferen, så MASTER kan læse den igen og udskrive den på sit terminalvindue. Derved testes tovejskommunikationen mellem PSoC'ene.
+På billedet ses også en VDD-forbindelse fra MASTER, denne er dog kun nødvendig, hvis slaven ikke får VDD fra PC.
  
 \begin{figure}[H]
 \includegraphics{Screenshots/SPI_testopstilling}
-\caption{PSoC forbundet til pc via UART og med anden PSoC enhed via SPI}
+\caption{PSoC forbundet til PC via UART og med anden PSoC-enhed via SPI}
 \end{figure}
 
-Desuden sættes Analog Discovery på SPI forbindelsen og der måles på CLCK, SS (slave select) og MOSI, for at sikre at SPI signalet ser fornuftigt ud. Altså at SS 
-går lav ved dataoverførelse, og den korrekte bitsekvens sendes på MOSI. Grunden til der ses efter om SS går lav, er fordi der ved SPI kan være flere slaver 
-tilsluttet. SPI fungere på den måde at den trække sinalet lavt på den slave som skal modtage signalet.
-CLCK er ikke særligt interessant, men det kan evt. tjekkes om frekvensen stemmer overens med det som angives i koden for PSoC. 
+Desuden sættes Analog Discovery på SPI-forbindelsen, og der måles på CLCK, SS (slave select) og MOSI for at sikre, at SPI-signalet ser fornuftigt ud. Altså at SS 
+går lav ved dataoverførsel, og den korrekte bitsekvens sendes på MOSI. Grunden til, at der ses efter, om SS går lav, er fordi, der ved SPI kan være flere slaver 
+tilsluttet. SPI fungerer på den måde, at den trækker signalet lavt på den slave, som skal modtage signalet.
+CLCK er ikke særligt interessant, men det kan evt. tjekkes om frekvensen stemmer overens med det, som angives i koden for PSoC.
 
 \begin{figure}[H]
 \includegraphics{Screenshots/Logic_analyzer}
-\caption{Test med Analog Discovery på SPI forbindelsen}
+\caption{Test med Analog Discovery på SPI-forbindelsen}
 \end{figure}
 
-Der sendes data fra master til slave, og der kigges på terminalen og logic analizer for at se hvilke data slave modtager. I denne test sendes kommandoen 0x5 til 
-slaven at antal gange. 
+Der sendes data fra MASTER til slave, og der kigges på terminalen og logic analizer for at se hvilke data, slave modtager. I denne test sendes kommandoen 0x05 til 
+slaven at antal gange.
 
-\subsection{Test af SPI forbindelse imellem Devit8000 og PSoC1}
+\subsection{Test af SPI-forbindelse imellem DK8k og MASTER}
 
-Testen for SPI forbindelsen imellem DK8k og MASTER foretages med Analog Aiscovery, hvor der måles på SS, CLCK, og henholdsvis MISO og MOSI.
+Testen for SPI-forbindelsen imellem DK8k og MASTER foretages med Analog Discovery, hvor der måles på SS, CLCK, og henholdsvis MISO og MOSI.
 
 \begin{figure}[H]
 \includegraphics{Screenshots/Test_analog}
-\caption{Opstilling med analog discovery til test af SPI forbindelse} 
+\caption{Opstilling med Analog Discovery til test af SPI-forbindelse} 
 \end{figure}
 
-Der udføres to test-scenarier. I første test sendes data fra DK8k(master) og der foretages en måling på MOSI forbindelsen med logic analyzer-
-funktionen på analog discovery. Denne test skal sikre, at vi får sendt de korrekte adresse- og data-bits over til MASTER, samt at SS og CLCK opfører sig 
+Der udføres to test-scenarier. I første test sendes data fra DK8k (master) og der foretages en måling på MOSI forbindelsen med logic analyzer-
+funktionen på Analog Discovery. Denne test skal sikre, at vi får sendt de korrekte adresse- og data-bits over til MASTER, samt at SS og CLCK opfører sig 
 som ønsket. Det vil sige at SS går lav ved dataoverførsel og at CLCK er stabil. I denne test bruges Linux-terminalen på DK8k til at sende nogle forskellige
 værdier til MASTER med Linux-kommandoen echo, hvorefter der aflæses bit-kombinationer på logic analyzer.
 
@@ -133,23 +135,27 @@ status på knap 2.1 på MASTER blive aflæst. Således kan det testes, at der se
 \section{Resultater}
 \subsection(Resultater af test for PSoC-PSoC SPI)
 
-Ved testen ses at der udskrives 05 på terminalvindue for PSoC-slave. Dette passer fint med den kommando der sendes fra master. SPI forbindelsen fungere altså
+Ved testen ses, at der udskrives 05 på terminalvindue for PSoC-slave. Dette passer fint med den kommando, der sendes fra MASTER. SPI-forbindelsen fungerer altså
 fint.
  
 \begin{figure}[H]
 \includegraphics{Screenshots/Terminal_spi_slave}
-\caption{Terminal udskrift fra PSoC slave enheden} 
+\caption{Terminal udskrift fra PSoC-slave-enheden} 
 \end{figure}  
 
-Der kigges også på logic analizer, og det ses at SS går lav ved dataoverførelse. Og der sendes desuden værdien 0x5 på MOSI. Igen virker det som forventet.   
+Der kigges også på logic analizer, og det ses, at SS går lav ved dataoverførelse. Og der sendes desuden værdien 0x05 på MOSI. Igen virker det som forventet.
+Det eneste problem ved denne test er, at MASTER først kan læse den sendte kommando efter at have sendt denne en tre-fem gange. Dette kunne give anledning til
+problemer i den endelige implementering, da MASTER skal have klar besked om PSoC'enes status, da disses opgaver skal synkroniseres. En evt. "løsning" på dette
+problem kunne være at indføre en "guard", f.eks en counter, som tjekker, at en kommando/meddelelse er blevet sendt/læst et vist antal gange, før der udføres
+yderligere opgaver.
 
 \begin{figure}[H]
 \includegraphics{Screenshots/Logic_analyzer}
-\caption{logic analizer målt på SPI forbindelsen} 
+\caption{logic analizer målt på SPI-forbindelsen} 
 \end{figure} 
 
 \subsection{Resultater af test for Devkit-PSoC SPI}
-Ved første test scenarie ses, hvordan der sendes værdien 20 fra DK8k til MASTER med Linux-kommandoen echo. På logic analyzer ses, at der sendes to gange 8 bit:
+Ved første test-scenarie ses, hvordan der sendes værdien 20 fra DK8k til MASTER med Linux-kommandoen echo. På logic analyzer ses, at der sendes to gange 8 bit:
 først en adresse kode, som er 65, og derefter værdien 20. Det ses også at SS går lav ved dataoverførsel, og at clock er stabil. Testen er derfor tilfredsstillende.
  
 \begin{figure}[H]
@@ -167,6 +173,6 @@ status for knappen på MASTER, som er trykket nede og derfor viser 1.
 
 \section{Diskussion}
 Ud fra ovenstående ses det at SPI kan bruges til at kommunikere imellem DK8k og MASTER, samt at kommunikere imellem PSoC-enhederne. Som resultaterne af 
-testen viser er SPI en smart måde, hvorpå der kan sendes og modtages data samtidigt. Det skal dog nævnes at der har været mange problemer med denne kommunikation,
-og der er brugt adskillige timer på at få det til at virke. Så sammenlignet med UART, som fungerede problemfrit på 1. og 2. semester, så har SPI været meget mere
-udfordrene at få til at virke.
+testen viser, er SPI en smart måde, hvorpå der kan sendes og modtages data samtidigt. Det skal dog nævnes, at der har været mange problemer med denne kommunikation,
+især ifb. med at læse data fra slave til master, og der er brugt adskillige timer på at få det til at virke. Så sammenlignet med UART, som fungerede problemfrit
+på 1. og 2. semester, så har SPI været meget mere udfordrende at få til at virke.
