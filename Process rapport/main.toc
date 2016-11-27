@@ -1,41 +1,33 @@
 \select@language {danish}
 \contentsline {chapter}{Indhold}{i}{section*.1}
-\contentsline {chapter}{\chapternumberline {1}Indledning}{2}{chapter.1}
-\contentsline {chapter}{\chapternumberline {2}Projektgennemf\IeC {\o }relse}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Gruppedannelse}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Samarbejdsaftale og arbejdsfordeling}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Planl\IeC {\ae }gning}{4}{section.2.3}
-\contentsline {section}{\numberline {2.4}Projektadministration og ledelse}{4}{section.2.4}
-\contentsline {section}{\numberline {2.5}M\IeC {\o }der}{5}{section.2.5}
-\contentsline {section}{\numberline {2.6}Udviklingsforl\IeC {\o }b}{5}{section.2.6}
-\contentsline {subsection}{Scrum}{5}{section*.4}
-\contentsline {subsubsection}{Konflikter med ASE-model}{5}{section*.5}
-\contentsline {subsubsection}{Gruppens afvigelser}{6}{section*.6}
-\contentsline {paragraph}{Roller}{6}{section*.7}
-\contentsline {paragraph}{Sprints}{6}{section*.8}
-\contentsline {paragraph}{M\IeC {\o }der}{6}{section*.9}
-\contentsline {subsubsection}{Fordele/ulemper}{6}{section*.10}
-\contentsline {paragraph}{Psykologiske effekter}{6}{section*.11}
-\contentsline {paragraph}{Kontrol}{6}{section*.12}
-\contentsline {paragraph}{Struktur}{6}{section*.13}
-\contentsline {subsubsection}{Brug af artifakter}{6}{section*.14}
-\contentsline {subsection}{Gruppedynamik}{6}{section*.15}
-\contentsline {subsubsection}{Gruppef\IeC {\o }lelse}{6}{section*.16}
-\contentsline {subsubsection}{Ledelse}{6}{section*.17}
-\contentsline {subsubsection}{Holdinddeling}{6}{section*.18}
-\contentsline {subsubsection}{Effektivitet}{6}{section*.19}
-\contentsline {subsubsection}{Strukturering}{6}{section*.20}
-\contentsline {subsubsection}{Konflikter}{6}{section*.21}
-\contentsline {paragraph}{Frav\IeC {\ae }r}{6}{section*.22}
-\contentsline {paragraph}{Engagement}{7}{section*.23}
-\contentsline {paragraph}{Udmelding}{7}{section*.24}
-\contentsline {paragraph}{H\IeC {\r a}ndtering}{7}{section*.25}
-\contentsline {subsection}{Brug af v\IeC {\ae }rkt\IeC {\o }jer}{7}{section*.26}
-\contentsline {subsubsection}{Agile board}{7}{section*.27}
-\contentsline {subsubsection}{Logbog}{7}{section*.28}
-\contentsline {subsubsection}{Github}{7}{section*.29}
-\contentsline {subsubsection}{Latex}{7}{section*.30}
-\contentsline {section}{\numberline {2.7}Konflikth\IeC {\r a}ndtering}{7}{section.2.7}
-\contentsline {section}{\numberline {2.8}Opn\IeC {\r a}ede erfaringer}{7}{section.2.8}
-\contentsline {section}{\numberline {2.9}Fremtidigt arbejde}{7}{section.2.9}
-\contentsline {section}{\numberline {2.10}Scrum}{7}{section.2.10}
+\contentsline {chapter}{\chapternumberline {1}Projektgennemf\IeC {\o }relse}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Forord}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Indledning}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Gruppedannelse}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Samarbejdskontrakt}{2}{section.1.4}
+\contentsline {section}{\numberline {1.5}Arbejdsfordeling}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}Planl\IeC {\ae }gning}{3}{section.1.6}
+\contentsline {section}{\numberline {1.7}Projekt administration og ledelse}{3}{section.1.7}
+\contentsline {section}{\numberline {1.8}M\IeC {\o }der}{4}{section.1.8}
+\contentsline {section}{\numberline {1.9}Udviklingsforl\IeC {\o }b}{5}{section.1.9}
+\contentsline {subsection}{Scrum}{5}{section*.2}
+\contentsline {subsubsection}{Konflikter med ASE-model}{5}{section*.3}
+\contentsline {subsubsection}{Roller}{5}{section*.4}
+\contentsline {subsubsection}{Sprints}{6}{section*.5}
+\contentsline {subsection}{Gruppedynamik}{7}{section*.6}
+\contentsline {subsubsection}{Gruppef\IeC {\o }lelse}{7}{section*.7}
+\contentsline {subsubsection}{Holdinddeling}{8}{section*.8}
+\contentsline {subsubsection}{Effektivitet og struktur}{8}{section*.9}
+\contentsline {subsection}{Konflikter}{9}{section*.10}
+\contentsline {subsubsection}{Konflikth\IeC {\r a}ndtering}{9}{section*.11}
+\contentsline {subsubsection}{F\IeC {\o }rste konflikt}{9}{section*.12}
+\contentsline {subsubsection}{Ambitionsniveau}{10}{section*.13}
+\contentsline {subsubsection}{Frafald}{10}{section*.14}
+\contentsline {subsection}{Brug af v\IeC {\ae }rkt\IeC {\o }jer}{10}{section*.15}
+\contentsline {subsubsection}{Agile board}{10}{section*.16}
+\contentsline {subsubsection}{Logbog}{11}{section*.17}
+\contentsline {subsubsection}{Github}{11}{section*.18}
+\contentsline {subsubsection}{Latex}{11}{section*.19}
+\contentsline {subsubsection}{Slack}{12}{section*.20}
+\contentsline {section}{\numberline {1.10}Opn\IeC {\r a}ede erfaringer}{13}{section.1.10}
+\contentsline {section}{\numberline {1.11}Fremtidigt arbejde}{13}{section.1.11}
