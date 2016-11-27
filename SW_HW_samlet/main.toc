@@ -20,9 +20,9 @@
 \contentsline {subsection}{PSoC}{20}{section*.11}
 \contentsline {subsubsection}{Sensor}{20}{section*.12}
 \contentsline {paragraph}{Sekventiel SAR ADC}{20}{section*.13}
-\contentsline {subsubsection}{Motor}{22}{section*.14}
-\contentsline {subsection}{ULN2003AN board}{23}{section*.15}
-\contentsline {section}{\numberline {3.3}Test}{24}{section.3.3}
+\contentsline {subsubsection}{Motor}{23}{section*.14}
+\contentsline {subsection}{ULN2003AN board}{24}{section*.15}
+\contentsline {section}{\numberline {3.3}Test}{25}{section.3.3}
 \contentsline {section}{\numberline {3.4}Resultater}{27}{section.3.4}
 \contentsline {section}{\numberline {3.5}Diskussion}{28}{section.3.5}
 \contentsline {chapter}{\chapternumberline {4}Bipol\IeC {\ae }re steppermotorer}{29}{chapter.4}
