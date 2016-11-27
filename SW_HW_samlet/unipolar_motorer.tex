@@ -32,7 +32,7 @@ Når der skal detekteres for en flaske tændes ADCen og det analoge signal fra s
 \subsubsection{Sensor}
 Sensorerne detekterer så længe der er tilkoblet Vcc og GND til dem. I projektet betyder det at sensorerne konstant vil prøve at detektere, men at der i koden kun aflæses fra dem når det er relevant. Dette gøres vha. den sekventielle SAR ADC fra TopDesignet.
 
-\subsubsubsection{Sekventiel SAR ADC} \\
+\paragraph{Sekventiel SAR ADC} \\
 Sequencing SAR ADC komponenten fra Figur \ref{PSoC_TopDesign_X_Y} består af en digital multiplexer, som udgør det sekventielle i ADCen. Yderligere findes en SAR ADC, der konverterer det analoge signal fra sensoren til en digital værdi i PSoCen. Der henvises til bilag xx for datablad for den sekventielle SAR ADC.
 
 Den digitale multiplexer kan tage to input, 0 eller 1. Disse værdier bestemmer hvilken sensor der skal læses fra. Når multiplexeren modtager 0 læses fra x-aksen mens der læses fra y-aksen når den modtager 1. Dette styres fra main.c med funktionen ``ADC\_SAR\_Seq\_GetResult16(uint16 chan)'', hvor "chan" er den port der læses fra. I main.c er 0 og 1 repræsenteret som ``X'' og ``Y'' - defineret i "enum axes" linje 63.
@@ -88,7 +88,7 @@ På linje 197 er funktionen rotateRight defineret. Dens opgave er at tænde og s
 \begin{table}
 \begin{tabular}{| l | c | c | c |}
 \hline
-1. parentes & 2. parentes & 2. parentes \bullet 15 & Resultat\\\hline
+1. parentes & 2. parentes & 2. parentes $\bullet$ 15 & Resultat\\\hline
 0b00000110 & 0b01100000 & 0b00000000 & 0b00000110\\\hline
 0b00000011 & 0b00110000 & 0b00000000 & 0b00000011\\\hline
 0b10000001 & 0b00011000 & 0b00001000 & 0b00001001\\\hline
