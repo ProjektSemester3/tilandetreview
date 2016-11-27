@@ -14,7 +14,7 @@
 \contentsline {subsection}{Test af SPI forbindelse mellem MASTER og PSoC-slave}{13}{section*.5}
 \contentsline {subsection}{Test af SPI-forbindelse imellem DK8k og MASTER}{15}{section*.6}
 \contentsline {section}{\numberline {2.4}Resultater}{16}{section.2.4}
-\contentsline {subsection}{(}{16}{section*.7}
+\contentsline {subsection}{Resultater af test for PSoC-PSoC SPI}{16}{section*.7}
 \contentsline {subsection}{Resultater af test for Devkit-PSoC SPI}{17}{section*.8}
 \contentsline {section}{\numberline {2.5}Diskussion}{17}{section.2.5}
 \contentsline {chapter}{\chapternumberline {3}Motorstyring p\IeC {\r a} x- og y-akser samt sensor detektering}{19}{chapter.3}
@@ -35,3 +35,12 @@
 \contentsline {section}{\numberline {4.4}Implementering}{34}{section.4.4}
 \contentsline {section}{\numberline {4.5}Test og resultater}{36}{section.4.5}
 \contentsline {section}{\numberline {4.6}Konklusion}{36}{section.4.6}
+\contentsline {chapter}{\chapternumberline {5}SPI-protokol}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Kommandoer}{37}{section.5.1}
+\contentsline {subsection}{Fra DK8k til MASTER}{37}{section*.14}
+\contentsline {subsection}{Fra MASTER til TOP}{37}{section*.15}
+\contentsline {subsection}{Fra MASTER til BOTTOM}{38}{section*.16}
+\contentsline {section}{\numberline {5.2}Feedback}{38}{section.5.2}
+\contentsline {subsection}{Fra MASTER til DK8k}{38}{section*.17}
+\contentsline {subsection}{Fra TOP til MASTER}{38}{section*.18}
+\contentsline {subsection}{Fra BOTTOM til MASTER}{39}{section*.19}
