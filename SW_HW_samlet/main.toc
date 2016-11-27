@@ -22,13 +22,13 @@
 \contentsline {subsubsection}{Motor}{24}{section*.13}
 \contentsline {subsection}{ULN2003AN board}{25}{section*.14}
 \contentsline {section}{\numberline {3.3}Test}{26}{section.3.3}
-\contentsline {section}{\numberline {3.4}Resultater}{28}{section.3.4}
-\contentsline {section}{\numberline {3.5}Diskussion}{29}{section.3.5}
-\contentsline {chapter}{\chapternumberline {4}Bipol\IeC {\ae }re steppermotorer}{30}{chapter.4}
-\contentsline {section}{\numberline {4.1}Indledning}{30}{section.4.1}
-\contentsline {section}{\numberline {4.2}Teori}{30}{section.4.2}
-\contentsline {subsection}{Bipolar Stepper Motor}{30}{section*.15}
-\contentsline {section}{\numberline {4.3}Design}{32}{section.4.3}
-\contentsline {section}{\numberline {4.4}Implementering}{34}{section.4.4}
-\contentsline {section}{\numberline {4.5}Test og resultater}{36}{section.4.5}
-\contentsline {section}{\numberline {4.6}Konklusion}{36}{section.4.6}
+\contentsline {section}{\numberline {3.4}Resultater}{29}{section.3.4}
+\contentsline {section}{\numberline {3.5}Diskussion}{30}{section.3.5}
+\contentsline {chapter}{\chapternumberline {4}Bipol\IeC {\ae }re steppermotorer}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Indledning}{31}{section.4.1}
+\contentsline {section}{\numberline {4.2}Teori}{31}{section.4.2}
+\contentsline {subsection}{Bipolar Stepper Motor}{31}{section*.15}
+\contentsline {section}{\numberline {4.3}Design}{33}{section.4.3}
+\contentsline {section}{\numberline {4.4}Implementering}{35}{section.4.4}
+\contentsline {section}{\numberline {4.5}Test og resultater}{37}{section.4.5}
+\contentsline {section}{\numberline {4.6}Konklusion}{37}{section.4.6}
