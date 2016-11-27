@@ -29,16 +29,14 @@ SPI forbindelsen vil ikke forklares her. Der henvises til afsnit xx for uddybnin
 Når der skal detekteres for en flaske tændes ADCen og det analoge signal fra sensoren konverteres til digitale værdier som aflæses. For hvert 10. step (se linje 538 og 559 i main.c), motoren tager, læses en gang fra sensoren. Hvis sensoren detekterer begge kanter på vinflasken vil der på PSoCen ske en kalkulation af hvor midten af flasken er. Herefter vil x- og y-akserne, og dermed åbningsmekanismen, bevæge sig ind på midten af flasken.
 
 \subsubsection{Sensor}
-
 Sensorerne detekterer så længe der er tilkoblet Vcc og GND til dem. I projektet betyder det at sensorerne konstant vil prøve at detektere, men at der i koden kun aflæses fra dem når det er relevant. Dette gøres vha. den sekventielle SAR ADC fra TopDesignet.
 
-\paragraph{Sekventiel SAR ADC} 
-
+\subsubsubsection{Sekventiel SAR ADC} \\
 Sequencing SAR ADC komponenten fra Figur \ref{PSoC_TopDesign_X_Y} består af en digital multiplexer, som udgør det sekventielle i ADCen. Yderligere findes en SAR ADC, der konverterer det analoge signal fra sensoren til en digital værdi i PSoCen. Der henvises til bilag xx for datablad for den sekventielle SAR ADC.
 
-Den digitale multiplexer kan tage to input, 0 eller 1. Disse værdier bestemmer hvilken sensor der skal læses fra. Når multiplexeren modtager 0 læses fra x-aksen mens der læses fra y-aksen når den modtager 1. Dette styres fra main.c med funktionen "ADC{\_}SAR{\_}Seq{\_}GetResult16(uint16 chan)", hvor "chan" er den port der læses fra. I main.c er 0 og 1 repræsenteret som "X" og "Y" - defineret i "enum axes" linje 63.
+Den digitale multiplexer kan tage to input, 0 eller 1. Disse værdier bestemmer hvilken sensor der skal læses fra. Når multiplexeren modtager 0 læses fra x-aksen mens der læses fra y-aksen når den modtager 1. Dette styres fra main.c med funktionen ``ADC\_SAR\_Seq\_GetResult16(uint16 chan)'', hvor "chan" er den port der læses fra. I main.c er 0 og 1 repræsenteret som ``X'' og ``Y'' - defineret i "enum axes" linje 63.
 
-SAR ADC-kredsløbet indeholder en DAC, en komparator og et register til at oversætte det analoge signal fra sensoren til en digital værdi. Outputtet fra ADCen er et antal counts der med funktionen "int32 ADC{\_}SAR{\_}Seq{\_}CountsTo{\_}mVolts(int16 adcCounts)" koverteres til mVolt.
+SAR ADC-kredsløbet indeholder en DAC, en komparator og et register til at oversætte det analoge signal fra sensoren til en digital værdi. Outputtet fra ADCen er et antal counts der med funktionen ``int32 ADC\_SAR\_Seq\_CountsTo_mVolts(int16 adcCounts)'' koverteres til mVolt.
 
 SAR er den måde som ADCen behandler dataene fra sensoren på. Successive approximation register fungerer ved at registret spørger efter en given værdi. Alt efter om den reelle værdi er højere eller lavere er outputtet henholdsvis et binært 1 eller 0. Registret vil spørge indtil en given resolution er opnået og en tilnærmet værdi er opnået.
 
@@ -66,7 +64,8 @@ Resolutionen i PSoC designet er sat til 8. Dette er gjort fordi en større nøja
 Figur \ref{ADC_SAR_SEQ} viser konfigureringen af ADCen. "Free Running" som sample mode er valgt fordi det er vigtigt at der konstant aflæses fra sensorerne og dermed sammenlignes om der er sket en ændring.
 
 \begin{figure}[H]
-\includegraphics[scale=0.7]{Screenshots/ADC_SAR_SEQ.png}
+	\centering
+\includegraphics[scale=0.8]{Screenshots/ADC_SAR_SEQ.png}
 \caption{Konfigurering af sekventiel SAR ADC}
 \label{ADC_SAR_SEQ}
 \end{figure}
@@ -86,7 +85,7 @@ På linje 197 er funktionen rotateRight defineret. Dens opgave er at tænde og s
 
 \begin{table}
 \begin{tabular}{| l | c | c | c |}
-1. parentes & 2. parentes & 2. parentes $\bullet$ 15 & Resultat\\\hline
+1. parentes & 2. parentes & 2. parentes \bullet 15 & Resultat\\\hline
 0b00000110 & 0b01100000 & 0b00000000 & 0b00000110\\\hline
 0b00000011 & 0b00110000 & 0b00000000 & 0b00000011\\\hline
 0b10000001 & 0b00011000 & 0b00001000 & 0b00001001\\\hline
@@ -115,7 +114,8 @@ Boardet kan ses på figur \ref{print_forside}.
 Modultesten blev gennemført ved at benytte UART forbindelse fra en PC til PSoCen. Integrationstesten blev gennemført med SPI forbindelse fra master PSoCen. Opstilling af modultest kan ses på figur \ref{x_sensor_start} som også viser at motor og sensor for x-akse aktive.
 
 \begin{figure}[H]
-\includegraphics[scale=0.068]{Screenshots/x_sensor_start.jpg}
+	\centering
+\includegraphics[scale=0.08]{Screenshots/x_sensor_start.jpg}
 \caption{Opstilling under modultest}
 \label{x_sensor_start}
 \end{figure}
@@ -144,10 +144,11 @@ Dette kan ikke umiddelbart sammenlignes med figur 4 i databladet for sensoren fo
 
 I koden er maksimumsafstand defineret som LOW = 72, dvs. hvis værdien fra afstandssensoren aflæses til under denne værdi, ignoreres den. I koden er der ikke taget hensyn til at en genstand kan være mindre end 10 cm fra sensoren. Dette skyldes at sensoren i WinePrep-rammen altid vil være placeret i en minimumsafstand af 10 cm fra objektet.
 
-Først blev x-aksen aktiviteret ved at simulere "LOCATE{\_}XY"-kommandoen fra linje 0x01 i main.c. Dette resulterede i billedet fra figur \ref{x_sensor_start}. En hånd blev anbragt foran sensoren og fjernet igen for at simulere en flaske. Y-aksen blev afsøgt for en flaske med samme procedure som for x-aksen - se figur \ref{y_sensor_start}.
+Først blev x-aksen aktiviteret ved at simulere ``LOCATE_XY''-kommandoen fra linje 0x01 i main.c. Dette resulterede i billedet fra figur \ref{x_sensor_start}. En hånd blev anbragt foran sensoren og fjernet igen for at simulere en flaske. Y-aksen blev afsøgt for en flaske med samme procedure som for x-aksen - se figur \ref{y_sensor_start}.
 
 \begin{figure}[H]
-\includegraphics[scale=0.068]{Screenshots/y_sensor_start.jpg}
+	\centering
+\includegraphics[scale=0.08]{Screenshots/y_sensor_start.jpg}
 \caption{Motor og sensor på y-akse aktiveret}
 \label{y_sensor_start}
 \end{figure}
@@ -155,7 +156,8 @@ Først blev x-aksen aktiviteret ved at simulere "LOCATE{\_}XY"-kommandoen fra li
 Figur \ref{End_of_search} viser endt detektering.
 
 \begin{figure}[H]
-\includegraphics[scale=0.068]{Screenshots/End_of_search.jpg}
+	\centering
+\includegraphics[scale=0.08]{Screenshots/End_of_search.jpg}
 \caption{Endt detektering}
 \label{End_of_search}
 \end{figure}
@@ -164,6 +166,7 @@ Figur \ref{End_of_search} viser endt detektering.
 Følgende figurer viser værdier for målte afstande under testen. Disse kan sammenlignes med tabel \ref{Afstand-vaerdier}. Hovedformålet med denne modultest er at undersøge om der sker en korrekt validering for detektering af en eventuel flaske.
 
 \begin{figure}[H]
+	\centering
 \includegraphics[scale=1]{Screenshots/Sensor-uden-genstand.png}
 \caption{Afstandsmåling uden for rækkevidde}
 \label{sensor_uden_genstand}
@@ -172,12 +175,14 @@ Følgende figurer viser værdier for målte afstande under testen. Disse kan sam
 Denne test er i og for sig underordnet, men er taget med for at dokumentere hvilken værdi en afstandsmåling uden for rækkevidde har. Dette vil kunne bruges til at sammenligne værdier for en reel og en ureel måling.
 
 \begin{figure}[H]
+	\centering
 \includegraphics[scale=1]{Screenshots/Sensor-12cm.png}
 \caption{Afstandsmåling ved 12 cm}
 \label{Sensor_12cm}
 \end{figure}
 
 \begin{figure}[H]
+	\centering
 \includegraphics[scale=1]{Screenshots/Sensor-22cm.png}
 \caption{Afstandsmåling ved 22cm}
 \label{Sensor_22cm}
