@@ -16,10 +16,11 @@ Motorernes spoler styres, via et ULN2003AN board, fra en PSoC 5LP. Sensorerne af
 \subsection{PSoC}
 Nedenfor beskrives PSoC håndteringen af motorer og sensorer, hvilke interne PSoC komponenter der har været nødvendige for dette samt pin konfigurering og kode. Kode er vedlagt som bilag xx. Bemærk at nogle af de benyttede funktioner i koden er skrevet af Cypress selv og kan kun benyttes i PSoC software.
 
-Figur \ref{TopDesign_motor_sensor} viser TopDesign vinduet i PSoC. Det ses at SPI bruges til kommunikation, en sekventiel successive-approximation-register (SAR) analog-to-digital converter (ADC) til at aflæse sensorernes værdier, samt pins til at håndtere motorerne og trykknapperne for enderne af x- og y-akserne.
+Figur \ref{PSoC_TopDesign_X_Y} viser TopDesign vinduet i PSoC. Det ses at SPI bruges til kommunikation, en sekventiel successive-approximation-register (SAR) analog-to-digital converter (ADC) til at aflæse sensorernes værdier, samt pins til at håndtere motorerne og trykknapperne for enderne af x- og y-akserne.
 
 \begin{figure}[H]
-\includegraphics[scale=0.48]{Screenshots/PSoC_TopDesign_X_Y.png}
+	\centering
+\includegraphics[scale=0.45]{Screenshots/PSoC_TopDesign_X_Y.png}
 \caption{PSoC TopDesign for motorstyring og sensoraflæsning}
 \label{PSoC_TopDesign_X_Y}
 \end{figure}
@@ -36,7 +37,7 @@ Sequencing SAR ADC komponenten fra Figur \ref{PSoC_TopDesign_X_Y} består af en 
 
 Den digitale multiplexer kan tage to input, 0 eller 1. Disse værdier bestemmer hvilken sensor der skal læses fra. Når multiplexeren modtager 0 læses fra x-aksen mens der læses fra y-aksen når den modtager 1. Dette styres fra main.c med funktionen ``ADC\_SAR\_Seq\_GetResult16(uint16 chan)'', hvor "chan" er den port der læses fra. I main.c er 0 og 1 repræsenteret som ``X'' og ``Y'' - defineret i "enum axes" linje 63.
 
-SAR ADC-kredsløbet indeholder en DAC, en komparator og et register til at oversætte det analoge signal fra sensoren til en digital værdi. Outputtet fra ADCen er et antal counts der med funktionen ``int32 ADC\_SAR\_Seq\_CountsTo_mVolts(int16 adcCounts)'' koverteres til mVolt.
+SAR ADC-kredsløbet indeholder en DAC, en komparator og et register til at oversætte det analoge signal fra sensoren til en digital værdi. Outputtet fra ADCen er et antal counts der med funktionen ``int32 ADC\_SAR\_Seq\_CountsTo\_mVolts(int16 adcCounts)'' koverteres til mVolt.
 
 SAR er den måde som ADCen behandler dataene fra sensoren på. Successive approximation register fungerer ved at registret spørger efter en given værdi. Alt efter om den reelle værdi er højere eller lavere er outputtet henholdsvis et binært 1 eller 0. Registret vil spørge indtil en given resolution er opnået og en tilnærmet værdi er opnået.
 
@@ -44,6 +45,7 @@ Nedenstående tabel viser hvordan registret behandler konverteringer. Det er et 
 
 \begin{table}
 \begin{tabular}{| l | c |}
+\hline
 Adspurgt værdi & Binært output\\\hline
 128 & 1\\\hline
 128 + 64 & 0\\\hline
@@ -85,6 +87,7 @@ På linje 197 er funktionen rotateRight defineret. Dens opgave er at tænde og s
 
 \begin{table}
 \begin{tabular}{| l | c | c | c |}
+\hline
 1. parentes & 2. parentes & 2. parentes \bullet 15 & Resultat\\\hline
 0b00000110 & 0b01100000 & 0b00000000 & 0b00000110\\\hline
 0b00000011 & 0b00110000 & 0b00000000 & 0b00000011\\\hline
@@ -115,7 +118,7 @@ Modultesten blev gennemført ved at benytte UART forbindelse fra en PC til PSoCe
 
 \begin{figure}[H]
 	\centering
-\includegraphics[scale=0.08]{Screenshots/x_sensor_start.jpg}
+\includegraphics[scale=0.1]{Screenshots/x_sensor_start.jpg}
 \caption{Opstilling under modultest}
 \label{x_sensor_start}
 \end{figure}
@@ -125,16 +128,17 @@ Pins er konfigureret fra PSoC til ULN2003AN boardet som vist i opstillingen og p
 For at sikre at der detekteres indenfor det relevante område, 10-20 cm fra afstandsmåleren, er tests blevet gennemført for at dokumentere hvilke værdier afstanden aflæses i. Sammenhæng mellem afstand og værdier kan ses i nedenstående tabel. Disse værdier er ikke omregnet til Volt, men afstand er målt med tommerstok.
 \begin{table}[H]
 \begin{tabular}{| l | r |}
-	Afstand i cm & Værdi\\\hline
-	Uden for rækkevidde & 6\\\hline
-	10 & 134\\\hline
-	12 & 124\\\hline
-	14 & 107\\\hline
-	16 & 93\\\hline
-	18 & 80\\\hline
-	20 & 72\\\hline
-	22 & 70\\\hline
-	\label{Afstand-vaerdier}
+\hline
+Afstand i cm & Værdi\\\hline
+Uden for rækkevidde & 6\\\hline
+10 & 134\\\hline
+12 & 124\\\hline
+14 & 107\\\hline
+16 & 93\\\hline
+18 & 80\\\hline
+20 & 72\\\hline
+22 & 70\\\hline
+\label{Afstand-vaerdier}
 \end{tabular}
 \end{table}
 
@@ -144,11 +148,11 @@ Dette kan ikke umiddelbart sammenlignes med figur 4 i databladet for sensoren fo
 
 I koden er maksimumsafstand defineret som LOW = 72, dvs. hvis værdien fra afstandssensoren aflæses til under denne værdi, ignoreres den. I koden er der ikke taget hensyn til at en genstand kan være mindre end 10 cm fra sensoren. Dette skyldes at sensoren i WinePrep-rammen altid vil være placeret i en minimumsafstand af 10 cm fra objektet.
 
-Først blev x-aksen aktiviteret ved at simulere ``LOCATE_XY''-kommandoen fra linje 0x01 i main.c. Dette resulterede i billedet fra figur \ref{x_sensor_start}. En hånd blev anbragt foran sensoren og fjernet igen for at simulere en flaske. Y-aksen blev afsøgt for en flaske med samme procedure som for x-aksen - se figur \ref{y_sensor_start}.
+Først blev x-aksen aktiviteret ved at simulere ``LOCATE\_XY''-kommandoen fra linje 0x01 i main.c. Dette resulterede i billedet fra figur \ref{x_sensor_start}. En hånd blev anbragt foran sensoren og fjernet igen for at simulere en flaske. Y-aksen blev afsøgt for en flaske med samme procedure som for x-aksen - se figur \ref{y_sensor_start}.
 
 \begin{figure}[H]
 	\centering
-\includegraphics[scale=0.08]{Screenshots/y_sensor_start.jpg}
+\includegraphics[scale=0.1]{Screenshots/y_sensor_start.jpg}
 \caption{Motor og sensor på y-akse aktiveret}
 \label{y_sensor_start}
 \end{figure}
@@ -157,7 +161,7 @@ Figur \ref{End_of_search} viser endt detektering.
 
 \begin{figure}[H]
 	\centering
-\includegraphics[scale=0.08]{Screenshots/End_of_search.jpg}
+\includegraphics[scale=0.1]{Screenshots/End_of_search.jpg}
 \caption{Endt detektering}
 \label{End_of_search}
 \end{figure}
