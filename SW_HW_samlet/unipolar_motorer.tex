@@ -32,12 +32,12 @@ Når der skal detekteres for en flaske tændes ADCen og det analoge signal fra s
 \subsubsection{Sensor}
 Sensorerne detekterer så længe der er tilkoblet Vcc og GND til dem. I projektet betyder det at sensorerne konstant vil prøve at detektere, men at der i koden kun aflæses fra dem når det er relevant. Dette gøres vha. den sekventielle SAR ADC fra TopDesignet.
 
-\paragraph{Sekventiel SAR ADC}
+\underline{Sekventiel SAR ADC}
 Sequencing SAR ADC komponenten fra Figur \ref{PSoC_TopDesign_X_Y} består af en digital multiplexer, som udgør det sekventielle i ADCen. Yderligere findes en SAR ADC, der konverterer det analoge signal fra sensoren til en digital værdi i PSoCen. Der henvises til bilag xx for datablad for den sekventielle SAR ADC.
 
-Den digitale multiplexer kan tage to input, 0 eller 1. Disse værdier bestemmer hvilken sensor der skal læses fra. Når multiplexeren modtager 0 læses fra x-aksen mens der læses fra y-aksen når den modtager 1. Dette styres fra main.c med funktionen ``ADC\_SAR\_Seq\_GetResult16(uint16 chan)'', hvor "chan" er den port der læses fra. I main.c er 0 og 1 repræsenteret som ``X'' og ``Y'' - defineret i "enum axes" linje 63.
+Den digitale multiplexer kan tage to input, 0 eller 1. Disse værdier bestemmer hvilken sensor der skal læses fra. Når multiplexeren modtager 0 læses fra x-aksen mens der læses fra y-aksen når den modtager 1. Dette styres fra main.c med funktionen ``ADC\_SAR\_Seq\_GetResult16(uint16 chan)'', hvor ``chan'' er den port der læses fra. I main.c er 0 og 1 repræsenteret som ``X'' og ``Y'' - defineret i "enum axes" linje 63.
 
-SAR ADC-kredsløbet indeholder en DAC, en komparator og et register til at oversætte det analoge signal fra sensoren til en digital værdi. Outputtet fra ADCen er et antal counts der med funktionen ``int32 ADC\_SAR\_Seq\_CountsTo\_mVolts(int16 adcCounts)'' koverteres til mVolt.
+SAR ADC-kredsløbet indeholder en DAC, en komparator og et register til at oversætte det analoge signal fra sensoren til en digital værdi. Outputtet fra ADCen er et antal counts der med funktionen\linebreak ``int32 ADC\_SAR\_Seq\_CountsTo\_mVolts(int16 adcCounts)'' konverteres til mV.
 
 SAR er den måde som ADCen behandler dataene fra sensoren på. Successive approximation register fungerer ved at registret spørger efter en given værdi. Alt efter om den reelle værdi er højere eller lavere er outputtet henholdsvis et binært 1 eller 0. Registret vil spørge indtil en given resolution er opnået og en tilnærmet værdi er opnået.
 

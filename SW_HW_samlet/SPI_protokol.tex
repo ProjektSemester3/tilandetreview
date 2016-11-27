@@ -1,0 +1,101 @@
+\chapter{SPI-protokol}
+\label{SPI-prot}
+
+I nedenstående sektioner vil DevKit8000 blive refereret til som DK8k,
+master-PSoC'en som MASTER, de to slave-PSoCs som TOP og BOTTOM.
+
+\section{Kommandoer}
+\subsection{Fra DK8k til MASTER}
+
+\begin{table}[H]
+\begin{tabular}{| l | r |}
+\hline
+Kommando & Værdi\\\hline
+GET_STATUS & 0x00\\\hline
+LOCATE_XY & 0x01\\\hline
+OPEN_BOTTLE & 0x04\\\hline
+\end{tabular}
+\end{table}
+
+\subsection{Fra MASTER til TOP}
+
+\begin{table}[H]
+\begin{tabular}{| l | r |}
+\hline
+Kommando & Værdi\\\hline
+GET_STATUS & 0x00\\\hline
+LOCATE_XY & 0x01\\\hline
+LOCATE_Z_1 & 0x02\\\hline
+LOCATE_Z_2 & 0x03\\\hline
+OPEN_BOTTLE & 0x04\\\hline
+RESET & 0x05\\\hline
+DISPENSE_CORK & 0x06\\\hline
+\end{tabular}
+\end{table}
+
+\subsection{Fra MASTER til BOTTOM}
+
+\begin{table}[H]
+\begin{tabular}{| l | r |}
+\hline
+Kommando & Værdi\\\hline
+GET_STATUS & 0x00\\\hline
+LOCATE_Z_1 & 0x02\\\hline
+LOCATE_Z_2 & 0x03\\\hline
+RESET & 0x05\\\hline
+\end{tabular}
+\end{table}
+
+\section{Feedback}
+\subsection{Fra MASTER til DK8k}
+
+\begin{table}[H]
+\begin{tabular}{| l | r |}
+\hline
+Besked & Værdi\\\hline
+VALID_TYPE & 0x14\\\hline
+INVALID_TYPE & 0x21\\\hline
+NO_BOTTLE & 0x22\\\hline
+DEFAULT & 0x30\\\hline
+WRONG_COMMAND & 0x31\\\hline
+WRONG_DEVICE & 0x32\\\hline
+IN_PROCESS & 0x33\\\hline
+\end{tabular}
+\end{table}
+
+\subsection{Fra TOP til MASTER}
+
+\begin{table}[H]
+\begin{tabular}{| l | r |}
+\hline
+Besked & Værdi\\\hline
+VALID_XY & 0x14\\\hline
+INVALID_XY & 0x20\\\hline
+VALID_Z & 0x13\\\hline
+VALID_TYPE & 0x14\\\hline
+INVALID_TYPE & 0x21\\\hline
+NO_BOTTLE & 0x22\\\hline
+OPENING_SUCCESSFUL & 0x15\\\hline
+RESET_XY_ON_SUCCESS & 0x35\\\hline
+CORK_DISPENSED & 0x16\\\hline
+READY_TO_DRINK & 0x17\\\hline
+DEFAULT & 0x30\\\hline
+WRONG_COMMAND & 0x31\\\hline
+IN_PROCESS & 0x33\\\hline
+\end{tabular}
+\end{table}
+
+\subsection{Fra BOTTOM til MASTER}
+
+\begin{table}[H]
+\begin{tabular}{| l | r |}
+\hline
+Besked & Værdi\\\hline
+MOVED_Z_1 & 0x11\\\hline
+MOVED_Z_2 & 0x12\\\hline
+RESET_Z & 0x34\\\hline
+DEFAULT & 0x30\\\hline
+WRONG_COMMAND & 0x31\\\hline
+IN_PROCESS & 0x33\\\hline
+\end{tabular}
+\end{table}
