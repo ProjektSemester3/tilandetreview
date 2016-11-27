@@ -1,6 +1,6 @@
-﻿\chapter{Dokumentation for SPI forbindelse imellem Devit8000 og PSoC}
+\chapter{Dokumentation for SPI forbindelse imellem Devit8000 og PSoC}
 
-\section{Indleding}
+\section{Indledning}
 I wineprep projektet skal der bruges en linux platform, som i dette projekt består af et DevKit8000 (DK8k) hvorpå der er installeret distributionen Ångstöm. 
 Denne skal tage imod input fra brugeren af systemet via en grafisk brugergrænseflade og omskrive disse til kommandoer, som sendes til PSoC. Desuden
 vil PSoC sende status beskeder tilbage til DK8k.
@@ -25,7 +25,7 @@ DK8k vil i dette tilfælde udføre rollen som master i forbindelsen til MASTER, 
 dataoverførslen mellem de to enheder. Ligeledes vil MASTER fungere som master i forbindelsen til TOP og BOTTOM.
 
 \begin{figure}[H]
-\includegraphics[scale=0.15]{Screenshots/Realisering_devkit_psoc}
+\includegraphics[scale=0.9]{Screenshots/Realisering_devkit_psoc}
 \caption{Realisering af Devkit8000-PSoC SPI forbindelse}
 \end{figure}
 
@@ -96,7 +96,7 @@ på den anden PC, og skriver den i Tx-bufferen, så MASTER kan læse den igen og
 På billedet ses også en VDD-forbindelse fra MASTER, denne er dog kun nødvendig, hvis slaven ikke får VDD fra PC.
  
 \begin{figure}[H]
-\includegraphics[scale=0.9]{Screenshots/SPI_testopstilling}
+\includegraphics[scale=0.1]{Screenshots/SPI_testopstilling}
 \caption{PSoC forbundet til PC via UART og med anden PSoC-enhed via SPI}
 \end{figure}
 
@@ -106,7 +106,7 @@ tilsluttet. SPI fungerer på den måde, at den trækker signalet lavt på den sl
 CLCK er ikke særligt interessant, men det kan evt. tjekkes om frekvensen stemmer overens med det, som angives i koden for PSoC.
 
 \begin{figure}[H]
-\includegraphics[scale=0.9]{Screenshots/Logic_analyzer}
+\includegraphics[scale=0.1]{Screenshots/Logic_analyzer}
 \caption{Test med Analog Discovery på SPI-forbindelsen}
 \end{figure}
 
@@ -118,7 +118,7 @@ slaven at antal gange.
 Testen for SPI-forbindelsen imellem DK8k og MASTER foretages med Analog Discovery, hvor der måles på SS, CLCK, og henholdsvis MISO og MOSI.
 
 \begin{figure}[H]
-\includegraphics[scale=0.9]{Screenshots/Test_analog}
+\includegraphics[scale=0.1]{Screenshots/Test_analog}
 \caption{Opstilling med Analog Discovery til test af SPI-forbindelse} 
 \end{figure}
 
@@ -139,7 +139,7 @@ Ved testen ses, at der udskrives 05 på terminalvindue for PSoC-slave. Dette pas
 fint.
  
 \begin{figure}[H]
-\includegraphics[scale=0.9]{Screenshots/Terminal_spi_slave}
+\includegraphics[scale=0.1]{Screenshots/Terminal_spi_slave}
 \caption{Terminal udskrift fra PSoC-slave-enheden} 
 \end{figure}  
 
@@ -150,7 +150,7 @@ problem kunne være at indføre en "guard", f.eks en counter, som tjekker, at en
 yderligere opgaver.
 
 \begin{figure}[H]
-\includegraphics[scale=0.9]{Screenshots/Logic_analyzer}
+\includegraphics[scale=0.1]{Screenshots/Logic_analyzer}
 \caption{logic analizer målt på SPI-forbindelsen} 
 \end{figure} 
 
@@ -159,7 +159,7 @@ Ved første test-scenarie ses, hvordan der sendes værdien 20 fra DK8k til MASTE
 først en adresse kode, som er 65, og derefter værdien 20. Det ses også at SS går lav ved dataoverførsel, og at clock er stabil. Testen er derfor tilfredsstillende.
  
 \begin{figure}[H]
-\includegraphics[scale=0.9]{Screenshots/Analog_devkit_echo_psoc_1}
+\includegraphics[scale=0.1]{Screenshots/Analog_devkit_echo_psoc_1}
 \caption{Data bliver sendt fra DK8k til MASTER} 
 \end{figure}
 
@@ -167,7 +167,7 @@ Ved det andet test-scenarie bruges Linux-kommandoen cat til at læse fra MASTER.
 status for knappen på MASTER, som er trykket nede og derfor viser 1. 
 
 \begin{figure}[H]
-\includegraphics[scale=0.9]{Screenshots/Analog_cat_psoc_5}
+\includegraphics[scale=0.1]{Screenshots/Analog_cat_psoc_5}
 \caption{Data bliver læst fra MASTER} 
 \end{figure}
 
