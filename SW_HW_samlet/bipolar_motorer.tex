@@ -1,26 +1,26 @@
-\chapter{Bipolære steppermotorer}
+\chapter{BipolÃ¦re steppermotorer}
 
 \section{Indledning}
-Da der enkelte steder i WinePrep er behov for en større motorkraft end de unipolære stepper motorer kan leveres anvendes der her bipolære stepper motorer
-i stedet Dette giver en lidt mere kompleks styring, men en noget større trækkraft.
+Da der enkelte steder i WinePrep er behov for en stÃ¸rre motorkraft end de unipolÃ¦re stepper motorer kan leveres anvendes der her bipolÃ¦re stepper motorer
+i stedet Dette giver en lidt mere kompleks styring, men en noget stÃ¸rre trÃ¦kkraft.
 
 \section{Teori}
-En stepper motor er en elektromotor der kan bevæges i små trin af en bestemt vinkel, ofte 1.8 eller 0.9 grader afhængig af motoren, dette giver en meget
-præcis positionering til forskel fra de mere gængse DC motorer der er bedre egnet til kontinuerte bevægelser der skal foregå flydende.
+En stepper motor er en elektromotor der kan bevÃ¦ges i smÃ¥ trin af en bestemt vinkel, ofte 1.8 eller 0.9 grader afhÃ¦ngig af motoren, dette giver en meget
+prÃ¦cis positionering til forskel fra de mere gÃ¦ngse DC motorer der er bedre egnet til kontinuerte bevÃ¦gelser der skal foregÃ¥ flydende.
 
-Steppermotorerne har flere fordele, i sammenhæng med WinePrep er de valgt da præcis positionering samt evnen til at gentage denne positionering er vigtig.
-Derudover har vi behov for en rigtig god evne til at bevare en given stillestående position på trods af ekstra belastninger, og her kommer stepper motorens
+Steppermotorerne har flere fordele, i sammenhÃ¦ng med WinePrep er de valgt da prÃ¦cis positionering samt evnen til at gentage denne positionering er vigtig.
+Derudover har vi behov for en rigtig god evne til at bevare en given stillestÃ¥ende position pÃ¥ trods af ekstra belastninger, og her kommer stepper motorens
 rigtig gode hold torque til sin ret.
 
-Stepper motorer kommer i flere varianter, og i WinePrep anvendes der både bipolare samt unipolare stepper motore. I dette dokument fokuseres der udelukkende
-på Bipolare stepper motore. Ønskes der information om brugen af unipolare stepper motore kan denne findes i dokumentet "Unipolære steppermotorer".
+Stepper motorer kommer i flere varianter, og i WinePrep anvendes der bÃ¥de bipolare samt unipolare stepper motore. I dette dokument fokuseres der udelukkende
+pÃ¥ Bipolare stepper motore. Ã˜nskes der information om brugen af unipolare stepper motore kan denne findes i dokumentet "UnipolÃ¦re steppermotorer".
 
 \subsection{Bipolar Stepper Motor}
 
-Den bipolære steppermotor adskiller sig som det ses på figur \ref{bipolarlayout} fra den unipolære stepper motor ved at have 1 vikling per fase hvor den
-unipolære har 1 fælles tab i midten af spolen.
+Den bipolÃ¦re steppermotor adskiller sig som det ses pÃ¥ figur \ref{bipolarlayout} fra den unipolÃ¦re stepper motor ved at have 1 vikling per fase hvor den
+unipolÃ¦re har 1 fÃ¦lles tab i midten af spolen.
 
-Afhængig af polariteten i den givne spole vil motoren rotere sin akse til den givne position.
+AfhÃ¦ngig af polariteten i den givne spole vil motoren rotere sin akse til den givne position.
 
 \begin{figure}[H]
 	\centering
@@ -29,9 +29,9 @@ Afhængig af polariteten i den givne spole vil motoren rotere sin akse til den gi
 	\label{bipolarlayout}
 \end{figure}
 
-Til WinePrep anvedes der kun stepper motorer med gearing, hvilket gør at vi ikke anvender microstepping, da vi allerede uden dette har en rigelig god præcision.
+Til WinePrep anvedes der kun stepper motorer med gearing, hvilket gÃ¸r at vi ikke anvender microstepping, da vi allerede uden dette har en rigelig god prÃ¦cision.
 
-For at anvende en bipolar stepper til full step skal faserne påtrykkes spænding ud fra lookup tabellen på figur \ref{lookuptabel}.
+For at anvende en bipolar stepper til full step skal faserne pÃ¥trykkes spÃ¦nding ud fra lookup tabellen pÃ¥ figur \ref{lookuptabel}.
 
 \begin{figure}[H]
 	\centering
@@ -43,12 +43,12 @@ For at anvende en bipolar stepper til full step skal faserne påtrykkes spænding 
 Den bipolare stepper motor styres med 1 fuld h-bro pr fase.
 
 \section{Design}
-Til at styre de Bipolære stepper motorer anvendes der et print designet omkring chippen L298, der er en dual full-bridge driver.
+Til at styre de BipolÃ¦re stepper motorer anvendes der et print designet omkring chippen L298, der er en dual full-bridge driver.
 
-På blok diagrammet for L298 der kan ses på figur \ref{blok298}, ses det at chippen indeholde mulighed for at lave et strøm feedback loop tilbage til PSoC 5
-Chippen hvor man ved hjælp af en comparator og en DAC kan sikre sig mod for store strømme i stepper motoren. 
+PÃ¥ blok diagrammet for L298 der kan ses pÃ¥ figur \ref{blok298}, ses det at chippen indeholde mulighed for at lave et strÃ¸m feedback loop tilbage til PSoC 5
+Chippen hvor man ved hjÃ¦lp af en comparator og en DAC kan sikre sig mod for store strÃ¸mme i stepper motoren. 
 
-Derudover kan man se hvordan brugen af AND-Gates kan medføre en besparelse i antallet af pins der er nødvendige for at drive en full-bridge.
+Derudover kan man se hvordan brugen af AND-Gates kan medfÃ¸re en besparelse i antallet af pins der er nÃ¸dvendige for at drive en full-bridge.
 
 \begin{figure}[H]
 	\centering
@@ -57,26 +57,26 @@ Derudover kan man se hvordan brugen af AND-Gates kan medføre en besparelse i ant
 	\label{blok298}
 \end{figure}
 
-Denne forsynes via 12V og 78L05 DC-DC 5V konverteren på boardet med 5V til de logiske enheder på chippen.
+Denne forsynes via 12V og 78L05 DC-DC 5V konverteren pÃ¥ boardet med 5V til de logiske enheder pÃ¥ chippen.
 
-Derudover er der som anbefalet i databladet for 78L05 sat kondensatorer til at stabiliserer 5V forsyningen, samt på L298 ud fra anbefalinger i databladet.
+Derudover er der som anbefalet i databladet for 78L05 sat kondensatorer til at stabiliserer 5V forsyningen, samt pÃ¥ L298 ud fra anbefalinger i databladet.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{Billeder/kredsloebL297L298}
-	\caption{kredsløb til styring a bipolar steppermotor med L298 samt L297. Kilde: datablad L298.}
+	\caption{kredslÃ¸b til styring a bipolar steppermotor med L298 samt L297. Kilde: datablad L298.}
 	\label{L298L297}
 \end{figure}
 
-Der er i designfasen taget udgangspunkt i kredsløbet der ses på Figur \ref{L298L297} , i vores kredsløb er L297 dog erstattet af en PSoC5LP og der er anvendt
-andre modstande til strømsfeedback delen, da vi ikke havde den samme type på lager på skolen.
+Der er i designfasen taget udgangspunkt i kredslÃ¸bet der ses pÃ¥ Figur \ref{L298L297} , i vores kredslÃ¸b er L297 dog erstattet af en PSoC5LP og der er anvendt
+andre modstande til strÃ¸msfeedback delen, da vi ikke havde den samme type pÃ¥ lager pÃ¥ skolen.
 
-Der i som RS1 og RS2 istedet anvendt en 0.1 ohm effektmodstand, da de små 1/4 watts modstande ikke ville kunne tåle de strømme der vil kunne løbe igennem motoren.
+Der i som RS1 og RS2 istedet anvendt en 0.1 ohm effektmodstand, da de smÃ¥ 1/4 watts modstande ikke ville kunne tÃ¥le de strÃ¸mme der vil kunne lÃ¸be igennem motoren.
 
-Dette giver os ud fra kirchoffs strømlov at strømmen gennem RS1 er den samme som strømmen gennem spolen på stepper motoren, derved kan vi ved hjælp af ohms lov
-finde frem til den spænding vi skal indstille vores DAC i PSoC5LP til, for at vi opnår den ønskede strøm i motoren.
+Dette giver os ud fra kirchoffs strÃ¸mlov at strÃ¸mmen gennem RS1 er den samme som strÃ¸mmen gennem spolen pÃ¥ stepper motoren, derved kan vi ved hjÃ¦lp af ohms lov
+finde frem til den spÃ¦nding vi skal indstille vores DAC i PSoC5LP til, for at vi opnÃ¥r den Ã¸nskede strÃ¸m i motoren.
 
-Den generelle formel findes i ligning \ref{Currentfeedback-general} hvorfra en mere specifik udgave der kun vil passe på vores kredsløb kan findes på i ligning
+Den generelle formel findes i ligning \ref{Currentfeedback-general} hvorfra en mere specifik udgave der kun vil passe pÃ¥ vores kredslÃ¸b kan findes pÃ¥ i ligning
 \ref{Currentfeedback-specific}
 
 \begin{equation}
@@ -90,7 +90,7 @@ Den generelle formel findes i ligning \ref{Currentfeedback-general} hvorfra en m
 \end{equation}
 
 \section{Implementering}
-Ud fra dette og de tilgængelige komponenter på vores komponentalger er vi kommet frem til et print design der ser ud som på figur \ref{printdesign}.
+Ud fra dette og de tilgÃ¦ngelige komponenter pÃ¥ vores komponentalger er vi kommet frem til et print design der ser ud som pÃ¥ figur \ref{printdesign}.
 
 \begin{figure}[H]
 	\centering
@@ -99,11 +99,11 @@ Ud fra dette og de tilgængelige komponenter på vores komponentalger er vi kommet
 	\label{printdesign}
 \end{figure}
 
-De anvendte dioder er af typen 1N4148 og anvendes som flybackdioder for at beskytte L298 mod de strømme der opstår når spolerne slukkes.
+De anvendte dioder er af typen 1N4148 og anvendes som flybackdioder for at beskytte L298 mod de strÃ¸mme der opstÃ¥r nÃ¥r spolerne slukkes.
 
-Kondensatorene på det endelig print er ikke af tantalum typen, men værdier er de foreskrevne i databladet for L298.
+Kondensatorene pÃ¥ det endelig print er ikke af tantalum typen, men vÃ¦rdier er de foreskrevne i databladet for L298.
 
-Det færdige print ses på Figur \ref{solderedprint}.
+Det fÃ¦rdige print ses pÃ¥ Figur \ref{solderedprint}.
 
 \begin{figure}[H]
 	\centering
@@ -115,7 +115,7 @@ Det færdige print ses på Figur \ref{solderedprint}.
 \section{Test og resultater}
 Test resultater mangler da software til styringen ikke er fuldt funktionel endnu.
 
-Problemet med softwaren på nuværende tidspunkt at at PWM delen i PSoC generere et 14 kHz 50\% dutycycle puls signal hvor den burde være lav.
+Problemet med softwaren pÃ¥ nuvÃ¦rende tidspunkt at at PWM delen i PSoC generere et 14 kHz 50\% dutycycle puls signal hvor den burde vÃ¦re lav.
 
 \section{Konklusion}
 Mangler grundet manglende test.
