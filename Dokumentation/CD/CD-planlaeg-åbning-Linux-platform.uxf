@@ -43,7 +43,7 @@ GUI
       <w>460</w>
       <h>130</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;controller class&gt;&gt;
+    <panel_attributes>&lt;&lt;controller&gt;&gt;
 UC1/UC2
 
 --

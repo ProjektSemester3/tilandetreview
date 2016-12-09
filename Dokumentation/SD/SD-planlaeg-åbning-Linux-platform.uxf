@@ -123,7 +123,7 @@ showMessage(INVALID_TYPE):void</panel_attributes>
       <w>960</w>
       <h>1110</h>
     </coordinates>
-    <panel_attributes>SD UC2: Planlæg Åbning</panel_attributes>
+    <panel_attributes>SD (Linux-platform) UC2: Planlæg Åbning</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -155,24 +155,24 @@ fwrite(buff, 1, 2, fd):void</panel_attributes>
     <coordinates>
       <x>490</x>
       <y>690</y>
-      <w>380</w>
+      <w>370</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
+    <panel_attributes>lt=&lt;&lt;&lt;-
 write(psoc_spi_device, 0x01, 0x01): ssize_t</panel_attributes>
-    <additional_attributes>360.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>350.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>490</x>
       <y>800</y>
-      <w>380</w>
+      <w>370</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
+    <panel_attributes>lt=&lt;&lt;&lt;-
 read(psoc_spi_device, 0x01, value): ssize_t</panel_attributes>
-    <additional_attributes>360.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>350.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -369,7 +369,7 @@ bg=yellow</panel_attributes>
       <x>480</x>
       <y>690</y>
       <w>20</w>
-      <h>20</h>
+      <h>30</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -406,6 +406,30 @@ bg=yellow</panel_attributes>
       <y>1010</y>
       <w>20</w>
       <h>40</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>840</x>
+      <y>710</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>840</x>
+      <y>820</y>
+      <w>20</w>
+      <h>20</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>

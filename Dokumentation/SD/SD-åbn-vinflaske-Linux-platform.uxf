@@ -135,7 +135,7 @@ showMessage(INVALID_TYPE):void</panel_attributes>
       <w>810</w>
       <h>558</h>
     </coordinates>
-    <panel_attributes>SD UC1: Åbn Vinflaske</panel_attributes>
+    <panel_attributes>SD (Linux-platform) UC1: Åbn Vinflaske</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -167,24 +167,24 @@ fwrite(buff, 1, 2, fd):void</panel_attributes>
     <coordinates>
       <x>432</x>
       <y>225</y>
-      <w>342</w>
+      <w>333</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
+    <panel_attributes>lt=&lt;&lt;&lt;-
 write(psoc_spi_device, 0x01, 0x01): ssize_t</panel_attributes>
-    <additional_attributes>360.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>350.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>432</x>
       <y>324</y>
-      <w>342</w>
+      <w>333</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
+    <panel_attributes>lt=&lt;&lt;&lt;-
 read(psoc_spi_device, 0x01, value): ssize_t</panel_attributes>
-    <additional_attributes>360.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>350.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -216,6 +216,90 @@ bg=yellow</panel_attributes>
       <x>423</x>
       <y>225</y>
       <w>18</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>171</x>
+      <y>324</y>
+      <w>18</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>171</x>
+      <y>450</y>
+      <w>18</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>171</x>
+      <y>513</y>
+      <w>18</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>423</x>
+      <y>324</y>
+      <w>18</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>423</x>
+      <y>450</y>
+      <w>18</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>423</x>
+      <y>513</y>
+      <w>18</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>747</x>
+      <y>243</y>
+      <w>18</w>
       <h>18</h>
     </coordinates>
     <panel_attributes>
@@ -225,70 +309,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>171</x>
-      <y>324</y>
+      <x>747</x>
+      <y>342</y>
       <w>18</w>
-      <h>108</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>171</x>
-      <y>450</y>
-      <w>18</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>171</x>
-      <y>513</y>
-      <w>18</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>423</x>
-      <y>324</y>
-      <w>18</w>
-      <h>108</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>423</x>
-      <y>450</y>
-      <w>18</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>423</x>
-      <y>513</y>
-      <w>18</w>
-      <h>36</h>
+      <h>18</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
