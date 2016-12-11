@@ -14,9 +14,8 @@ Klassernes overordnede funktionalitet burde ud fra deres titler og ovenstående 
 For nærmere at beskrive disse to metoder, hvis funktionalitet ikke afviger fra hinanden, er følgende aktivitetsdiagram blevet udarbejdet: \\
 
 \begin{figure}[H]
-	\caption{AD_locate}
-	\label{locateX()_/locateY()}
 	\includegraphics[scale=0.09]{AD_locate.jpg}
+	\label{locateX()_/locateY()}
 \end{figure}
 
 Ved indtrædelse i metoden nulstilles en tæller \textit{stepCount}, som tæller antallet af steps taget. Derefter måles med sensor, om en flaske er registreret. Så længe dette ikke er tilfældet skal motoren fortsat køre, og \textit{stepCount} skal tælles op. I så fald enden på aksen nås, skal metoden afslutte og returnere en fejlværdi. Hvis flasken registreres, gemmes \textit{stepCount} i \textit{rightPosition}. Der fortsættes efter samme mønster, indtil der ikke længere registreres en flaske, eller enden er nået. Hvis førstnævnte er tilfældet, gemmes \textit{stepCount} i \textit{leftPosition}, hvorefter afstanden til flaskens midte beregnes ud fra \textit{rightPosition} og \textit{leftPosition}. Denne værdi sammenlignes med en forudbestemt værdi for at sikre, at det er en kompatibel flaske, der er indsat. Hvis ikke, afsluttes metoden og returnerer en fejlværdi. Ellers flyttes sensoren til flaskens midte, og metoden returnerer en succesværdi.
