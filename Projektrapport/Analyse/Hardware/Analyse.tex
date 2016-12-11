@@ -1,0 +1,20 @@
+\section{Analyse}
+\subsection{Motorvalg}
+Tre typer af motorer, DC-, stepper- (DC) og servo motor, har været overvejet til forskellige funktioner i projektet. Krav til de forskellige motorer blev inddelt i 3 overordnede emner: præcision (til positionering), hastighed (rpm) og moment (torque).\\
+
+Præcision på akserne er altafgørende og her er stepper motoren de andre overlegne. Der blev desuden ikke defineret et krav for hvor hurtigt vinflasken skulle åbnes, så hastigheden er af den grund blevet nedprioriteret.
+
+\subsubsection{x-, y- og z-aksen samt iskruning af proptrækker}
+På baggrund af viden om forskellige typer af motorer, se evt. bilag xx, blev stepper motorer af typen 28BYJ-48 valgt pga. dens nøjagtighed indenfor positionsgenkendelse. Det var nødvendigt, for at kunne åbne vinen, at have koordinater der lå indenfor en milimeters nøjagtighed, og det kunne opnåes med motorens mange steps per rotation. I 4-step mode har motoren en vinkel på 11,25(grader) per step, som betyder 32 steps per rotation internt i motoren. Med en gearing på 1:64 giver det 2048 steps per rotation for motorens skaft, hvilket giver meget nøjagtige koordinater. Motoren er lille i sin fysiske størrelse og var derfor også nem at implementere i rammen for WinePrep hvilket gjorde den yderligere attraktiv.\\
+
+Det eneste problem med motoren var dens relativt svage moment som standard, unipolær model. Det blev løst ved at omdanne motoren til bipolær og det lykkedes på denne måde at øge momentet med mere end 2 gange. Se hvordan dette lod sig gøre i bilag xx.\\
+
+Der blev forsøgt lavet målinger på kraften der skulle til for at skrue proptrækkeren i. Disse målinger viste sig dog at være meget upræcise og de blev derfor vurderet ubrugelige for beslutningsprocessen. Uden nærmere indsigt i krav til moment for motoren for iskruning af proptrækkeren, blev 28BYJ-48 også valgt til denne opgave.
+
+\subsubsection{Proptræk}
+Målinger af proptrækket blev foretaget med en kraftmåler som kunne måle op til 20 kg. Under forsøgene blev det bevist at proptrækket kræver større kraft end hvad kraftmåleren kunne måle, og det blev herefter besluttet at anskaffe en motor med rigelig moment (se bilag xx). Valget faldt på stepper motor af typen NEMA17 der ifølge databladet kan trække med en kraft på 48 kg. 
+
+En DC- eller servomotor kunne lige så vel have udført arbejdet, men det var NEMA17 der var til rådighed på værkstedet på ASE.
+
+\subsection{Sensorvalg}
+Ud fra en betragtning om præcision, som var et krav af høj betydning, var det underordnet om en afstandsmåler af typen lys eller ultralyd blev valgt, da præcisionen stadig ville være for unøjagtig med de komponenter der kunne anskaffes. Det essentielle for sensoren var at den detekterede om der var en genstand i WinePrep. Der var to muligheder at vælge imellem i Embedded Stock og lasersensoren, SHARP GP2Y0A21YK, vandt over en ultralydssensor, pga. dens større præcision.
