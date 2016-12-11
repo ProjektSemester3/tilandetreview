@@ -27,37 +27,36 @@
 \contentsline {subsection}{Motor- og sensorstyring}{9}{section*.10}
 \contentsline {section}{\numberline {5.4}Analyse - GUI}{10}{section.5.4}
 \contentsline {section}{\numberline {5.5}Analyse af SPI}{10}{section.5.5}
-\contentsline {chapter}{\chapternumberline {6}Arkitektur}{12}{chapter.6}
-\contentsline {chapter}{\chapternumberline {7}Systemarkitektur}{13}{chapter.7}
-\contentsline {section}{\numberline {7.1}Hardware}{13}{section.7.1}
-\contentsline {section}{\numberline {7.2}Software}{15}{section.7.2}
-\contentsline {subsection}{Devkit8000 (Linux platform)}{16}{section*.11}
-\contentsline {subsection}{PSoC Master og PSoC slave}{18}{section*.12}
-\contentsline {chapter}{\chapternumberline {8}Design}{21}{chapter.8}
-\contentsline {section}{\numberline {8.1}Hardware}{21}{section.8.1}
-\contentsline {section}{\numberline {8.2}Software}{21}{section.8.2}
-\contentsline {subsection}{Motor- og sensorstyring}{21}{section*.13}
-\contentsline {subsubsection}{Indledning}{21}{section*.14}
-\contentsline {subsubsection}{Klasser og funktioner}{22}{section*.15}
-\contentsline {section}{\numberline {8.3}Implementering - GUI}{23}{section.8.3}
-\contentsline {subsection}{Seriel kommunikation}{24}{section*.16}
-\contentsline {chapter}{\chapternumberline {9}Test, implementering og resultater}{26}{chapter.9}
-\contentsline {section}{\numberline {9.1}Hardware}{26}{section.9.1}
-\contentsline {section}{\numberline {9.2}Test}{26}{section.9.2}
-\contentsline {subsection}{Motorer og sensorer}{26}{section*.17}
-\contentsline {section}{\numberline {9.3}Resultater}{26}{section.9.3}
-\contentsline {subsection}{Akserne}{26}{section*.18}
-\contentsline {section}{\numberline {9.4}Software}{28}{section.9.4}
-\contentsline {subsection}{PSoC}{28}{section*.19}
-\contentsline {subsubsection}{Hardware-gr\IeC {\ae }nseflade}{28}{section*.20}
-\contentsline {paragraph}{Sensorer}{28}{section*.21}
-\contentsline {paragraph}{Motorer}{28}{section*.22}
-\contentsline {paragraph}{Knapper}{28}{section*.23}
-\contentsline {subsubsection}{Implementering}{28}{section*.24}
-\contentsline {subsubsection}{Test}{29}{section*.25}
-\contentsline {subsubsection}{Diskussion}{30}{section*.26}
-\contentsline {subsection}{Seriel kommunikation}{30}{section*.27}
-\contentsline {subsubsection}{SPI Device Driver}{30}{section*.28}
-\contentsline {subsubsection}{Kommunikation mellem PSoC's}{31}{section*.29}
-\contentsline {subsubsection}{Test af PSoC-PSoC}{31}{section*.30}
-\contentsline {subsubsection}{Test af DevKit-PSoC}{31}{section*.31}
+\contentsline {chapter}{\chapternumberline {6}Systemarkitektur}{12}{chapter.6}
+\contentsline {section}{\numberline {6.1}Hardware}{12}{section.6.1}
+\contentsline {section}{\numberline {6.2}Software}{14}{section.6.2}
+\contentsline {subsection}{Devkit8000 (Linux platform)}{15}{section*.11}
+\contentsline {subsection}{PSoC Master og PSoC slave}{17}{section*.12}
+\contentsline {chapter}{\chapternumberline {7}Design}{20}{chapter.7}
+\contentsline {section}{\numberline {7.1}Hardware}{20}{section.7.1}
+\contentsline {section}{\numberline {7.2}Software}{20}{section.7.2}
+\contentsline {subsection}{Motor- og sensorstyring}{20}{section*.13}
+\contentsline {subsubsection}{Indledning}{20}{section*.14}
+\contentsline {subsubsection}{Klasser og funktioner}{21}{section*.15}
+\contentsline {section}{\numberline {7.3}Implementering - GUI}{22}{section.7.3}
+\contentsline {subsection}{Seriel kommunikation}{23}{section*.16}
+\contentsline {chapter}{\chapternumberline {8}Test, implementering og resultater}{25}{chapter.8}
+\contentsline {section}{\numberline {8.1}Hardware}{25}{section.8.1}
+\contentsline {section}{\numberline {8.2}Test}{25}{section.8.2}
+\contentsline {subsection}{Motorer og sensorer}{25}{section*.17}
+\contentsline {section}{\numberline {8.3}Resultater}{25}{section.8.3}
+\contentsline {subsection}{Akserne}{25}{section*.18}
+\contentsline {section}{\numberline {8.4}Software}{27}{section.8.4}
+\contentsline {subsection}{PSoC}{27}{section*.19}
+\contentsline {subsubsection}{Hardware-gr\IeC {\ae }nseflade}{27}{section*.20}
+\contentsline {paragraph}{Sensorer}{27}{section*.21}
+\contentsline {paragraph}{Motorer}{27}{section*.22}
+\contentsline {paragraph}{Knapper}{27}{section*.23}
+\contentsline {subsubsection}{Implementering}{27}{section*.24}
+\contentsline {subsubsection}{Test}{28}{section*.25}
+\contentsline {subsubsection}{Diskussion}{29}{section*.26}
+\contentsline {subsection}{Seriel kommunikation}{29}{section*.27}
+\contentsline {subsubsection}{SPI Device Driver}{29}{section*.28}
+\contentsline {subsubsection}{Kommunikation mellem PSoC's}{30}{section*.29}
+\contentsline {subsubsection}{Test af PSoC-PSoC}{30}{section*.30}
+\contentsline {subsubsection}{Test af DevKit-PSoC}{30}{section*.31}
