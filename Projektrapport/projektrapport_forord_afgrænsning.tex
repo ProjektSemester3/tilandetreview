@@ -1,0 +1,25 @@
+\chapter{Forord}
+Denne rapport er skrevet på 3. semester af gruppe 13, på retningerne IKT, E og EE ved Aarhus Universitet, Ingeniør højskolen. 
+Vejleder for dette projekt er Søren Hansen. Afleveringsdatoen for denne projektrapport er den 20. December 2016, og bedømmelse er den 18. Januar 2017.
+Rapporten er udarbejdet på baggrund af den dokumentation, som kan findes i bilaget for projektrapporten.
+
+\section{Læsevejledning}
+Det er tiltænkt at rapporten skal læses i kronologisk rækkefølge, dog kan afsnittene omkring implementering og test af delsystemerne læses
+uafhængigt af hinanden. 
+
+\chapter{Afgrænsning}
+Det er et krav at projektet skal indeholde en linux platform, en PSoC og aktuator. Gruppen har derfor fokuseret på de usecases som indeholdte alle disse elementer, 
+hvilket var "åben nu" og "planlæg åbning". I de indledende faser af projektet, blev det drøftet hvorvidt systemet skulle måle temperaturen af vinen, have en 
+mobil applikationen og tilknyttes en database via internettet. Gruppen blev dog enige om at dette låg uden for læringsmålene for projektet, og var for 
+tidskrævende til at kunne implementeres indenfor tidsrammen. Gruppen holdte dog muligheden åben for at disse krav kunne komme på tale hvis der var tid og 
+overskud sidst i projektet, hvilket der ikke blev grundet det mandefald gruppen havde. 
+Der blev også opstillet nogle krav for et ideelt produkt, dog med den klare opfattelse af at disse ikke var mulige for gruppen at gennemføre. Disse krav 
+indbefattede bl.a. regulering af vines temperatur, online vinbestilling, og genkendelse af vintype ud fra et billede af vinetiketten. 
+Målet for dette projekt blev at lave en prototype med en grafisk brugergrænseflade, der via kommunikation med PSoC gjorde det muligt at styre positionerings- 
+og åbningsmekanismer til åbning af en vinflaske. Denne prototype ville indeholde både motorer, sensorer, linux platform og PSoC, og dermed opfylde minimums 
+kravene til projektet. I og med at gruppen havde en forholdsvis lille størrelse blev det prioriteret ikke at bruge ressourcer på implementering af features der 
+låg udenfor disse minimumskrav. Det var vigtigt at fokusere på hvad der var nødvendigt for at opfylde IHA's krav, og ikke hvad der kunne gøre prototypen mere 
+imponerende eller innoverende. Ud fra den ønskede prototype, blev der opstillet en riskmodel for både software og hardware der skulle klarlægge hvilke områder 
+gruppen skulle fokusere på. Fokuspunkterne for projektet blev derfor styring af motorer og sensorer til positionerings- og åbningsmekanisme, kommunikation mellem 
+linux platform og PSoC enheder, samt brugergrænsefladen. Konstruktionen af de fysiske rammer for systemet blev ikke prioriteret særligt højt, da dette ligger 
+udenfor de faglige mål for projektet.              
