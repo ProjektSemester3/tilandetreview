@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>9</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>9</x>
+      <x>104</x>
       <y>0</y>
-      <w>972</w>
-      <h>1170</h>
+      <w>864</w>
+      <h>1040</h>
     </coordinates>
     <panel_attributes>CD (PSoC) UC1: Åbn Vinflaske &amp; UC2: Planlæg åbning</panel_attributes>
     <additional_attributes/>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>36</x>
-      <y>27</y>
-      <w>90</w>
-      <h>36</h>
+      <x>128</x>
+      <y>24</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>&lt;&lt;boundary&gt;&gt;
 :DevKit_SPI</panel_attributes>
@@ -27,10 +27,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>153</x>
-      <y>27</y>
-      <w>90</w>
-      <h>36</h>
+      <x>232</x>
+      <y>24</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>&lt;&lt;boundary&gt;&gt;
 :MotorsXY</panel_attributes>
@@ -39,10 +39,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>270</x>
-      <y>27</y>
-      <w>90</w>
-      <h>36</h>
+      <x>336</x>
+      <y>24</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>&lt;&lt;boundary&gt;&gt;
 :Sensor</panel_attributes>
@@ -51,10 +51,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>387</x>
-      <y>27</y>
-      <w>153</w>
-      <h>36</h>
+      <x>440</x>
+      <y>24</y>
+      <w>136</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>&lt;&lt;controller&gt;&gt;
 :UC1/UC2 (PSoC-Master)</panel_attributes>
@@ -63,10 +63,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>684</x>
-      <y>27</y>
-      <w>153</w>
-      <h>36</h>
+      <x>704</x>
+      <y>24</y>
+      <w>136</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>&lt;&lt;controller&gt;&gt;
 :UC1/UC2 (PSoC-Slave)</panel_attributes>
@@ -76,9 +76,9 @@
     <id>UMLGeneric</id>
     <coordinates>
       <x>864</x>
-      <y>27</y>
-      <w>90</w>
-      <h>36</h>
+      <y>24</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>&lt;&lt;boundary&gt;&gt;
 :MotorsZSP</panel_attributes>
@@ -87,10 +87,10 @@
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>567</x>
-      <y>27</y>
-      <w>90</w>
-      <h>36</h>
+      <x>600</x>
+      <y>24</y>
+      <w>80</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>&lt;&lt;boundary&gt;&gt;
 :PSoC_SPI</panel_attributes>
@@ -99,10 +99,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>72</x>
-      <y>54</y>
-      <w>27</w>
-      <h>1125</h>
+      <x>160</x>
+      <y>48</y>
+      <w>24</w>
+      <h>1000</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
@@ -110,10 +110,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>189</x>
-      <y>54</y>
-      <w>27</w>
-      <h>1125</h>
+      <x>264</x>
+      <y>48</y>
+      <w>24</w>
+      <h>1000</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
@@ -121,21 +121,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>297</x>
-      <y>54</y>
-      <w>36</w>
-      <h>1125</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>20.0;10.0;10.0;1230.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>450</x>
-      <y>54</y>
-      <w>27</w>
-      <h>1125</h>
+      <x>368</x>
+      <y>48</y>
+      <w>24</w>
+      <h>1000</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
@@ -143,10 +132,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>603</x>
-      <y>54</y>
-      <w>27</w>
-      <h>1125</h>
+      <x>496</x>
+      <y>48</y>
+      <w>24</w>
+      <h>1000</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
@@ -154,10 +143,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>747</x>
-      <y>54</y>
-      <w>27</w>
-      <h>1125</h>
+      <x>632</x>
+      <y>48</y>
+      <w>24</w>
+      <h>1000</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
@@ -165,10 +154,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>900</x>
-      <y>54</y>
-      <w>27</w>
-      <h>1125</h>
+      <x>760</x>
+      <y>48</y>
+      <w>24</w>
+      <h>1000</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
@@ -176,10 +165,21 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>72</x>
-      <y>81</y>
-      <w>396</w>
-      <h>36</h>
+      <x>896</x>
+      <y>48</y>
+      <w>24</w>
+      <h>1000</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;1230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>72</y>
+      <w>352</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 readCommand(OPEN):void</panel_attributes>
@@ -188,10 +188,10 @@ readCommand(OPEN):void</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>450</x>
-      <y>99</y>
-      <w>18</w>
-      <h>333</h>
+      <x>496</x>
+      <y>88</y>
+      <w>16</w>
+      <h>232</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -200,10 +200,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>306</x>
-      <y>117</y>
-      <w>162</w>
-      <h>36</h>
+      <x>368</x>
+      <y>104</y>
+      <w>144</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 startSensor(X):void</panel_attributes>
@@ -212,10 +212,10 @@ startSensor(X):void</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>198</x>
-      <y>144</y>
-      <w>270</w>
-      <h>36</h>
+      <x>272</x>
+      <y>128</y>
+      <w>240</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 locateX():int8</panel_attributes>
@@ -224,10 +224,10 @@ locateX():int8</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>189</x>
-      <y>162</y>
-      <w>18</w>
-      <h>36</h>
+      <x>264</x>
+      <y>144</y>
+      <w>16</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -236,10 +236,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>198</x>
-      <y>180</y>
-      <w>270</w>
-      <h>36</h>
+      <x>272</x>
+      <y>160</y>
+      <w>240</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 SUCCESS</panel_attributes>
@@ -248,10 +248,10 @@ SUCCESS</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>306</x>
-      <y>207</y>
-      <w>162</w>
-      <h>36</h>
+      <x>368</x>
+      <y>184</y>
+      <w>144</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 stopSensor(X):void</panel_attributes>
@@ -260,10 +260,10 @@ stopSensor(X):void</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>306</x>
-      <y>234</y>
-      <w>162</w>
-      <h>36</h>
+      <x>368</x>
+      <y>208</y>
+      <w>144</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 startSensor(Y):void</panel_attributes>
@@ -272,10 +272,10 @@ startSensor(Y):void</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>198</x>
-      <y>261</y>
-      <w>270</w>
-      <h>36</h>
+      <x>272</x>
+      <y>232</y>
+      <w>240</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 locateY():int8</panel_attributes>
@@ -284,10 +284,10 @@ locateY():int8</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>189</x>
-      <y>279</y>
-      <w>18</w>
-      <h>36</h>
+      <x>264</x>
+      <y>248</y>
+      <w>16</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -296,10 +296,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>198</x>
-      <y>297</y>
-      <w>270</w>
-      <h>36</h>
+      <x>272</x>
+      <y>264</y>
+      <w>240</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 SUCCESS</panel_attributes>
@@ -308,46 +308,10 @@ SUCCESS</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>306</x>
-      <y>324</y>
-      <w>162</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-stopSensor(Y):void</panel_attributes>
-    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>198</x>
-      <y>351</y>
-      <w>270</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-positionXY():void</panel_attributes>
-    <additional_attributes>10.0;20.0;280.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>189</x>
-      <y>369</y>
-      <w>18</w>
-      <h>27</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>459</x>
-      <y>405</y>
-      <w>162</w>
-      <h>45</h>
+      <x>504</x>
+      <y>296</y>
+      <w>144</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 updateStatus(FIND_Z_1)
@@ -357,10 +321,10 @@ updateStatus(FIND_Z_1)
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>603</x>
-      <y>423</y>
-      <w>18</w>
-      <h>18</h>
+      <x>632</x>
+      <y>312</y>
+      <w>16</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -369,10 +333,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>603</x>
-      <y>423</y>
-      <w>171</w>
-      <h>45</h>
+      <x>632</x>
+      <y>312</y>
+      <w>152</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 readCommand(FIND_Z_1)
@@ -382,431 +346,9 @@ readCommand(FIND_Z_1)
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>747</x>
-      <y>432</y>
-      <w>18</w>
-      <h>81</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>306</x>
-      <y>387</y>
-      <w>162</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-startSensor(X):void</panel_attributes>
-    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>756</x>
-      <y>441</y>
-      <w>162</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-positionZ(UNDER_TOP)
-:void</panel_attributes>
-    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>900</x>
-      <y>459</y>
-      <w>18</w>
-      <h>27</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>603</x>
-      <y>486</y>
-      <w>171</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-updateStatus(Z_FOUND_1)
-:void</panel_attributes>
-    <additional_attributes>20.0;20.0;160.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>603</x>
-      <y>504</y>
-      <w>18</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>450</x>
-      <y>504</y>
-      <w>180</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-readCommand(Z_FOUND_1)
-:void</panel_attributes>
-    <additional_attributes>20.0;20.0;170.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>450</x>
-      <y>513</y>
-      <w>18</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>306</x>
-      <y>522</y>
-      <w>180</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-confirmHeight(UNDER_TOP)
-:int8</panel_attributes>
-    <additional_attributes>20.0;20.0;160.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>306</x>
-      <y>540</y>
-      <w>18</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>315</x>
-      <y>558</y>
-      <w>153</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-SUCCESS</panel_attributes>
-    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>459</x>
-      <y>576</y>
-      <w>162</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-updateStatus(FIND_Z_2)
-:void</panel_attributes>
-    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>603</x>
-      <y>594</y>
-      <w>18</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>603</x>
-      <y>594</y>
-      <w>171</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-readCommand(FIND_Z_2)
-:void</panel_attributes>
-    <additional_attributes>160.0;20.0;20.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>747</x>
-      <y>603</y>
-      <w>18</w>
-      <h>81</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>756</x>
-      <y>612</y>
-      <w>162</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-positionZ(ABOVE_TOP)
-:void</panel_attributes>
-    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>900</x>
-      <y>630</y>
-      <w>18</w>
-      <h>27</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>603</x>
-      <y>657</y>
-      <w>171</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-updateStatus(Z_FOUND_2)
-:void</panel_attributes>
-    <additional_attributes>20.0;20.0;160.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>603</x>
-      <y>675</y>
-      <w>18</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>450</x>
-      <y>675</y>
-      <w>180</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-readCommand(Z_FOUND_2)
-:void</panel_attributes>
-    <additional_attributes>20.0;20.0;170.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>450</x>
-      <y>684</y>
-      <w>18</w>
-      <h>117</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>306</x>
-      <y>693</y>
-      <w>171</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-confirmHeight(ABOVE_TOP)
-:int8</panel_attributes>
-    <additional_attributes>20.0;20.0;160.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>306</x>
-      <y>711</y>
-      <w>18</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>315</x>
-      <y>729</y>
-      <w>153</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;.
-SUCCESS</panel_attributes>
-    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>306</x>
-      <y>756</y>
-      <w>162</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-stopSensor(X):void</panel_attributes>
-    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>459</x>
-      <y>774</y>
-      <w>162</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-updateStatus(OPEN)
-:void</panel_attributes>
-    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>603</x>
-      <y>792</y>
-      <w>18</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>612</x>
-      <y>792</y>
-      <w>153</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-readCommand(OPEN)
-:void</panel_attributes>
-    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>747</x>
-      <y>801</y>
-      <w>18</w>
-      <h>81</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>756</x>
-      <y>810</y>
-      <w>162</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-openBottle():void</panel_attributes>
-    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>900</x>
-      <y>828</y>
-      <w>18</w>
-      <h>27</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>585</x>
-      <y>855</y>
-      <w>207</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-updateStatus(BOTTLE_OPENED)
-:void</panel_attributes>
-    <additional_attributes>40.0;20.0;180.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>603</x>
-      <y>873</y>
-      <w>18</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>432</x>
-      <y>873</y>
-      <w>216</w>
-      <h>45</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-readCommand(BOTTLE_OPENED)
-:void</panel_attributes>
-    <additional_attributes>40.0;20.0;190.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>450</x>
-      <y>882</y>
-      <w>18</w>
+      <x>760</x>
+      <y>320</y>
+      <w>16</w>
       <h>72</h>
     </coordinates>
     <panel_attributes>
@@ -816,22 +358,23 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>198</x>
-      <y>891</y>
-      <w>270</w>
-      <h>36</h>
+      <x>768</x>
+      <y>328</y>
+      <w>144</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-reset():void</panel_attributes>
-    <additional_attributes>10.0;20.0;280.0;20.0</additional_attributes>
+positionZ(UNDER_TOP)
+:void</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>189</x>
-      <y>909</y>
-      <w>18</w>
-      <h>27</h>
+      <x>896</x>
+      <y>344</y>
+      <w>16</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -840,10 +383,419 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>459</x>
-      <y>927</y>
-      <w>162</w>
-      <h>45</h>
+      <x>632</x>
+      <y>368</y>
+      <w>152</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+updateStatus(Z_FOUND_1)
+:void</panel_attributes>
+    <additional_attributes>20.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>632</x>
+      <y>384</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>496</x>
+      <y>384</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+readCommand(Z_FOUND_1)
+:void</panel_attributes>
+    <additional_attributes>20.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>496</x>
+      <y>392</y>
+      <w>16</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>368</x>
+      <y>400</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+confirmHeight(UNDER_TOP)
+:int8</panel_attributes>
+    <additional_attributes>20.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>368</x>
+      <y>416</y>
+      <w>16</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>376</x>
+      <y>432</y>
+      <w>136</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+SUCCESS</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>448</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+updateStatus(FIND_Z_2)
+:void</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>632</x>
+      <y>464</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>632</x>
+      <y>464</y>
+      <w>152</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+readCommand(FIND_Z_2)
+:void</panel_attributes>
+    <additional_attributes>160.0;20.0;20.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>760</x>
+      <y>472</y>
+      <w>16</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>768</x>
+      <y>480</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+positionZ(ABOVE_TOP)
+:void</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>896</x>
+      <y>496</y>
+      <w>16</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>632</x>
+      <y>520</y>
+      <w>152</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+updateStatus(Z_FOUND_2)
+:void</panel_attributes>
+    <additional_attributes>20.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>632</x>
+      <y>536</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>496</x>
+      <y>536</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+readCommand(Z_FOUND_2)
+:void</panel_attributes>
+    <additional_attributes>20.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>496</x>
+      <y>544</y>
+      <w>16</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>368</x>
+      <y>552</y>
+      <w>152</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+confirmHeight(ABOVE_TOP)
+:int8</panel_attributes>
+    <additional_attributes>20.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>368</x>
+      <y>568</y>
+      <w>16</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>376</x>
+      <y>584</y>
+      <w>136</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+SUCCESS</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>368</x>
+      <y>608</y>
+      <w>144</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+stopSensor(Y):void</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>688</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+updateStatus(OPEN)
+:void</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>632</x>
+      <y>704</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>704</y>
+      <w>136</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+readCommand(OPEN)
+:void</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>760</x>
+      <y>712</y>
+      <w>16</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>768</x>
+      <y>720</y>
+      <w>144</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+openBottle():void</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>896</x>
+      <y>736</y>
+      <w>16</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>616</x>
+      <y>760</y>
+      <w>184</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+updateStatus(BOTTLE_OPENED)
+:void</panel_attributes>
+    <additional_attributes>40.0;20.0;180.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>632</x>
+      <y>776</y>
+      <w>16</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>776</y>
+      <w>192</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+readCommand(BOTTLE_OPENED)
+:void</panel_attributes>
+    <additional_attributes>40.0;20.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>496</x>
+      <y>784</y>
+      <w>16</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>272</x>
+      <y>792</y>
+      <w>240</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+reset():void</panel_attributes>
+    <additional_attributes>10.0;20.0;280.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>264</x>
+      <y>808</y>
+      <w>16</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>824</y>
+      <w>144</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 updateStatus(DISPOSE)
@@ -853,10 +805,10 @@ updateStatus(DISPOSE)
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>603</x>
-      <y>945</y>
-      <w>18</w>
-      <h>18</h>
+      <x>632</x>
+      <y>840</y>
+      <w>16</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -865,10 +817,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>603</x>
-      <y>945</y>
-      <w>171</w>
-      <h>45</h>
+      <x>632</x>
+      <y>840</y>
+      <w>152</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 readCommand(DISPOSE)
@@ -878,10 +830,10 @@ readCommand(DISPOSE)
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>747</x>
-      <y>954</y>
-      <w>18</w>
-      <h>117</h>
+      <x>760</x>
+      <y>848</y>
+      <w>16</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -890,10 +842,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
-      <y>963</y>
-      <w>162</w>
-      <h>36</h>
+      <x>768</x>
+      <y>856</y>
+      <w>144</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 dispose():void</panel_attributes>
@@ -902,10 +854,10 @@ dispose():void</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>900</x>
-      <y>981</y>
-      <w>18</w>
-      <h>27</h>
+      <x>896</x>
+      <y>872</y>
+      <w>16</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -914,10 +866,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>756</x>
-      <y>1008</y>
-      <w>162</w>
-      <h>36</h>
+      <x>768</x>
+      <y>896</y>
+      <w>144</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 reset():void</panel_attributes>
@@ -926,10 +878,10 @@ reset():void</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>900</x>
-      <y>1026</y>
-      <w>18</w>
-      <h>27</h>
+      <x>896</x>
+      <y>912</y>
+      <w>16</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -938,10 +890,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>585</x>
-      <y>1044</y>
-      <w>207</w>
-      <h>45</h>
+      <x>616</x>
+      <y>928</y>
+      <w>184</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 updateStatus(CORK_DISPOSED)
@@ -951,10 +903,10 @@ updateStatus(CORK_DISPOSED)
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>603</x>
-      <y>1062</y>
-      <w>18</w>
-      <h>18</h>
+      <x>632</x>
+      <y>944</y>
+      <w>16</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -963,10 +915,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>432</x>
-      <y>1062</y>
-      <w>216</w>
-      <h>45</h>
+      <x>480</x>
+      <y>944</y>
+      <w>192</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 readCommand(CORK_DISPOSED)
@@ -976,10 +928,10 @@ readCommand(CORK_DISPOSED)
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>450</x>
-      <y>1071</y>
-      <w>18</w>
-      <h>45</h>
+      <x>496</x>
+      <y>952</y>
+      <w>16</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
@@ -988,10 +940,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>81</x>
-      <y>1089</y>
-      <w>387</w>
-      <h>36</h>
+      <x>168</x>
+      <y>968</y>
+      <w>344</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 updateStatus(READY_TO_DRINK):void</panel_attributes>
@@ -1000,13 +952,37 @@ updateStatus(READY_TO_DRINK):void</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>72</x>
-      <y>1107</y>
-      <w>18</w>
-      <h>18</h>
+      <x>160</x>
+      <y>984</y>
+      <w>16</w>
+      <h>16</h>
     </coordinates>
     <panel_attributes>
 bg=yellow</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>264</x>
+      <y>664</y>
+      <w>16</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>272</x>
+      <y>648</y>
+      <w>240</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+positionXY():void</panel_attributes>
+    <additional_attributes>10.0;20.0;280.0;20.0</additional_attributes>
   </element>
 </diagram>
