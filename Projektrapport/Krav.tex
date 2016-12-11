@@ -1,0 +1,23 @@
+\chapter{Krav}
+I henhold til projektets mål er der med udgangspunkt i FURPS+(indsæt reference til beskrivelse af FURPS+) og MoSCoW(indsæt reference til beskrivelse af MoSCoW) blevet opstillet en række krav for WinePrep. De funktionelle krav er beskrevet ved tre use-cases, hvoraf de to mest betydende for WinePrep's værdi vil blive beskrevet nøjere i dette kapitel. Disse omfatter den essentielle funktionalitet, som gør WinePrep enestående i forhold til andre produkter på markedet. Før disse beskrives er det dog påliggende at få sat nogle rammer på WinePrep i form af systemets grænseflader til dettes aktører.
+
+\section{Aktører}
+Der er to aktører for dette system: brugeren af WinePrep; og den givne vinflaske, der skal åbnes.
+
+\subsection{Bruger}
+Brugeren af WinePrep er den primære aktør, som interagerer med systemet ved at indsætte en vinflaske i WinePrep og/eller betjene systemet via dettes trykskærm, hvorpå brugeren kan benytte sig af produktets funktioner.
+
+\subsection{Vinflaske}
+Vinflasken indgår som en passiv aktør i systemet, der inspiceres og åbnes af WinePrep. Denne skal være af en bestemt type og ved indsættelse i WinePrep være i en bestemt tilstand. Mere om dette findes beskrevet i bilaget(reference til detaljer om vinflaske).
+
+\section{Use-cases}
+De to vigtigste use-cases vil her blive beskrevet overordnet. Mere information om disse og den tredje use-case kan findes i bilaget(indsæt reference til use-cases i bilaget).
+
+\subsection{Åbn vinflaske}
+Brugeren skal efter at have indsat en vinflaske i WinePrep trykke på knappen "Åbn nu" på trykskærmen. Systemet skal da foretage målinger af den indsatte vinflaske for at bekræfte, at denne er af en type, der er kompatibel med systemet. Herefter skal systemet åbne vinflasken og informere brugeren om dette. Løbende under processen vil der blive taget hånd om fejlscenarier, hvor brugeren via trykskærmen vil blive informeret om, at vinflasken ikke er indsat korrekt eller er af en ukompatibel type, hvis denne ikke godkendes af systemet(indsæt reference til udvidelser/undtaqelser for UC1).
+
+\subsection{Planlæg åbning}
+Brugeren skal på trykskærmen trykke på knappen "Planlæg åbning" og herefter indtaste et klokkeslæt, hvor vinflasken ønskes åbnet, og vinen drikkeklar. Systemet venter da til iltningstidspunktet, hvor brugeren forinden skal have indsat vinflasken i WinePrep, hvorpå det påbegynder prceduren beskrevet i "Åbn vinflaske" ovenfor. Trykskærmen vil herefter vise det tidspunkt, hvor vinen vil være drikkeklar. Kan det ønskede klokkeslæt, hvor vinen skal være drikkeklar, ikke forenes med iltningstidspunktet(reference til detaljer om iltningstidspunkt), annulleres processen, hvorefter brugeren vil blive tilbudt muligheden for at få vinflasken åbnet øjeblikkeligt.
+
+\section{Ikke-funktionelle krav}
+WinePrep skal have en let betjenelig trykskærm, som skal indeholde knapper med billeder på, der illustrerer hver knaps funktion(reference til billede af GUI). Disse knapper skal ligeledes have et flademål, som gør det muligt for brugeren at kunne trykke på disse med sin finger uden at ramme en naboknap(reference til bilag: ikke-funktionelle krav/brugervenlighed). WinePrep skal kunne behandle brugerinput øjeblikkeligt og løbende holde brugeren opdateret om vinflaskens status(referencer til bilag: ikke-funktionelle krav/brugervenlighed + /ydeevne). Denne vinflaske skal være af en på forhånd bestemt type(reference til detaljer om vinflaske). Skulle der opstå et behov for reparation eller vedligeholdelse af systemet, skal en ekspert i WinePrep's interne konstruktion(reference til bilag: ikke-funktionelle krav/vedligeholdelse) kontaktes.
