@@ -1,0 +1,9 @@
+\section{Analyse - GUI}
+
+Da brugergrænsefladen skulle designes blev der gjort mange overvejelser. Først og fremmest skulle der selvfølgelig researches omkring programmet QT hvorpå brugergrænsefladen skulle designes. For at få en fornemmelse af hvor følsom og hvor præcis touchfunktionen på Devkit8000 var skulle den selvfølgelig testes. Den blev kalibreret og derefter testet. Det viste sig at præcisionen var meget begrænset på touchskærmen. Derfor blev det besluttet at det var nødvendigt at bruge store knapper til at navigere på brugergrænsefladen. Det indledende design for brugergrænsefladen kan ses på figur x i bilag x. Her ses det at hvordan knapperne er blevet designet således at de fylder hele skærmen.
+
+For at skifte menu er QT funktionerne show() og hide() benyttet. Dette kunne have været gjort på flere måder, men da der ikke er mange knapper i designet er denne metode blevet vurderet til at være den mest hensigtsmæssige.
+
+Til at starte med viste ”Aktuel info:” hvilket tidspunkt på dagen vinen stod til at blive åbnet, men da der ikke er et batteri indsat Devkit8000 kan RTC ikke benyttes, da den vil resettes, hver gang Devkitted genstartes. Derfor blev det besluttet at ”Aktuel info:” skulle vise den resterende tid som var for åbningen af vinen.
+ 
+I og med SPI allerede var valgt som kommunikationsform mellem Devkit8000 og PSoC, var der ingen overvejelse over kommunikationsformen ved udarbejdelsen af brugergrænsefladen. 
