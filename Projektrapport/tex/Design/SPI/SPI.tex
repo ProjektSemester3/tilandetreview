@@ -1,0 +1,4 @@
+\subsection{Seriel kommunikation}
+Til at håndtere SPI-kommunikationen på DevKit8000 er der benyttet en af skolen udleveret driver. Det har ikke været muligt at få adgang til source-koden for denne, men det kan formodes, at den opbygget efter den typiske struktur med en character driver, som håndterer kommunikationen mellem user-space og hardware driveren, hvormed sidstnævnte forbinder character driveren med den specifikke hardware, der skrives ud til, og håndterer specifikationer for SPI-kommunikationen. Havde det ikke været for et tilhørende design til PSoC(REFERENCE TIL BILLEDE AF SPIS-KONFIGURERING PÅ MASTER-PSOC!!!!!), ville disse specifikationer have været ukendte. \\
+
+I PSoC-Creator er det muligt at benytte SPI-komponenter vha. drag-and-drop metoden og at specificere disse som master/slave. Master-PSoC'en skal håndtere både kommunikation med DevKit8000 og Slave-PSoC, så denne skal både have SPI-master- og /-slave-komponenter.

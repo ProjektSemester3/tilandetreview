@@ -1,0 +1,9 @@
+\section{Analyse af SPI}
+Til kommuniktaion mellem systemet CPU'er skulle der benyttes en serial protokol til afsendelse og modtagelse af databits.
+Både Devkit8000 og PSoC understøtter UART, I2C og SPI. Gruppen tænkte i første omgang på at anvende UART, da kendskaben til denne protokol var god.
+Det viste sig dog at UART porten på Devkit8000 bruges af anden hardware, og derfor stod gruppen tilbage med enten I2C eller SPI. Der blev under flere 
+laboratorie øvelser på 3 semester anvendt SPI, og derfor var der allerede en SPI linux device driver tilgængelig. Det blev derfor besluttet at systemet 
+skulle anvende SPI til Devkit8000-PSoC forbindelsen. I2C blev holdt åben som en mulighed til PSoC-PSoC forbindelsen i tilfældet af at der skulle kobles 
+flere PSoC enheder på hinanden. I2C tillader nemlig flere enheder at være sammenkoblet med relativt få forbindelser, hvorimod SPI kræver en ny forbindelse for 
+hver ny enhed der tilkobles. Systemet endte dog med kun at benytte to PSoC enheder, og da kendskaben til SPI var bedre, blev SPI også brugt til PSoC-PSoC
+forbindelsen.     

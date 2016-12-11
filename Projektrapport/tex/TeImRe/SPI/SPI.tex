@@ -1,0 +1,15 @@
+\subsection{Seriel kommunikation}
+
+\subsubsection{SPI Device Driver}
+Det nævntes tidligere i dette emnes tilhørende design-sektion(REFERENCE!!!), at en device driver for SPI-kommunikationen på DevKit8000 var blevet udleveret af skolen til brug i dette projekt. Det er denne, der er blevet brugt til dette produkt. Det var oprindeligt tænkt, at der skulle skrives en driver fra bunden af, der skulle tage udgangspunkt i HAL-øvelse 6, men grundet komplikationer med at få læst fra Master-PSoC såvel som usædvanlige men regelmæssige bitshifts ved sending af kommandoer, overtoges den allerede færdigudviklede device driver. Dette har dog ikke været problemløst, da der, i stil med den oprindelige driver, har været problemer med at få læst fra Master-PSoC og i perioder at få skrevet til denne. Det har ligeledes været tanken, at der skulle ske et interrupt, når der gives status fra Master-PSoC til DevKit8000, men grundet den manglende adgang til driverens source-kode, er denne idé blevet forkastet. \\
+
+\subsubsection{Kommunikation mellem PSoC's}
+PSoC'ene er hver især implementeret med en SPI-slave-komponent (Master-PSoC'en er yderligere implementeret med en SPI-master-komponent), som benytter interrupts, der trigges hver gang, der er blevet læst en data-byte ind på Rx-bufferen. Den tilhørende interrupt-rutine vil fungere som en state-machine, hvor den pågældende data-byte læses i en switch, som, alt efter kommandoen, sætter en variabel, der læses i PSoC'ens tilhørende \textit{main}-funktion, til en bestemt værdi. I \textit{main}-funktionen skal der da påkaldes de relevante metoder, som skal følge den modtagne kommando. Grunden til denne implementering er, at holde så meget af programmets funktionalitet så opdelt som muligt for at opretholde princippet om høj samhørighed - lav kobling. \\
+
+Ønskes konfigurationen af SPI set, henvises der for DevKit8000/Master-PSoC og Master-PSoC/Slave-PSoC til henholdsvis (REFERENCE!!!) og (ARHHHHHAAHRHHRAH!!!!) i bilag. \\
+
+\subsubsection{Test af PSoC-PSoC}
+Test af SPI-kommunikation mellem PSoC's foregik ved at sende et tal frem og tilbage mellem disse som beskrevet i bilag(REFERENCE!!!). Værdien, der sendtes fra Master til Slave, kunne aflæses i WaveForms efter én transmission, mens det krævede 3-4 transmissioner at læse fra Slave til Master. Årsagen hertil er uvist.
+
+\subsubsection{Test af DevKit-PSoC}
+Test af SPI-kommunikation mellem DevKit8000 og PSoC foregik ved på Linux-platformen at skrive til og læse fra et SPI-device som specificeret i bilag(REREREREFEFEFEFERENCE!!!!!!!). Når der skrevet fra DevKit8000 til PSoC, sendtes de korrekte data problemfrit, men ved læsning fra PSoC modtoges et forkert resultat. Årsagen hertil er uvist.
