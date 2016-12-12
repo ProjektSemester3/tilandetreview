@@ -1,19 +1,19 @@
-\subsection{GUI}
+\subsubsection{GUI}
 
 Brugergrænsefladen gav særlige udfordringer i designfasen. Da programmet QT blev anvendt til at designe og implementer brugergrænsefladen. Udfordringerne bestod primært i at kendskabet til programmet QT ikke var særligt stort. Da QT selv skaber klasserne og metoderne er det svært at beskrive disse på forhånd. Derfor blev det besluttet at klasserne først skulle udarbejdes efter at brugergrænsefladen var designet. 
 
 For at holde styr på den indtastede og den resterende tid er der blev oprettet en Count klasse . Denne count klasse er implementeret som en domainklasse da det er her den resterende tid for vinåbningen gemmes. Det er denne klasse som skal sørge for at tiden tælles ned når den startes. Illustrationen af countklassen kan ses på figur x.
 
 \begin{figure}[H]
-\includegraphics[scale=1]{tex/Design/GUI/Fotos/CountThread}
-\caption{CountThread klasse illustreret}
+	\centerline{\includegraphics[scale=1]{tex/Design/GUI/Fotos/CountThread}}
+	\caption{CountThread klasse illustreret}
 \end{figure}
 
 Der er i alt 2 klasser i brugergrænsefladen. Der er en klasse for MainWindow, hvor alle funktionerne er defineret. MainWindow er klassen som sørger for at vise den grafiske brugergrænseflade. Det er her alle trykknap funktionerne er defineret. Klassen ses illustreret på figur x. 
 
 \begin{figure}[H]
-\includegraphics[scale=1]{tex/Design/GUI/Fotos/MainWindow}
-\caption{MainWindow klasse illustreret}
+	\centerline{\includegraphics[scale=1]{tex/Design/GUI/Fotos/MainWindow}}
+	\caption{MainWindow klasse illustreret}
 \end{figure}
 
 Brugergrænsefladen er state styret. Derfor har det været nødvendigt at lave et statemachine diagram for brugergrænsefladen. Der er i alt 3 overordnede states for hele system. De tre states er, ”Åbning”, ”Venter på åbning” og ”Åbning stoppet”.

@@ -1,0 +1,9 @@
+\myparagraph{GUI}
+
+Det vigtigste der skulle testes ved brugergrænsefladen var at den kunne sende en hvilken som helst kommando ved hjælp af SPI driveren. Dette blev testet ved at forbinde Analog Discovery til Devkit8000’s SPI ben. Derefter blev funktionen Logic Analyzer benyttet til at måle på outputtet. Det var vigtigt at vide hvornår kommandoen blev sendt ud. Da touchfunktionen ikke har været optimal på Devkit8000 blev funktion ”Planlæg åbning” brugt til at teste hvad outputtet fra Devkit8000 var efter nedtællingen. Grunden til at funktionen ”Åbn nu” ikke blev brugt, var fordi at man skulle trykke mange gange på touchskærmen for at Devkittet ville reagere. Dette bragte en uønsket usikkerhed i testen. Derfor var det mere hensigtsmæssigt at teste med funktionen ”Planlæg åbning da man her kan se hvornår tiden udløber, og dermed hvornår der bør sendes en kommando ud. På figur \ref{PAA}, kan det ses hvordan, det var muligt at sende kommandoen 5 ved at bruge ”Planlæg åbning” funktionen. 
+
+\begin{figure}[H]
+	\includegraphics[scale=1]{tex/Test/GUI-Test/Billeder/test_GUI}
+	\caption{Åben nu funktionen implementerets}
+	\label{PAA}
+\end{figure}

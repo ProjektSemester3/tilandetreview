@@ -1,8 +1,14 @@
 %Main Document
 \documentclass[a4paper, 11pt, oneside]{AuProjectHandin}
+\usepackage{titlesec}
 \usepackage{AuPreamble}
 \include{config}
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
+\newcommand{\mysubparagraph}[1]{\subparagraph{#1}\mbox{}\\}
+%\titleformat*{\chapter}{\LARGE\bfseries}
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
 \begin{document}
 
 \input{titlepage}
@@ -14,30 +20,36 @@
 \input{Indledning.tex}
 \input{Krav.tex}
 \input{afgraensning.tex}
+\chapter{Realisering}
 \input{Metode.tex}
-\chapter{Analyse}
-\section{Hardware}
+\section{Analyse}
+\subsection{Hardware}
 \input{tex/Analyse/Analyse_hw.tex}
-\section{Software}
+\subsection{Software}
 \input{tex/Analyse/Analyse_PSoC_motorer.tex}
 \input{tex/Analyse/Analyse_SPI.tex}
 \input{tex/Analyse/Analyse_GUI.tex}
 \input{tex/Arkitektur/Arkitektur.tex}
-\chapter{Design}
-\section{Hardware}
-\section{Software}
+\section{Design}
+\subsection{Hardware}
+\input{tex/Design/HW/HW.tex}
+\subsection{Software}
 \input{tex/Design/PSoC/PSoC.tex}
 \input{tex/Design/GUI/GUI.tex}
 \input{tex/Design/SPI/SPI.tex}
-\chapter{Test, implementering og resultater}
-\section{Hardware}
-\input{tex/TeImRe/Hardware/Test_og_resultater.tex}
-\section{Software}
-\input{tex/TeImRe/PSoC/PSoC.tex}
-\input{tex/TeImRe/GUI/GUI-Implementering/GUI-Implementering.tex}
-\input{tex/TeImRe/GUI/GUI-Test/test_GUI.tex}
-\input{tex/TeImRe/GUI/GUI-Diskussion/Diskussion-GUI.tex}
-\input{tex/TeImRe/SPI/SPI.tex}
+\section{Implementering}
+\subsection{Hardware}
+\subsection{Software}
+\input{tex/Implementering/PSoC/PSoC.tex}
+\input{tex/Implementering/GUI/GUI-Implementering/GUI-Implementering.tex}
+\input{tex/Implementering/SPI/SPI.tex}
+\section{Test}
+\input{tex/Test/Motor-sensor/Test_og_resultater.tex}
+\input{tex/Test/GUI-Test/test_GUI.tex}
+\section{Resultater}
+\input{tex/Resultater/Motor-sensor/Motor-sensor.tex}
+\section{Diskussion af resultater}
+\input{tex/Diskussion/GUI-Diskussion/Diskussion-GUI.tex}
 
 \backmatter
 

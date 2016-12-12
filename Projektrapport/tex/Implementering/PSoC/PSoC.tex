@@ -1,12 +1,12 @@
-\subsection{PSoC}
+\subsubsection{PSoC}
 Klasserne fra klassediagrammet blev implementeret i form af hver deres headerfil efter princippet om høj samhørighed - lav kobling. \textit{main}-funktionen blev formet som en state-machine, der vha. en switch påkaldte de metoder, der skulle udføres på et givent tidspunkt i eksekveringen af programmet i henhold til sekvensdiagrammet(reference!!!!). Disse switches' cases bestemtes ud fra de kommandoer/beskeder, de enkelte PSoC's modtog fra hinanden eller DevKit8000. Der er ligeledes blevet oprettet en seperat \textit{status}-fil, som indeholder adskillige kommandoer/beskeder og forkortelser, der bruges igennem programmet, for at holde koden overskuelig og øge læsbarheden af denne.
 
-\subsubsection{Hardware-grænseflade}
-\paragraph{Sensorer}
+\myparagraph{Hardware-grænseflade}
+\mysubparagraph{Sensorer}
 Til at måle sensorerne benyttedes en SAR-ADC, som, efter hvert sample, returnerede en værdi i \textit{counts}. For at sammenligne med (GRAF FRA SENSOR-DATABLAD) konverteredes disse værdier til mV. Dermed kunne der fastslås, hvor vidt en flaske var registreret, ud fra afstanden forbundet med den målte spænding.
 
-\paragraph{Motorer}
+\mysubparagraph{Motorer}
 Motorerne styredes vha. et PWM-signal, som gik fra en given GPIO-pen ud til STEP-inputtet på A4988-driveren, som talte et step op for hver rising edge på PWM-signalet, samt to digitale signaler, der gik til henholdsvis ENABLE- og DIRECTION-inputtene på driveren.
 
-\paragraph{Knapper}
+\mysubparagraph{Knapper}
 Knapperne implementeredes som interrupts der trigger på rising edge. Disse var hovedårsagen til, at der skulle min. 2 PSoS's, da hvert interrupt optager en port på PSoC'en, som kun har 6 til rådighed, mens der var behov for 8.
