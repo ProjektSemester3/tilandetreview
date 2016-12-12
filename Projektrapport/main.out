@@ -10,22 +10,18 @@
 \BOOKMARK [1][-]{section.3.2}{Use-cases}{chapter.3}% 10
 \BOOKMARK [1][-]{section.3.3}{Ikke-funktionelle krav}{chapter.3}% 11
 \BOOKMARK [0][-]{chapter.4}{Afgr\346nsning}{}% 12
-\BOOKMARK [1][-]{section.4.1}{}{chapter.4}% 13
-\BOOKMARK [0][-]{chapter.5}{Analyse}{}% 14
-\BOOKMARK [1][-]{section.5.1}{Hardware}{chapter.5}% 15
-\BOOKMARK [1][-]{section.5.2}{Analyse}{chapter.5}% 16
-\BOOKMARK [1][-]{section.5.3}{Software}{chapter.5}% 17
-\BOOKMARK [1][-]{section.5.4}{Analyse - GUI}{chapter.5}% 18
-\BOOKMARK [1][-]{section.5.5}{Analyse af SPI}{chapter.5}% 19
-\BOOKMARK [0][-]{chapter.6}{Systemarkitektur}{}% 20
-\BOOKMARK [1][-]{section.6.1}{Hardware}{chapter.6}% 21
-\BOOKMARK [1][-]{section.6.2}{Software}{chapter.6}% 22
-\BOOKMARK [0][-]{chapter.7}{Design}{}% 23
-\BOOKMARK [1][-]{section.7.1}{Hardware}{chapter.7}% 24
-\BOOKMARK [1][-]{section.7.2}{Software}{chapter.7}% 25
-\BOOKMARK [1][-]{section.7.3}{Implementering - GUI}{chapter.7}% 26
-\BOOKMARK [0][-]{chapter.8}{Test, implementering og resultater}{}% 27
-\BOOKMARK [1][-]{section.8.1}{Hardware}{chapter.8}% 28
-\BOOKMARK [1][-]{section.8.2}{Test}{chapter.8}% 29
-\BOOKMARK [1][-]{section.8.3}{Resultater}{chapter.8}% 30
-\BOOKMARK [1][-]{section.8.4}{Software}{chapter.8}% 31
+\BOOKMARK [0][-]{chapter.5}{Metode}{}% 13
+\BOOKMARK [0][-]{chapter.6}{Analyse}{}% 14
+\BOOKMARK [1][-]{section.6.1}{Hardware}{chapter.6}% 15
+\BOOKMARK [1][-]{section.6.2}{Software}{chapter.6}% 16
+\BOOKMARK [0][-]{chapter.7}{Systemarkitektur}{}% 17
+\BOOKMARK [1][-]{section.7.1}{Hardware}{chapter.7}% 18
+\BOOKMARK [1][-]{section.7.2}{Software}{chapter.7}% 19
+\BOOKMARK [0][-]{chapter.8}{Design}{}% 20
+\BOOKMARK [1][-]{section.8.1}{Hardware}{chapter.8}% 21
+\BOOKMARK [1][-]{section.8.2}{Software}{chapter.8}% 22
+\BOOKMARK [0][-]{chapter.9}{Test, implementering og resultater}{}% 23
+\BOOKMARK [1][-]{section.9.1}{Hardware}{chapter.9}% 24
+\BOOKMARK [1][-]{section.9.2}{Test}{chapter.9}% 25
+\BOOKMARK [1][-]{section.9.3}{Resultater}{chapter.9}% 26
+\BOOKMARK [1][-]{section.9.4}{Software}{chapter.9}% 27
