@@ -50,12 +50,22 @@ På figur xx ses resulater på Logic Analyzer når der skrives til PSoC master f
 \caption{Udskrift fra Logic Analyzer fra test af SPI forbindelse mellem Devkit og PSoC Master}
 \end{figure}
 
+Resultater for læsningen af PSoC Master gav kun succesfuldt resultater ved en enkelt test. Derudover kunne der ikke læses fra PSoC master
+Hvilket betyder at der ikke er dokumentet en succesfuld aflæsning af MISO forbindelsen. Selv efter mange forsøg, og med hjælp fra undervisere i HAL, blev 
+dette problem aldrig løst.
+
 \textbf{PSoC Master - PSoC Slave:} \\
-På figur xx ses udskrift Logic Analyzer. Der er i denne test blevet skrevet værdien 5 til PSoC slave.
+På figur xx ses udskrift Logic Analyzer og PC Terminal. Der er i denne test blevet skrevet værdien 5 til PSoC slave. Billeder for test af MISO er udeladt, men
+gav dog samme resultat.
 
 \begin{figure}[H]
 \includegraphics[scale=0.6]{tex/TeImRe/SPI/Logic_analyzer}
 \caption{Udskrift fra Logic Analyzer fra test af SPI forbindelse mellem PSoC Slave og PSoC Master}
+\end{figure}
+
+\begin{figure}[H]
+\includegraphics[scale=0.6]{tex/TeImRe/SPI/Terminal_spi_slave}
+\caption{Udskrift fra terminal fra test af SPI forbindelse mellem PSoC Slave og PSoC Master}
 \end{figure}
 
 \subsection{Diskussion af resultater for SPI kommunikation}
@@ -63,15 +73,15 @@ textbf{DevKit8000-PSoC Master:}\\
 Som det ses på figur xx, blev der succesfuldt sendt de korrekte databits ud på SPI MOSI, SS gik også lav ved dataoverførelse hvilket er meget vigtigt
 for at sikre, at den korrekte slave i vores tilfælde "PSoC Master" modtager kommandoerne. CLK ser rigtig ud med den clock mode som er specificeret.
 Dette ses ved at CLK starter høj og skifter bits på nedafgående flanke, og læser på opadgående flanke. Dette svarer til CPHA = 1 og CPOL = 1, hvilket også var 
-den opsæninger der er lavet for denne SPI forbindelse.
+den opsæninger der er lavet for denne SPI forbindelse.\\
+
+Problemet med MISO forbindelsen betød at projektets prototype ikke kunne sende status beskeder til brugeren, hvilket naturligvis var en stor skuffelse for
+gruppen. Problemet ligger højst sandsynlig på selve PSoC, da der ikke læses noget data på MISO forbindelsen, og det derfor ikke har noget med DevKit8000 af gøre.
+
 
 \textbf{PSoC Master - PSoC Slave:} 
 Her ses igen er det er de rigtige databits som bliver sendt, og SS går ligeleder lav som den burde. Det ser dog ud til at clock mode ikke helt passer med
 CPHA = 0 og CPOL = 0, som den var sat til. CLK starter lav som den skal, men ser ud til at skrifte på nedadgående flanke og læse på opadgående. Dette
 er ikke korrekt, og grunden hertil er uvis. Men som det ses på figur xx, så udskrives de korrekte bits til terminalen på PC, hvilket må betyde at 
-PSoC Slave modtager de korrekte bits, og derfor burde denne forbindelse virke fint.
+PSoC Slave modtager de korrekte bits, og derfor burde denne forbindelse virke fint.\\ 
 
-\begin{figure}[H]
-\includegraphics[scale=0.6]{tex/TeImRe/SPI/Terminal_spi_slave}
-\caption{Udskrift fra terminal fra test af SPI forbindelse mellem PSoC Slave og PSoC Master}
-\end{figure}
