@@ -12,7 +12,7 @@ gruppen. Problemet ligger højst sandsynlig på selve PSoC, da der ikke læses n
 
 \subsubsection{PSoC Master - PSoC Slave}
 
-Her ses igen er det er de rigtige databits som bliver sendt, og SS går ligeleder lav som den burde. Det ser dog ud til at clock mode ikke helt passer med
-CPHA = 0 og CPOL = 0, som den var sat til. CLK starter lav som den skal, men ser ud til at skrifte på nedadgående flanke og læse på opadgående. Dette
-er ikke korrekt, og grunden hertil er uvis. Men som det ses på figur \ref{LA_SPI_3}, så udskrives de korrekte bits til terminalen på PC, hvilket må betyde at 
-PSoC Slave modtager de korrekte bits, og derfor burde denne forbindelse virke fint.
+Her ses igen er det er de rigtige databits som bliver sendt, og SS går ligeleder lav som den burde. Clock mode passer også fint med 
+CPHA = 0 og CPOL = 0, som den var sat til. CLK starter lav som den skal, og skrifter på nedadgående flanke og læser på opadgående. Dette er helt som forventet. 
+Og som det ses på figur \ref{LA_SPI_3}, så udskrives de korrekte bits til terminalen på PC, hvilket igen betyder at PSoC Slave modtager de korrekte bits, 
+og derfor burde denne forbindelse virke fint.
