@@ -11,30 +11,30 @@ Systemet indeholder tre CPU'er, DevKit8000, PSoC-Master og PSoC-Slave. Herudover
 	\caption{BDD for WinePrep}
 \end{figure}
 
-\subsubsection{Åbningsmekanisme:}
+\subsubsection{Åbningsmekanisme}
 Til selve åbningen af en vinflaske er der konstrueret en åbningsmekanisme. Den indeholder to motorer, en til iskruning, og en til optrækning.
 For at kunne holde styr på skruens position, er der implementeret to trykknapper, der indikerer start og slut position. Motorene bliver styret via 
 pololu motor drivere(INDSÆT REFERENCE TIL POLOLU). \\   
 
-\subsubsection{Positionering:}
+\subsubsection{Positionering}
 For at detektere vinflaskens position og positionere åbningsmekanismen korrekt, anvendes en positioneringsmekanisme. Herpå er monteret to motorer som finder
 vinflaskens x- og y-koordinator vha. sensorer. Z-koordinatet bliver reguleret af yderligere to motorer, som hæver og sænker åbningsmekanismen. 
 Der er implementeret to trykknapper, en som indikerer at åbningsmekanismen er tilstrækkelig tæt på vinflaskens åbning, den anden indikerer startpositionen. 
 Yderligere fire trykknapper indikerer at x-/y-motorerne har nået deres yderposition. Alle motorene bliver ligeledes styret via pololu motor drivere. \\
 
-\subsubsection{DevKit8000:}
+\subsubsection{DevKit8000}
 Dette er et prototypekit, hvorpå Linux distribution ångström er installeret. Det er via DevKit8000's touchskærm at interaktion med brugeren foregår. 
 Denne enhed har dermed til opgave at tage imod input fra brugeren og sende disse videre i systemet, samt at give brugeren status beskeder. Den er forbundet til PSoC-Master via en SPI forbindelse. \\
 
-\subsubsection{PSoC-Master:}
+\subsubsection{PSoC-Master}
 PSoC er en programmerbar CPU-enhed med GPIO pins, som har ansvaret for styring/aflæsning af hardware enheder. PSoC-Master er forbundet til positionering, 
 hvor den styrer x-/y-motorer via pololu motor drivere, og aflæser x-/y-sensorer samt x-/y-trykknapper. Den er forbundet med PSoC-Slave via SPI. \\
 
-\subsubsection{PSoC-Slave:}
+\subsubsection{PSoC-Slave}
 Denne enhed styrer via pololu motor drivere de to z motorer på positionering, samt motorene på åbningsmekanismen. Den aflæser også z trykknapper på 
 positionering og trykknapper på åbningsmekanismen. \\
 
-\subsubsection{Strømforsyning:}
+\subsubsection{Strømforsyning}
 Denne enhed leverer strøm til de enkelte hardware blokke. De tre CPU'er skal hver have 5 volt, det samme skal sensorer og trykknapper. Pololu motor driverne 
 skal have både 5 og 10 volt. \\
 

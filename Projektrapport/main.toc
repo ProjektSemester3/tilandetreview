@@ -29,18 +29,18 @@
 \contentsline {subsubsection}{GUI}{12}{subsubsection*.14}
 \contentsline {section}{\numberline {5.3}Systemarkitektur}{12}{section.5.3}
 \contentsline {subsection}{Hardware}{12}{subsection*.15}
-\contentsline {subsubsection}{\IeC {\r A}bningsmekanisme:}{13}{subsubsection*.16}
-\contentsline {subsubsection}{Positionering:}{13}{subsubsection*.17}
-\contentsline {subsubsection}{DevKit8000:}{14}{subsubsection*.18}
-\contentsline {subsubsection}{PSoC-Master:}{14}{subsubsection*.19}
-\contentsline {subsubsection}{PSoC-Slave:}{14}{subsubsection*.20}
-\contentsline {subsubsection}{Str\IeC {\o }mforsyning:}{14}{subsubsection*.21}
+\contentsline {subsubsection}{\IeC {\r A}bningsmekanisme}{13}{subsubsection*.16}
+\contentsline {subsubsection}{Positionering}{13}{subsubsection*.17}
+\contentsline {subsubsection}{DevKit8000}{14}{subsubsection*.18}
+\contentsline {subsubsection}{PSoC-Master}{14}{subsubsection*.19}
+\contentsline {subsubsection}{PSoC-Slave}{14}{subsubsection*.20}
+\contentsline {subsubsection}{Str\IeC {\o }mforsyning}{14}{subsubsection*.21}
 \contentsline {subsection}{Software}{14}{subsection*.22}
 \contentsline {subsubsection}{DevKit8000 (Linux platform)}{15}{subsubsection*.23}
 \contentsline {subsubsection}{PSoC-Master og PSoC-Slave}{17}{subsubsection*.24}
 \contentsline {section}{\numberline {5.4}Design}{20}{section.5.4}
 \contentsline {subsection}{Hardware}{20}{subsection*.25}
-\contentsline {subsection}{Skal medtages p\IeC {\r a} en eller anden m\IeC {\r a}de}{20}{subsection*.26}
+\contentsline {subsubsection}{Skal medtages p\IeC {\r a} en eller anden m\IeC {\r a}de}{20}{subsubsection*.26}
 \contentsline {subsection}{Software}{20}{subsection*.27}
 \contentsline {subsubsection}{Motor- og sensorstyring}{20}{subsubsection*.28}
 \contentsline {paragraph}{Klasser og funktioner}{20}{paragraph*.29}
@@ -53,11 +53,11 @@
 \contentsline {subsection}{Software}{25}{subsection*.35}
 \contentsline {subsubsection}{Motor-/sensorstyring}{25}{subsubsection*.36}
 \contentsline {paragraph}{Hardware-gr\IeC {\ae }nseflade}{25}{paragraph*.37}
-\contentsline {subparagraph}{Sensorer}{26}{subparagraph*.38}
+\contentsline {subparagraph}{Sensorer}{25}{subparagraph*.38}
 \contentsline {subparagraph}{Motorer}{26}{subparagraph*.39}
 \contentsline {subparagraph}{Knapper}{26}{subparagraph*.40}
 \contentsline {subsubsection}{Seriel kommunikation}{26}{subsubsection*.41}
-\contentsline {paragraph}{GUI}{28}{paragraph*.42}
+\contentsline {subsubsection}{GUI}{28}{subsubsection*.42}
 \contentsline {section}{\numberline {5.6}Test}{28}{section.5.6}
 \contentsline {subsection}{Motorer og sensorer}{28}{subsection*.43}
 \contentsline {subsection}{Seriel kommunikation}{29}{subsection*.44}
@@ -74,4 +74,4 @@
 \contentsline {subsection}{Seriel kommunikation}{33}{subsection*.53}
 \contentsline {subsubsection}{DevKit8000-PSoC Master}{33}{subsubsection*.54}
 \contentsline {subsubsection}{PSoC Master - PSoC Slave}{33}{subsubsection*.55}
-\contentsline {subsubsection}{GUI}{34}{subsubsection*.56}
+\contentsline {subsection}{GUI}{34}{subsection*.56}
