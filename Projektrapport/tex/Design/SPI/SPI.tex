@@ -1,7 +1,7 @@
 \subsubsection{Seriel kommunikation}
 
-\textbf{Devkit8000-PSoC Master:} \\
-
+\myparagraph{Devkit8000-PSoC Master}
+\\
 Som beskrevet i analysen for SPI (reference), blev denne protokol valgt pga. den kendskab gruppen allerede havde fra HAL øvelse 6 (reference). 
 For at kunne kommunikere over SPI fra en Linux platform, skal den rette device driver indsættes i Linux kernen. Denne driver tillader os at tilgå
 den SPI hardware som er på Devkittet fra vores grafiske brugergrænseflade. Ideen er at man skriver en driver der via det SPI interface som allerede er 
@@ -24,12 +24,11 @@ og alt information omkring opsætningen for SPI forbindelse måtte udledes fra d
 Ud fra figur xx, kan det aflæses at SPI clock mode er sat til CPHA = 1 og CPOL = 1, og antal databits sat til 16. Det PSoC program som var udleveret blev brugt
 som skabelon for gruppens eget program til PSoC master, dog med nogle modifikationer. Især håndteringen af de databits som blev modtaget fra devkittet blev 
 genbrugt, da der ikke kunne ændres på disse bitkombinationer. For information omkring implementeringen af håndtering af databits for SPI kommunikation, 
-henvises til afsnittet "Implementering". \\
+henvises til afsnittet "Implementering".
 
-\textbf{PSoC Master - PSoC Slave:} \\
-
+\myparagraph{PSoC Master - PSoC Slave}
+\\
 Til SPI forbindelsen mellem PSoC Master og PSoc slave havde gruppen frie hænder til opsætte SPI. Her blev clock mode valgt til CHPA = 0 og CPOL = 0, og 
 antal databits til 8. Grunden til der kun bliver sendt 8 bits her, er at det er tilstrækkeligt til den simple form for kommunikation der er mellem PSoc enhederne.
 8 databits ville også have været fint for Devkit-PSoC forbindelsen, men som tidligere nævnt kunne det ikke ændres da der ikke var adgang til SPI device driveren
-på Devkit8000. Clock mode er ændret til default værdien fra PSoC-Creator, hvilket der ikke har været nogen yderlige designmæssige tanker omkring. 
-
+på Devkit8000. Clock mode er ændret til default værdien fra PSoC-Creator, hvilket der ikke har været nogen yderlige designmæssige tanker omkring.

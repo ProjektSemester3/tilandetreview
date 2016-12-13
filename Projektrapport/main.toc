@@ -44,28 +44,34 @@
 \contentsline {subsection}{Software}{20}{subsection*.27}
 \contentsline {subsubsection}{Motor- og sensorstyring}{20}{subsubsection*.28}
 \contentsline {paragraph}{Klasser og funktioner}{20}{paragraph*.29}
-\contentsline {subsubsection}{GUI}{22}{subsubsection*.30}
-\contentsline {subsubsection}{Seriel kommunikation}{24}{subsubsection*.31}
+\contentsline {subsubsection}{Seriel kommunikation}{22}{subsubsection*.30}
+\contentsline {paragraph}{Devkit8000-PSoC Master}{22}{paragraph*.31}
+\contentsline {paragraph}{PSoC Master - PSoC Slave}{23}{paragraph*.32}
+\contentsline {subsubsection}{GUI}{23}{subsubsection*.33}
 \contentsline {section}{\numberline {5.5}Implementering}{25}{section.5.5}
-\contentsline {subsection}{Hardware}{25}{subsection*.32}
-\contentsline {subsection}{Software}{25}{subsection*.33}
-\contentsline {subsubsection}{PSoC}{25}{subsubsection*.34}
-\contentsline {paragraph}{Hardware-gr\IeC {\ae }nseflade}{26}{paragraph*.35}
-\contentsline {subparagraph}{Sensorer}{26}{subparagraph*.36}
-\contentsline {subparagraph}{Motorer}{26}{subparagraph*.37}
-\contentsline {subparagraph}{Knapper}{26}{subparagraph*.38}
-\contentsline {paragraph}{GUI}{26}{paragraph*.39}
-\contentsline {subsubsection}{Seriel kommunikation}{27}{subsubsection*.40}
-\contentsline {paragraph}{SPI Device Driver}{27}{paragraph*.41}
-\contentsline {paragraph}{Kommunikation mellem PSoC's}{27}{paragraph*.42}
-\contentsline {paragraph}{Test af PSoC-PSoC}{28}{paragraph*.43}
-\contentsline {paragraph}{Test af DevKit-PSoC}{28}{paragraph*.44}
+\contentsline {subsection}{Hardware}{25}{subsection*.34}
+\contentsline {subsection}{Software}{25}{subsection*.35}
+\contentsline {subsubsection}{Motor-/sensorstyring}{25}{subsubsection*.36}
+\contentsline {paragraph}{Hardware-gr\IeC {\ae }nseflade}{25}{paragraph*.37}
+\contentsline {subparagraph}{Sensorer}{26}{subparagraph*.38}
+\contentsline {subparagraph}{Motorer}{26}{subparagraph*.39}
+\contentsline {subparagraph}{Knapper}{26}{subparagraph*.40}
+\contentsline {subsubsection}{Seriel kommunikation}{26}{subsubsection*.41}
+\contentsline {paragraph}{GUI}{28}{paragraph*.42}
 \contentsline {section}{\numberline {5.6}Test}{28}{section.5.6}
-\contentsline {subsection}{Test}{28}{subsection*.45}
-\contentsline {subsubsection}{Motorer og sensorer}{28}{subsubsection*.46}
-\contentsline {paragraph}{GUI}{28}{paragraph*.47}
-\contentsline {section}{\numberline {5.7}Resultater}{29}{section.5.7}
-\contentsline {subsection}{Resultater}{29}{subsection*.48}
-\contentsline {subsubsection}{Akserne}{29}{subsubsection*.49}
-\contentsline {section}{\numberline {5.8}Diskussion af resultater}{31}{section.5.8}
-\contentsline {paragraph}{GUI}{31}{paragraph*.50}
+\contentsline {subsection}{Motorer og sensorer}{28}{subsection*.43}
+\contentsline {subsection}{Seriel kommunikation}{29}{subsection*.44}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{29}{subsubsection*.45}
+\contentsline {subsubsection}{PSoC Master - PSoC Slave}{29}{subsubsection*.46}
+\contentsline {subsection}{GUI}{29}{subsection*.47}
+\contentsline {section}{\numberline {5.7}Resultater}{30}{section.5.7}
+\contentsline {subsection}{Motor-/sensorstyring}{30}{subsection*.48}
+\contentsline {subsubsection}{Akserne}{30}{subsubsection*.49}
+\contentsline {subsection}{Seriel kommunikation}{32}{subsection*.50}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{32}{subsubsection*.51}
+\contentsline {subsubsection}{PSoC Master - PSoC Slave}{32}{subsubsection*.52}
+\contentsline {section}{\numberline {5.8}Diskussion af resultater}{33}{section.5.8}
+\contentsline {subsection}{Seriel kommunikation}{33}{subsection*.53}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{33}{subsubsection*.54}
+\contentsline {subsubsection}{PSoC Master - PSoC Slave}{33}{subsubsection*.55}
+\contentsline {subsubsection}{GUI}{34}{subsubsection*.56}
