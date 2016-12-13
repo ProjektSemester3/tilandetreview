@@ -21,21 +21,21 @@
 \contentsline {subsection}{Hardware}{10}{subsection*.6}
 \contentsline {subsubsection}{Motorvalg}{10}{subsubsection*.7}
 \contentsline {paragraph}{x-, y- og z-aksen samt iskruning af proptr\IeC {\ae }kker}{10}{paragraph*.8}
-\contentsline {paragraph}{Proptr\IeC {\ae }k}{10}{paragraph*.9}
+\contentsline {paragraph}{Proptr\IeC {\ae }k}{11}{paragraph*.9}
 \contentsline {subsubsection}{Sensorvalg}{11}{subsubsection*.10}
 \contentsline {subsection}{Software}{11}{subsection*.11}
 \contentsline {subsubsection}{Motor- og sensorstyring}{11}{subsubsection*.12}
-\contentsline {subsubsection}{SPI}{11}{subsubsection*.13}
+\contentsline {subsubsection}{SPI}{12}{subsubsection*.13}
 \contentsline {subsubsection}{GUI}{12}{subsubsection*.14}
-\contentsline {section}{\numberline {5.3}Systemarkitektur}{12}{section.5.3}
-\contentsline {subsection}{Hardware}{12}{subsection*.15}
+\contentsline {section}{\numberline {5.3}Systemarkitektur}{13}{section.5.3}
+\contentsline {subsection}{Hardware}{13}{subsection*.15}
 \contentsline {subsubsection}{\IeC {\r A}bningsmekanisme}{13}{subsubsection*.16}
-\contentsline {subsubsection}{Positionering}{13}{subsubsection*.17}
+\contentsline {subsubsection}{Positionering}{14}{subsubsection*.17}
 \contentsline {subsubsection}{DevKit8000}{14}{subsubsection*.18}
 \contentsline {subsubsection}{PSoC-Master}{14}{subsubsection*.19}
 \contentsline {subsubsection}{PSoC-Slave}{14}{subsubsection*.20}
 \contentsline {subsubsection}{Str\IeC {\o }mforsyning}{14}{subsubsection*.21}
-\contentsline {subsection}{Software}{14}{subsection*.22}
+\contentsline {subsection}{Software}{15}{subsection*.22}
 \contentsline {subsubsection}{DevKit8000 (Linux platform)}{15}{subsubsection*.23}
 \contentsline {subsubsection}{PSoC-Master og PSoC-Slave}{17}{subsubsection*.24}
 \contentsline {section}{\numberline {5.4}Design}{20}{section.5.4}

@@ -17,11 +17,12 @@ Dog var det blot den binære fil som var tilgængelig, hvilket betød at der ikk
 og alt information omkring opsætningen for SPI forbindelse måtte udledes fra det PSoC-Creator program som medfulgte. 
 
 \begin{figure}[H]
-\includegraphics[scale=0.6]{tex/Design/SPI/Clock_mode_SPI}
-\caption{Opsætning for SPI forbindelse Devkit8000-PSoC Master}
+	\includegraphics[scale=0.6]{tex/Design/SPI/Clock_mode_SPI}
+	\caption{Opsætning for SPI forbindelse Devkit8000-PSoC Master}
+	\label{SPI_opsaetning}
 \end{figure}
 
-Ud fra figur xx, kan det aflæses at SPI clock mode er sat til CPHA = 1 og CPOL = 1, og antal databits sat til 16. Det PSoC program som var udleveret blev brugt
+Ud fra figur \ref{SPI_opsaetning}, kan det aflæses at SPI clock mode er sat til CPHA = 1 og CPOL = 1, og antal databits sat til 16. Det PSoC program som var udleveret blev brugt
 som skabelon for gruppens eget program til PSoC master, dog med nogle modifikationer. Især håndteringen af de databits som blev modtaget fra devkittet blev 
 genbrugt, da der ikke kunne ændres på disse bitkombinationer. For information omkring implementeringen af håndtering af databits for SPI kommunikation, 
 henvises til afsnittet "Implementering".
