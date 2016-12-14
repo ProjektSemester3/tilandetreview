@@ -1,12 +1,13 @@
 \subsubsection{Seriel kommunikation}
 
-SPI forbindelsen blev mellem de to enheder blev etableret med 6 ledninger som set på figur xx. En til MOSI, MISO, CLK, SS, VCC og GND (reference til SPI).
+SPI forbindelsen blev mellem de to enheder blev etableret med 6 ledninger som set på figur \ref{ffm_DK8k_PSoC}. En til MOSI, MISO, CLK, SS, VCC og GND (reference til SPI).
 Udgangen for DevKit8000 er valgt på baggrund af datasheet for denne enhed (reference til devkit datasheet). GPIO pins på PSoC er valgfrie, og konfigureres 
 i PSoC-creator til de ønskede værdier.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.07]{tex/TeImRe/SPI/Realisering_devkit_psoc}}
 	\caption{Den fysiske forbindelese mellem Devkit800 og PSoC Master}
+	\label{ffm_DK8k_PSoC}
 \end{figure}
 
 Som nævnt i Design afsnittet for SPI (reference til design), har der ikke været adgang til koden for SPI device driveren på DevKit8000, hvorfor implementeringen
