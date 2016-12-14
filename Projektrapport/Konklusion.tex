@@ -1,0 +1,27 @@
+\section{Konklusion}
+Formålet med projektet var at lave prototypen for en automatisk vinåbner. Denne prototype skulle være i stand til at detektere vinflaskens position, således at
+åbningen af flasken kunne gennemføres. Desuden skulle prototypen kunne indstilles til at åbne en vinflaske på et forudbestemt tidspunkt, med henblik på at 
+opnå en korrekt iltning af vinen.\\
+
+Det lykkedes i nogen grad at få udviklet de enkelte delelementer til prototypen. Der blev gennemført succesfulde modultest af både motorer og sensorer til 
+positioneringen. x/y/z motorer kunne bevæge den indre ramme, og sensorer detekterede flaskens placering i systemet.\\
+
+Brugergrænsefladen blev implementeret med funktioner til åbning af vin, og planlægning af vinåbningen. Disse fungerede efter hensigten, og sendte de ønskede
+kommandoer videre i systemet.\\
+
+Skelettet for vinåbneren blev også konstrueret, og motorer, sensorer blev moteret herpå. Hvilket betød at de fysiske rammer til en fungerende prototype var opsat.
+
+Åbningsmekanismen blev dog ikke designet, og prototypen var i sidste ende ikke i stand til åbne en vinflaske. Gruppen havde undervurderet kompleksiteten af denne
+del af projektet, og måtte til sidst opgive at få det færdiggjordt. Dette var trods en ihærdig indsats, og et stort ønske om at få denne del af prototypen til
+at fungere.
+
+Den serielle kommunikation imellem de logiske enheder fungerede kun som envejs kommunikation. Det lykkedes at sende kommandoer fra brugergrænsefladen til
+resten af systemet, men der kunne ikke læses kommandoer tilbage, hvilket gjorde at statusbeskeder til brugeren ikke var mulige. Fejlen er desværre ukendt i
+skrivende stund.
+
+Udfordringer med skellettet viste sig at give problemer for gennemførelsen af integrationstesten. Trods succesfulde modultest, kunne det samlede system ikke
+bevæge x og y akserne tilfredstillende. Dette skyldes små skævheder i konstruktionen, der gjorde at motorerne ikke kunne trække de bånd som skulle flytte x/y
+akserne.       
+
+Trods en utilfredstillende integrationstest, gjorde de succesfulde modultest af systemets delelementer, at prototypen kan danne et godt fundament til videre 
+udvikling af en automatisk vinåbner.
