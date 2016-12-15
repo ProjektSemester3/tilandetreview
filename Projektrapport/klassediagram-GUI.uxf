@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>430</x>
+      <y>230</y>
+      <w>290</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Boundary&gt;&gt;
+MainWindow
+--
+MainWindow(QWidget *parent=0)
+~ MainWindow()
++ hideMainMenu(): void
++ showPlanlaegMenu(): void
++ countDown(void*): void*
++ showTime(void*): void*
++ onNumberChanged(int): void
+- timerFunction(): void 
+- on_planlaegAabning_clicked(): void
+- on_bekraeft_clicked(): void
+- on_aabenNu_clicked(): void
+- on_tilbage_clicked(): void
+- on_comboBox_2_activated(int index): void
+- on_comboBox_activated(int index):void
+
+--
++ thread: CountThread*
+- ui: MainWindow*
+- hour_: int
+- min_: int
+- threadRunning_:bool
+- *timer: QTimer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>250</y>
+      <w>220</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Boundary&gt;&gt;
+ReadWrite
+--
+CountThread(QObject* parent=0)
++ cmdread(): char
++ cmdwrite(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>310</y>
+      <w>140</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>0</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Controller&gt;&gt;
+UC1/UC2
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>90</y>
+      <w>30</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>240</y>
+      <w>220</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Domain&gt;&gt;
+Countthread
+--
+CountThread(QObject* parent=0)
++ run(): void
++ getMin(): int
++ getHours(): int
+# numberchanged(int): void
+--
++ stop: bool
+- hours_: int
+- min_: int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>310</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
