@@ -6,8 +6,9 @@ for at sikre, at den korrekte slave i vores tilfælde "PSoC Master" modtager kom
 Dette ses ved at CLK starter høj og skifter bits på nedafgående flanke, og læser på opadgående flanke. Dette svarer til CPHA = 1 og CPOL = 1, hvilket også var 
 den opsæninger der er lavet for denne SPI forbindelse.\\
 
-Problemet med MISO forbindelsen betød at projektets prototype ikke kunne sende status beskeder til brugeren, hvilket naturligvis var en stor skuffelse for
+Problemer med MISO forbindelsen betød at projektets prototype ikke kunne sende status beskeder til brugeren, hvilket naturligvis var en stor skuffelse for
 gruppen. Problemet ligger højst sandsynlig på selve PSoC, da der ikke læses noget data på MISO forbindelsen, og det derfor ikke har noget med DevKit8000 af gøre.
+I test af GUI blev dette problem dog løst med en virtuel klasse, som fungerede som en stub og dermed simulerede SPI forbindelsen.
 
 
 \subsubsection{PSoC Master - PSoC Slave}
