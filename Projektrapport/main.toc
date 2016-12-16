@@ -50,18 +50,18 @@
 \contentsline {subsubsection}{GUI}{26}{subsubsection*.32}
 \contentsline {section}{\numberline {6.5}Test}{26}{section.6.5}
 \contentsline {subsection}{Motorer og sensorer}{26}{subsection*.33}
-\contentsline {subsection}{Seriel kommunikation}{27}{subsection*.34}
-\contentsline {subsubsection}{DevKit8000-PSoC Master}{27}{subsubsection*.35}
-\contentsline {subsubsection}{PSoC Master - PSoC Slave}{28}{subsubsection*.36}
-\contentsline {subsection}{GUI}{28}{subsection*.37}
-\contentsline {subsubsection}{Test med virtuel klasse}{29}{subsubsection*.38}
-\contentsline {section}{\numberline {6.6}Resultater}{30}{section.6.6}
-\contentsline {subsection}{Motorer og sensorer}{30}{subsection*.39}
-\contentsline {subsection}{Seriel kommunikation}{31}{subsection*.40}
-\contentsline {subsubsection}{DevKit8000-PSoC Master}{31}{subsubsection*.41}
-\contentsline {subsubsection}{PSoC Master - PSoC Slave}{31}{subsubsection*.42}
-\contentsline {section}{\numberline {6.7}Diskussion af resultater}{32}{section.6.7}
-\contentsline {subsection}{Seriel kommunikation}{32}{subsection*.43}
-\contentsline {subsubsection}{DevKit8000-PSoC Master}{32}{subsubsection*.44}
-\contentsline {subsubsection}{PSoC Master - PSoC Slave}{33}{subsubsection*.45}
-\contentsline {subsection}{GUI}{33}{subsection*.46}
+\contentsline {subsection}{Seriel kommunikation}{29}{subsection*.34}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{29}{subsubsection*.35}
+\contentsline {subsubsection}{PSoC Master - PSoC Slave}{29}{subsubsection*.36}
+\contentsline {subsection}{GUI}{29}{subsection*.37}
+\contentsline {subsubsection}{Test med virtuel klasse}{30}{subsubsection*.38}
+\contentsline {section}{\numberline {6.6}Resultater}{31}{section.6.6}
+\contentsline {subsection}{Motorer og sensorer}{31}{subsection*.39}
+\contentsline {subsection}{Seriel kommunikation}{32}{subsection*.40}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{32}{subsubsection*.41}
+\contentsline {subsubsection}{PSoC Master - PSoC Slave}{32}{subsubsection*.42}
+\contentsline {section}{\numberline {6.7}Diskussion af resultater}{33}{section.6.7}
+\contentsline {subsection}{Seriel kommunikation}{33}{subsection*.43}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{33}{subsubsection*.44}
+\contentsline {subsubsection}{PSoC Master - PSoC Slave}{34}{subsubsection*.45}
+\contentsline {subsection}{GUI}{34}{subsection*.46}

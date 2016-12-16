@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.23)  16 DEC 2016 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.23)  16 DEC 2016 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1149,7 +1149,7 @@ Package babel Info: Redefining danish shorthand "~
 
 
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <winePrep.png, 
-id=91, 744.7825pt x 626.34pt>
+id=99, 744.7825pt x 626.34pt>
 File: winePrep.png Graphic file (type png)
  <use winePrep.png>
 Package pdftex.def Info: winePrep.png used on input line 21.
@@ -1336,7 +1336,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
- <Usecasediagram.png, id=148, 622.325pt x 521.95pt>
+ <Usecasediagram.png, id=157, 622.325pt x 521.95pt>
 File: Usecasediagram.png Graphic file (type png)
 
 <use Usecasediagram.png>
@@ -1493,7 +1493,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 
-<tex/Arkitektur/Diagrammer/BDD_WinePrep.png, id=186, 765.86125pt x 289.08pt>
+<tex/Arkitektur/Diagrammer/BDD_WinePrep.png, id=190, 765.86125pt x 289.08pt>
 File: tex/Arkitektur/Diagrammer/BDD_WinePrep.png Graphic file (type png)
 
 <use tex/Arkitektur/Diagrammer/BDD_WinePrep.png>
@@ -1528,7 +1528,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 27.
 [12 <./tex/Arkitektur/Diagrammer/BDD_WinePrep.png>]
-<tex/Arkitektur/Diagrammer/Allokering_WinePrep_to_MC.png, id=203, 1195.46625pt 
+<tex/Arkitektur/Diagrammer/Allokering_WinePrep_to_MC.png, id=205, 1195.46625pt 
 x 642.4pt>
 File: tex/Arkitektur/Diagrammer/Allokering_WinePrep_to_MC.png Graphic file (typ
 e png)
@@ -1605,7 +1605,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 62.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 62.
-[15] <tex/Design/L298.png, id=264, 757.83125pt x 402.50375pt>
+[15] <tex/Design/L298.png, id=262, 757.83125pt x 402.50375pt>
 File: tex/Design/L298.png Graphic file (type png)
 
 <use tex/Design/L298.png>
@@ -1633,7 +1633,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--15
 
  []
 
-<tex/Design/PSoC/AD_locate.jpg, id=281, 682.55pt x 732.7375pt>
+<tex/Design/PSoC/AD_locate.jpg, id=278, 682.55pt x 732.7375pt>
 File: tex/Design/PSoC/AD_locate.jpg Graphic file (type jpg)
 
 <use tex/Design/PSoC/AD_locate.jpg>
@@ -1683,7 +1683,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 18.
-[19] <tex/Design/SPI/Clock_mode_SPI.png, id=302, 374.90062pt x 231.86626pt>
+[19] <tex/Design/SPI/Clock_mode_SPI.png, id=299, 374.90062pt x 231.86626pt>
 File: tex/Design/SPI/Clock_mode_SPI.png Graphic file (type png)
 
 <use tex/Design/SPI/Clock_mode_SPI.png>
@@ -1704,7 +1704,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
 [20 <./tex/Design/SPI/Clock_mode_SPI.png>]
-<tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png, id=313, 697.60625pt x 350.3087
+<tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png, id=309, 697.60625pt x 350.3087
 5pt>
 File: tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png Graphic file (type png)
  <use tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png>
@@ -1712,7 +1712,7 @@ Package pdftex.def Info: tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png used on
  input line 7.
 (pdftex.def)             Requested size: 348.80226pt x 175.15395pt.
 
-<tex/Design/GUI/Fotos/CountThread.png, id=315, 111.91812pt x 97.36375pt>
+<tex/Design/GUI/Fotos/CountThread.png, id=311, 111.91812pt x 97.36375pt>
 File: tex/Design/GUI/Fotos/CountThread.png Graphic file (type png)
 
 <use tex/Design/GUI/Fotos/CountThread.png>
@@ -1728,7 +1728,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
  [21 <./tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png>]
-<tex/Design/GUI/Fotos/MainWindow.png, id=326, 149.05687pt x 215.80624pt>
+<tex/Design/GUI/Fotos/MainWindow.png, id=321, 149.05687pt x 215.80624pt>
 File: tex/Design/GUI/Fotos/MainWindow.png Graphic file (type png)
 
 <use tex/Design/GUI/Fotos/MainWindow.png>
@@ -1740,7 +1740,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
-<tex/Design/GUI/Fotos/sm.png, id=328, 476.27937pt x 311.66437pt>
+<tex/Design/GUI/Fotos/sm.png, id=323, 476.27937pt x 311.66437pt>
 File: tex/Design/GUI/Fotos/sm.png Graphic file (type png)
 
 <use tex/Design/GUI/Fotos/sm.png>
@@ -1787,7 +1787,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--1
 
  []
 
-<tex/TeImRe/SPI/Realisering_devkit_psoc.jpg, id=347, 2348.775pt x 4175.6pt>
+<tex/TeImRe/SPI/Realisering_devkit_psoc.jpg, id=339, 2348.775pt x 4175.6pt>
 File: tex/TeImRe/SPI/Realisering_devkit_psoc.jpg Graphic file (type jpg)
 
 <use tex/TeImRe/SPI/Realisering_devkit_psoc.jpg>
@@ -1823,17 +1823,12 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 39.
 
 (./tex/Test/Motor-sensor/Test_og_resultater.tex
-
-LaTeX Warning: Reference `fig:HW_bipolar_akse' on page 26 undefined on input li
-ne 5.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
 
 
-<tex/Test/Motor-sensor/Bipolar_test_opstilling.jpg, id=364, 4175.6pt x 2348.775
+<tex/Test/Motor-sensor/Bipolar_test_opstilling.jpg, id=355, 4175.6pt x 2348.775
 pt>
 File: tex/Test/Motor-sensor/Bipolar_test_opstilling.jpg Graphic file (type jpg)
 
@@ -1855,46 +1850,39 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 12.
 [26]
+<tex/Test/Motor-sensor/HW_stativ_test.jpg, id=364, 5331.92pt x 2999.205pt>
+File: tex/Test/Motor-sensor/HW_stativ_test.jpg Graphic file (type jpg)
 
-LaTeX Warning: Reference `fig:HW_stativ_test' on page 27 undefined on input lin
-e 14.
+<use tex/Test/Motor-sensor/HW_stativ_test.jpg>
+Package pdftex.def Info: tex/Test/Motor-sensor/HW_stativ_test.jpg used on input
+ line 17.
+(pdftex.def)             Requested size: 1759.53908pt x 989.74074pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+ [27 <./tex/Test/Motor-sensor/Bipolar_test_opstilling.jpg>]
+Overfull \vbox (423.26912pt too high) has occurred while \output is active []
 
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
 
-LaTeX Warning: File `tex/Test/Motor-sensor/HW_stativ_test.png' not found on inp
-ut line 17.
-
-
-! Package pdftex.def Error: File `tex/Test/Motor-sensor/HW_stativ_test.png' not
- found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 ...tex/Test/Motor-sensor/HW_stativ_test.png}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 17.
-(c:/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)) (./tex/Test/SPI/SPI.tex
+[28 <./tex/Test/Motor-sensor/HW_stativ_test.jpg>]) (./tex/Test/SPI/SPI.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--13
 
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 13.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 13.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 13.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 13.
-[27 <./tex/Test/Motor-sensor/Bipolar_test_opstilling.jpg>]
-<tex/TeImRe/SPI/SPI_testAnalog.jpg, id=382, 4175.6pt x 2348.775pt>
+<tex/TeImRe/SPI/SPI_testAnalog.jpg, id=376, 4175.6pt x 2348.775pt>
 File: tex/TeImRe/SPI/SPI_testAnalog.jpg Graphic file (type jpg)
 
 <use tex/TeImRe/SPI/SPI_testAnalog.jpg>
@@ -1902,7 +1890,17 @@ Package pdftex.def Info: tex/TeImRe/SPI/SPI_testAnalog.jpg used on input line 1
 5.
 (pdftex.def)             Requested size: 292.32187pt x 164.43105pt.
 ) (./tex/Test/GUI-Test/test_GUI.tex
-<tex/Test/GUI-Test/Billeder/test_GUI.png, id=384, 375.90437pt x 157.58875pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 9.
+
+[29 <./tex/TeImRe/SPI/SPI_testAnalog.jpg>]
+<tex/Test/GUI-Test/Billeder/test_GUI.png, id=387, 375.90437pt x 157.58875pt>
 File: tex/Test/GUI-Test/Billeder/test_GUI.png Graphic file (type png)
 
 <use tex/Test/GUI-Test/Billeder/test_GUI.png>
@@ -1914,16 +1912,8 @@ Overfull \hbox (6.90344pt too wide) in paragraph at lines 11--12
 [][] 
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 15.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 15.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 15.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 15.
-[28 <./tex/TeImRe/SPI/SPI_testAnalog.jpg>]
-<tex/Test/GUI-Test/Billeder/Test_Virtuel_klasse_invalid.png, id=395, 359.09157p
+
+<tex/Test/GUI-Test/Billeder/Test_Virtuel_klasse_invalid.png, id=388, 359.09157p
 t x 197.98969pt>
 File: tex/Test/GUI-Test/Billeder/Test_Virtuel_klasse_invalid.png Graphic file (
 type png)
@@ -1941,27 +1931,18 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 43.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 43.
- [29 <./tex/Test/GUI-Test/Billeder/test_GUI.png>]
+ [30 <./tex/Test/GUI-Test/Billeder/test_GUI.png>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 43.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 43.
 
 (./tex/Resultater/Motor-sensor/Motor-sensor.tex
-
-LaTeX Warning: Reference `fig:HW_bipolar_akse' on page 30 undefined on input li
-ne 2.
-
-
-LaTeX Warning: Reference `fig:HW_stativ_test' on page 30 undefined on input lin
-e 5.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
 
-<tex/Test/Motor-sensor/Sensor_10cm.png, id=406, 261.97874pt x 46.67438pt>
+<tex/Test/Motor-sensor/Sensor_10cm.png, id=402, 261.97874pt x 46.67438pt>
 File: tex/Test/Motor-sensor/Sensor_10cm.png Graphic file (type png)
 
 <use tex/Test/Motor-sensor/Sensor_10cm.png>
@@ -1978,8 +1959,8 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 
-[30 <./tex/Test/GUI-Test/Billeder/Test_Virtuel_klasse_invalid.png>]
-<tex/TeImRe/SPI/Analog_devkit_echo_psoc_1.png, id=419, 605.26125pt x 97.86563pt
+[31 <./tex/Test/GUI-Test/Billeder/Test_Virtuel_klasse_invalid.png>]
+<tex/TeImRe/SPI/Analog_devkit_echo_psoc_1.png, id=412, 605.26125pt x 97.86563pt
 >
 File: tex/TeImRe/SPI/Analog_devkit_echo_psoc_1.png Graphic file (type png)
  <use tex/TeImRe/SPI/Analog_devkit_echo_psoc_1.png>
@@ -1987,7 +1968,7 @@ Package pdftex.def Info: tex/TeImRe/SPI/Analog_devkit_echo_psoc_1.png used on i
 nput line 8.
 (pdftex.def)             Requested size: 363.15953pt x 58.71982pt.
 
-<tex/TeImRe/SPI/Logic_analyzer.png, id=421, 1926.19624pt x 353.32pt>
+<tex/TeImRe/SPI/Logic_analyzer.png, id=414, 1926.19624pt x 353.32pt>
 File: tex/TeImRe/SPI/Logic_analyzer.png Graphic file (type png)
 
 <use tex/TeImRe/SPI/Logic_analyzer.png>
@@ -2007,9 +1988,9 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 26.
-[31 <./tex/Test/Motor-sensor/Sensor_10cm.png> <./tex/TeImRe/SPI/Analog_devkit_e
+[32 <./tex/Test/Motor-sensor/Sensor_10cm.png> <./tex/TeImRe/SPI/Analog_devkit_e
 cho_psoc_1.png>]
-<tex/TeImRe/SPI/Terminal_spi_slave.png, id=435, 869.2475pt x 312.16624pt>
+<tex/TeImRe/SPI/Terminal_spi_slave.png, id=427, 869.2475pt x 312.16624pt>
 File: tex/TeImRe/SPI/Terminal_spi_slave.png Graphic file (type png)
 
 <use tex/TeImRe/SPI/Terminal_spi_slave.png>
@@ -2035,7 +2016,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
- [32 <./tex/TeImRe/SPI/Logic_analyzer.png> <./tex/TeImRe/SPI/Terminal_spi_slave
+ [33 <./tex/TeImRe/SPI/Logic_analyzer.png> <./tex/TeImRe/SPI/Terminal_spi_slave
 .png>])
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 50.
@@ -2045,7 +2026,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 50.
- [33]
+ [34]
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -2054,15 +2035,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 78F8C9415095BDF917B8F366A4D8DDF2;1157.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: AFECE7528839FEA46D63A483311730CF;1058
-(rerunfilecheck)             After:  78F8C9415095BDF917B8F366A4D8DDF2;1157.
 
 LaTeX Warning: There were undefined references.
 
@@ -2072,101 +2047,17 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
  ) 
 Here is how much of TeX's memory you used:
- 17899 strings out of 493013
- 297852 string characters out of 6136993
- 392593 words of memory out of 5000000
- 21025 multiletter control sequences out of 15000+600000
- 20631 words of font info for 44 fonts, out of 8000000 for 9000
+ 17856 strings out of 493013
+ 297130 string characters out of 6136993
+ 392691 words of memory out of 5000000
+ 21013 multiletter control sequences out of 15000+600000
+ 20317 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,16n,44p,10459b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.5.17} has been referenced but does not exi
+pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
 st, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.5.18} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.16} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.15} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.13} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.11} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.10} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.9} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.8} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.7} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.6} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.5} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.3} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{table.5.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.5.3.1} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
-, replaced by a fixed one
-
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.5.1} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.2} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.1} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.7} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.6} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.5} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
 , replaced by a fixed one
 
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texliv
@@ -2186,12 +2077,11 @@ super/sfrm0800.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm
 c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive
 /2016/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2016/texm
 f-dist/fonts/type1/public/cm-super/sfrm2488.pfb><c:/texlive/2016/texmf-dist/fon
-ts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1/p
-ublic/cm-super/sftt1095.pfb>
-Output written on main.pdf (36 pages, 7176759 bytes).
+ts/type1/public/cm-super/sfti1095.pfb>
+Output written on main.pdf (37 pages, 10720683 bytes).
 PDF statistics:
- 558 PDF objects out of 1000 (max. 8388607)
- 459 compressed objects within 5 object streams
- 167 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 541 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 140 named destinations out of 1000 (max. 500000)
+ 274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
