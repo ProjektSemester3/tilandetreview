@@ -1,17 +1,16 @@
-\chapter{Dokumentation for SPI forbindelse imellem Devit8000 og PSoC}
+\chapter{Dokumentation for seriel kommunikation}
 
 \section{Indledning}
 I wineprep projektet skal der bruges en linux platform, som i dette projekt består af et DevKit8000 (DK8k) hvorpå der er installeret distributionen Ångstöm. 
 Denne skal tage imod input fra brugeren af systemet via en grafisk brugergrænseflade og omskrive disse til kommandoer, som sendes til PSoC. Desuden
 vil PSoC sende status beskeder tilbage til DK8k.
 Der vil i projektet indgå en PSoC, som står for kommunikationen med DK8k samt for nogle af systemets motorer og sensorer,
-men på grund af et begrænset antal GPIO-pinde og UDB'er på PSoC, vil det blive nødvendigt med to ekstra PSoCs, som kan tage sig af kommunikationen med de 
-øvrige motorer og sensorer i systemet. Der vil derfor blive lavet en forbindelse mellem de tre PSoC-enheder, hvor PSoC'en, som tager imod kommandoer fra
-DK8k, vil fungere som master over de to øvrige PSoCs. Der vil i denne dokumentation blive refereret til disse PSoC-enheder som MASTER
-(forbindes til Devkit), TOP (slave til MASTER, som i sidder i toppen af Wineprep) og BOTTOM (slave til MASTER, som sidder i bunden af
-Wineprep).
+men på grund af et begrænset antal GPIO-pinde og UDB'er på PSoC, vil det blive nødvendigt med en ekstra PSoC, som kan tage sig af kommunikationen med de 
+øvrige motorer og sensorer i systemet. Der vil derfor blive lavet en forbindelse mellem de to PSoC-enheder, hvor PSoC'en, som tager imod kommandoer fra
+DK8k, vil fungere som master overfor den øvrige PSoC. Der vil i denne dokumentation blive refereret til disse PSoC-enheder som MASTER
+(forbindes til Devkit) og SLAVE (slave til MASTER PSoC). 
 Ovenstående taget i betragtning vil det blive nødvendigt at etablere en tovejsforbindelse imellem DK8k og MASTER, samt en tovejsforbindelse imellem 
-MASTER og TOP, samt MASTER og BOTTOM. 
+MASTER og SLAVE. 
 
 Dette kan gøres på flere forskellige måder, f.eks. med en UART-protokol som på tidligere semester projekter. Der er i fagene HAL og GFV på 3. semester 
 blevet arbejdet en del med de to serielle dataforbindelsesstandarder I2C og SPI, og det vil derfor være nærliggende at benytte en af disse to. 
@@ -22,7 +21,7 @@ PSoC. Grunden til dette valg er mest af alt bekvemmelighed, da der allerede er a
 SPI er en synkron dataopførselsmetode, hvor to enheder indgår i et master/slave-forhold, og hvor data sendes og modtages mellem de to enheder på
 samme tid med klokken som "taktstok". For mere information omkring SPI-protokollen henvises til dennes bilag (jf. kapitel \ref{SPI-prot}).
 DK8k vil i dette tilfælde udføre rollen som master i forbindelsen til MASTER, hvilket også betyder, at det er denne, som står for at starte 
-dataoverførslen mellem de to enheder. Ligeledes vil MASTER fungere som master i forbindelsen til TOP og BOTTOM.
+dataoverførslen mellem de to enheder. Ligeledes vil MASTER fungere som master i forbindelsen til SLAVE.
 
 \begin{figure}[H]
 	\centering
@@ -32,25 +31,26 @@ dataoverførslen mellem de to enheder. Ligeledes vil MASTER fungere som master i
 
 SPI undersøttes naturligvis af DK8k, men for at kunne etablere forbindelsen til MASTER skal den nødvendige SPI-driver skrives til Linux. 
 Denne driver indeholder blandt andet den korrekte opsætning for forbindelsen samt implementeringen af SPI-metoderne til at sende/modtage data.
-Der skal også skrives en character device driver, der gør det muligt for et program i userspace at tilgå SPI driveren. Der laves også en hotplug-driver,
-der gør det muligt at indsætte PSoC i runtime. For mere information omkring implementeringen af denne driver samt eksempel på dens anvendelse henvises der til HAL 
-øvelse 6 i bilag.
-Vi har i dette projekt anvendt den SPI-driver, som er blevet udleveret på redmine i faget HAL. Så SPI-driver-modulerne indsættes blot på DK8k, og der 
-laves de nødvendige device-noder. Disse noder er nødvendige for at kunne kommunikere mellem user- og kernelspace. 
+Der skal også skrives en character device driver, der gør det muligt for et program i userspace at tilgå SPI driveren. 
+Vi har i dette projekt anvendt den SPI-driver, som er blevet udleveret på redmine i faget HAL. Alt information omkring opsætningen for SPI-forbindelse 
+måtte derfor udledes fra det PSoC-Creator program som medfulgte. Heraf kunne det det konstateres at spi device driveren var op sat til at gøre med 
+clock mode CPHA = 1 og CPOL = 1, og 16 databits. 
+SPI-driver-modulerne indsættes blot på DK8k, og der laves de nødvendige device-noder. Disse noder er nødvendige for at kunne kommunikere mellem user- og 
+kernelspace. 
 
 \begin{figure}[H]
 \includegraphics[scale=0.9]{Screenshots/Devkit_cat_mk_psoc}
 \caption{Indsættelse af moduler i Linux kernen og oprettelse af device noder}
 \end{figure}
 
-De tre PSoC-enheder skal ligesom DK8k også have implementeret software, der kan håndtere SPI-forbindelsen og reagere
+De to PSoC-enheder skal ligesom DK8k også have implementeret software, der kan håndtere SPI-forbindelsen og reagere
 på den ønskede måde, når der modtages data. Denne software skrives med værktøjet PSoC Creator, som via et simpelt drag-and-drop interface gør det
 nemt at konfigurere SPI. Selve SPI-driveren skal derfor ikke skrives, men der skal laves en source-fil, hvori det er muligt at kalde metoder til
 styring af SPI, håndtere Rx-interrupts og anvende de modtagne data til at udføre forskellige opgaver for systemet.
 
 \begin{figure}[H]
 \includegraphics[scale=0.8]{Screenshots/PSOC_opstilling_spi}
-\caption{Topdesign for PSoC1}
+\caption{Topdesign for psoc MASTER}
 \end{figure}
 
 MASTER skal have både et SPI-master- (SPIM) og et SPI-slave-modul (SPIS) i PSoC Creator. Der ønskes et interrupt ved Rx på SPIS, da slaven skal reagere
@@ -60,29 +60,25 @@ Af disse er de første 8 bit tiltænkt adresse- og kommandobits, og de næste 8 
 som fortæller hvilket device, der benyttes. Da der kun er én PSoC som slave til DK8k, vil et forsøg på at skrive til et andet device, end det, der er blevet
 afsat til MASTER, returnere en fejlmeddelelse. Kommandobits indikerer, om der ønskes status læst tilbage fra MASTER, eller om det blot er 
 tilstækkeligt, at MASTER behandler den modtagne kommando og sender nogle default-værdier tilbage. Mere specifikt vil MASTER fungere som formidler af
-kommandoer mellem DK8k og TOP og BOTTOM. MASTER vil ikke indeholde nogen anden særegen funktionalitet, da den ikke har direkte adgang til motorer, sensorer, osv.
-Disse eksterne komponenter håndteres af TOP og BOTTOM på baggrund af de kommandoer, der sendes fra DK8k til MASTER. Inde i den føromtalte switch vil MASTER
-behandle disse kommandoer ved at påføre TOP eller BOTTOM en pågældende opgave vha. metoder fra SPIM. SPIM's Rx-interruptflag går ligeledes højt, når
-TOP/BOTTOM rapporterer deres status tilbage. Da vil der i en interruptrutine også være switch, som behandler disse status-meddelelse. MASTER's rolle kunne passende
-beskrives ved et tilstandsdiagram (*referer til applikationsmodel, når denne engang er opdateret).
+kommandoer mellem DK8k og SLAVE. MASTER vil desuden indeholde anden særegen funktionalitet, der styrer de motorer og sensorer, som ikke er tilkoblet SLAVE.
 
 \begin{figure}[H]
 \includegraphics[scale=0.9]{Screenshots/PSOC_switch}
 \caption{Eksempel på en switch statement i PSoC koden}
 \end{figure}
 
-Topdesign og koden for TOP og BOTTOM vil blive implementeret næsten på samme måde som MASTER mht. kommunikationen med denne, hvor der implementeres et Rx-interrupt
-og en switch som behandler den modtagne data. De to slave-PSoC-enheder vil dog kun have et SPIS modul implementeret, og derfor have færre switch-cases.
-Der bruges en 8bit kommando til at sende data til TOP og BOTTOM, og det er denne kommando, som bliver switched på. Når en opgave er udført, eller der er opstået
+Topdesign og koden for SLAVE vil blive implementeret næsten på samme måde som MASTER mht. kommunikationen med denne, hvor der implementeres et Rx-interrupt
+og en switch som behandler den modtagne data. Slave-PSoC-enheden vil dog kun have et SPIS modul implementeret, og derfor have færre switch-cases.
+Der bruges en 8bit kommando til at sende data til SLAVE, og det er denne kommando, som bliver switched på. Når en opgave er udført, eller der er opstået
 en fejl, opdateres Tx-bufferen med en relevant status-meddelelse. Dette sker løbende i udørelsen af en pågældende opgave.
 \begin{figure}[H]
 \includegraphics{Screenshots/PSOC_topdesign_SPIS}
-\caption{Topdesing for PSoC2 og PSoC3}
+\caption{Topdesing for psco SLAVE}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[scale=0.9]{Screenshots/PSOC_switch_slave}
-\caption{Eksempel på switch cases for PSoC2 og PSoC3}
+\caption{Eksempel på switch cases for psoc SLAVE}
 \end{figure}     
  
 \section{Test}
@@ -102,10 +98,10 @@ På billedet ses også en VDD-forbindelse fra MASTER, denne er dog kun nødvendi
 \caption{PSoC forbundet til PC via UART og med anden PSoC-enhed via SPI}
 \end{figure}
 
-Desuden sættes Analog Discovery på SPI-forbindelsen, og der måles på CLCK, SS (slave select) og MOSI for at sikre, at SPI-signalet ser fornuftigt ud. Altså at SS 
+Desuden sættes Analog Discovery på SPI-forbindelsen, og der måles på CLK, SS (slave select) og MOSI for at sikre, at SPI-signalet ser fornuftigt ud. Altså at SS 
 går lav ved dataoverførsel, og den korrekte bitsekvens sendes på MOSI. Grunden til, at der ses efter, om SS går lav, er fordi, der ved SPI kan være flere slaver 
 tilsluttet. SPI fungerer på den måde, at den trækker signalet lavt på den slave, som skal modtage signalet.
-CLCK er ikke særligt interessant, men det kan evt. tjekkes om frekvensen stemmer overens med det, som angives i koden for PSoC.
+På CLK ses det om den clock mode der er valgt stemmer overens med outputtet på logic analyzer.
 
 \begin{figure}[H]
 	\centering
@@ -127,9 +123,9 @@ Testen for SPI-forbindelsen imellem DK8k og MASTER foretages med Analog Discover
 \end{figure}
 
 Der udføres to test-scenarier. I første test sendes data fra DK8k (master) og der foretages en måling på MOSI forbindelsen med logic analyzer-
-funktionen på Analog Discovery. Denne test skal sikre, at vi får sendt de korrekte adresse- og data-bits over til MASTER, samt at SS og CLCK opfører sig 
-som ønsket. Det vil sige at SS går lav ved dataoverførsel og at CLCK er stabil. I denne test bruges Linux-terminalen på DK8k til at sende nogle forskellige
-værdier til MASTER med Linux-kommandoen echo, hvorefter der aflæses bit-kombinationer på logic analyzer.
+funktionen på Analog Discovery. Denne test skal sikre, at vi får sendt de korrekte adresse- og data-bits over til MASTER, samt at SS og CLK opfører sig 
+som ønsket. Det vil sige at SS går lav ved dataoverførsel og at CLK har den rette clock mode. I denne test bruges Linux-terminalen på DK8k til at sende nogle 
+forskellige værdier til MASTER med Linux-kommandoen echo, hvorefter der aflæses bit-kombinationer på logic analyzer.
 
 I den anden test læses der fortsat på MOSI forbindelsen, og Linux-kommandoen cat bruges til at læse fra MASTER. Her aflæses det på terminalen, hvad der bliver sendt 
 fra MASTER. I test-programmet på MASTER er der implementeret en switch, som gør, at når der læses med kommandoen cat PSoC{\_}5 fra Linux-terminalen, vil 
