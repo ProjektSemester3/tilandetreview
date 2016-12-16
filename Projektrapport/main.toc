@@ -47,8 +47,8 @@
 \contentsline {subsubsection}{GUI}{25}{subsubsection*.31}
 \contentsline {section}{\numberline {5.5}Test}{25}{section.5.5}
 \contentsline {subsection}{Motorer og sensorer}{25}{subsection*.32}
-\contentsline {subsection}{Seriel kommunikation}{25}{subsection*.33}
-\contentsline {subsubsection}{DevKit8000-PSoC Master}{25}{subsubsection*.34}
+\contentsline {subsection}{Seriel kommunikation}{26}{subsection*.33}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{26}{subsubsection*.34}
 \contentsline {subsubsection}{PSoC Master - PSoC Slave}{26}{subsubsection*.35}
 \contentsline {subsection}{GUI}{26}{subsection*.36}
 \contentsline {subsubsection}{Test med virtuel klasse}{27}{subsubsection*.37}
