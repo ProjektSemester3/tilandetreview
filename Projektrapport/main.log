@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.27)  16 DEC 2016 17:55
+=======
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.23)  16 DEC 2016 17:46
+=======
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.11.27)  16 DEC 2016 17:27
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.23)  16 DEC 2016 17:45
+>>>>>>> da136af6fbc07985b9bbea5989b1e474fde3a1dc
+>>>>>>> c903d1e0592d8f83c0a0d3a943744091d11777ec
+>>>>>>> dfad58a658e9d06ffcbb4b51cf2786b88804be6e
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2063,7 +2075,11 @@ c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><c:/texlive
 /2016/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2016/texm
 f-dist/fonts/type1/public/cm-super/sfrm2488.pfb><c:/texlive/2016/texmf-dist/fon
 ts/type1/public/cm-super/sfti1095.pfb>
+<<<<<<< HEAD
 Output written on main.pdf (37 pages, 10721836 bytes).
+=======
+Output written on main.pdf (37 pages, 10719656 bytes).
+>>>>>>> dfad58a658e9d06ffcbb4b51cf2786b88804be6e
 PDF statistics:
  545 PDF objects out of 1000 (max. 8388607)
  445 compressed objects within 5 object streams
