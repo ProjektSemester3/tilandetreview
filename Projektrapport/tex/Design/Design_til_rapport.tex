@@ -1,33 +1,26 @@
-\chapter{Design}
-\label{ch:Design}
-
-\section{Brugergrænseflade}
-\label{sec:Brugergraenseflade}
-
-\section{Positionering}
-\label{sec:Positionering}
+\subsection{Positionering}
 Positionering består af 2 sensorer som drives af aktuatorer på de tre akser. Én motor på henholdsvis x og y flytter disse to akser mens to motorer driver z-aksen.
 
-\subsection{Hardware}
-\subsubsection{Detektering}
-\label{sec:HW_Detektering}
+\subsubsection{Hardware}
+\myparagraph{Detektering}
 At lokalisere flasken kræver en type af sensor. Embedded Stocks udvalg var begrænset så valget stod mellem to typer af afstandsmålere som enten vha. lys eller ultralyd kan detektere et objekt.
 \\
 \\
 Tabel \ref{tab:Sensor_precision} viser forskellen i præcision for afstandsmåling mellem ultralydssensoren, HC-SR04, og  lasersensoren, GP2Y0A21YK. Præcisionskravet er 1 mm for at \textbf{Åbningsmekanismen} har det mest centreret punkt på proppen at åbne.
 
 \begin{table}[H]
-\begin{tabular}{ |l|c| }
-  \centerline
-  \hline
-   & Faktisk præcision \\
-  \hline 
-  HC-SR04 & 300 mm\footnote{https://www.elextra.dk/main.aspx?page=article&artno=H16466} \\
-  \hline
-  GP2Y0A21YK  & 2,57 mm\footnote{Se kapitlet Test afsnit om lasersensor} \\
-  \hline
-\end{tabular}
-\caption{De to sensores præcision}\label{tab:Sensor_precision}
+	\centering
+	\begin{tabular}{ |l|c| }
+  		\hline
+   		& Faktisk præcision \\
+  		\hline 
+  		HC-SR04 & 300 mm\footnote{\href{https://www.elextra.dk/main.aspx?page=article&artno=H16466}{Blablabla}} \\
+  		\hline
+  		GP2Y0A21YK  & 2,57 mm\footnote{Se kapitlet Test afsnit om lasersensor} \\
+  		\hline
+	\end{tabular}
+	\caption{De to sensores præcision}
+	\label{tab:Sensor_precision}
 \end{table}
 
 \noindent
@@ -39,8 +32,7 @@ Sensorens ansvar er derfor kun at registrere om der er et objekt eller ej. Ved a
 \\
 Fordi PSoC 5LP er valgt som microcontroller kan håndteringen af sensoren gøres i PSoC Creator. Det analoge signal fra sensoren konverteres til digitalt med SAR\_ADC komponenten\footnote{Datablad SAR\_ADC i bilagene}.
 
-\subsubsection{Aksestyring}
-\label{sec:HW_Aksestyring}
+\myparagraph{Aksestyring}
 Til at flytte akserne bruges motoren 28BYJ-48\footnote{Datablad for 28BYJ-48}. Valget er taget på baggrund af en analyse af forskellige typer af motorer\footnote{Dokumentation Typer af motorer}, som viser at steppere er DC- og servomotorer overlegne i præcision. En bevidsthed om at sensorerne ikke opfyldte præcisionskravet på 1 mm. er også grundlaget for at vælge 28BYJ-48. Desuden udbyder Embedded Stock kun denne model, og ikke andre motorer, i et antal, som skal bruges i projektet.
 \\
 \\
@@ -59,7 +51,7 @@ Momentet for motoren er dog relativt svagt, som kan ses under kapitlet Test, hvo
 Med baggrund i Biot-Savars lov er det udledt at B-feltet i en spole er proportional med antallet af viklinger i spolen, som ses i ligning \ref{eq:Biot_Savars}. For uddybning af denne udledning henvises til dokumentationen for bipolære motorer.
 
 \begin{equation} \label{eq:Biot_Savars}
-B=(($\mu_0$ \cdot i)/2 \cdot r) \cdot N
+	B = \frac{\mu_0 \cdot i}{2 \cdot r} \cdot N
 \end{equation}
 
 \noindent
@@ -69,7 +61,7 @@ Hvis teorien fra Biot-Savars lov overføres til 28BYJ-48 betyder det, at motoren
 Hver bipolær motor styres gennem to H-broer så det er muligt at vende strømmen, og dermed vende retningen på motoren. Det er først gjort gennem chippen L298\footnote{Datablad for L298} hvis datablad har været udgangspunkt for to designede og implementerede vero boards som blev udarbejdet. Figur \ref{fig:L298} viser de to H-broer som L298 indeholder.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[scale=0.33]{L298.png}}
+	\centerline{\includegraphics[scale=0.33]{tex/Design/L298}}
 	\caption{L298 indeholdende to H-broer}
 	\label{fig:L298}
 \end{figure}
@@ -77,30 +69,25 @@ Hver bipolær motor styres gennem to H-broer så det er muligt at vende strømme
 \noindent
 Da boardsene aldrig kom til at fungere blev motor drivere af typen Pololu-A4988\footnote{Datablad for Pololu-A4988} taget i brug. Driveren følger samme princip som L298 med to H-broer, men motoren styres gennem et PWM-signal, en enable pin og en direction pin. Se databladet for Pololu-A4988 for yderligere information.
 
-\section{Åbningsmekanisme}
-\label{sec:Aabningsmekanisme}
+\subsection{Åbningsmekanisme}
+\subsubsection{Hardware}
+\myparagraph{Iskruning}
+Ved at teste hvor stor en kraft der skal til for, at skrue proptrækkeren i proppen, kunne en aktuator vælges ud fra testen. Desværre for projektet har det været umuligt at finde ordentligt måleudstyr. Desuden har det ikke været muligt at sammenligne med lignende eksisterende produkter så et design af iskruning er aldrig opnået.
 
-\subsection{Hardware}
-\subsubsection{Iskruning}
-\label{sec:HW_Iskruning}
-
-\subsubsection{Proptrækning}
-\label{sec:HW_Proptraekning}
-
-
-\section{SPI kommunikation}
-\label{sec:SPI}
-
+\myparagraph{Proptrækning}
+Test af proptrækning med kraftmåler lånt fra Navitas giver et krav til motoren om moment på +25 kg.
 
 Nedenstående tabel SKAL bruges under afsnittet om test!!
 \begin{table}[H]
-\begin{tabular}{ |l|c|c| }
-  \centerline
-  \hline
-  \textbf{28BYJ-48} & Unipolær & Bipolær\\
-  \hline 
-  Moment i full-step mode & 363 gcm & 792 gcm \\
-  \hline
-\end{tabular}
-\caption{Moment for 28BYJ-48\footnote{Dokumentation for test af motorer}}\label{tab:motor_moment}
+  	\centering
+	\begin{tabular}{ |l|c|c| }
+  		\hline
+  		\textbf{28BYJ-48} & Unipolær & Bipolær\\
+  		\hline
+  		Moment i full-step mode & 363 gcm & 792 gcm \\
+  		\hline
+	\end{tabular}
+	\caption[]{Moment for 28BYJ-48\footnotemark}
+	\label{tab:motor_moment}
 \end{table}
+\footnotetext{Dokumentation for test af motorer}
