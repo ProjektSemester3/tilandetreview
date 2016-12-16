@@ -4,7 +4,8 @@ Programmet QT blev anvendt til at designe og implementer brugergrænsefladen. De
 
 Det endelige klassediagram der blev udarbejdet kan ses illustreret på figur x. Dette klassediagram indeholder 5 forskellige klasser.
 
-(INDSÆT FIGUR HER)
+{tex/Design/GUI/Fotos/Tom_klassediagram}}
+	\caption{Klasserne indsættes i et klassediagram}
 
 Her kan det ses at der er oprettet to forskellige klasser til read og write funktionerne, som sørger for kommunikationen med PSoC. Der er oprettet en virtuel read og write, og en reel read og write. Den virtuelle er blot oprettet for at gøre det muligt at teste systemet før det endelige system er fuldt udviklet, mens den reelle klasse er oprettet til at bruges når det endelige system udvikles.
 
@@ -28,4 +29,7 @@ For at se hele klasse diagrammet med alle metoder henvises der til bilag x.
 
 Brugergrænsefladen er state styret. Derfor har det været nødvendigt at lave et statemachine diagram for brugergrænsefladen.\\
 
-Systemet starter i en state der hedder "Brugerinput afventes". Denne state beskriver systemet når, brugergrænsefladen er i hovedmenuen. Her kan brugeren gøre 2 ting. Enten trykke på "Åbn nu" og få vinen åbnet med det samme, eller trykke på planlæg åbning, indtaste et åbningstidspunkt, for derefter at få systemet til at tælle ned til åbningstidpunktet. Vælger brugeren planlægningsmenuen, kan brugeren selvfølgelig navigere i systemet imens der bliver talt ned. Derfor er der ført en pil tilbage til "Brugerinput afventes". Når timeren sættes i gang, begynder den at tælle et minut ned ad gangen. Når minut og time antallet til sammen går ned på 0 bryder systemet ud af denne state og ind i en ny state der hedder "Afventer besked". I denne state ventes der på en besked fra PSoC'en. PSoC'en kan komme med 3 forskellige beskeder. Den første er at der ingen flaske er i systemet. Dette vil udløse et advarselsvindue på brugergrænsefladen. Den anden besked er at den indsatte flaske er ugyldig, hvilket også vil udløse et advarselsvindue. Den sidste besked man kan få er at flasken godkendes. Alle disse states fører brugeren tilbage til hovedmenuen ved at brugeren trykker OK på vinduet.
+{tex/Design/GUI/Fotos/sm}}
+	\caption{statemachine}
+
+som illustreret i figuren starter systemet i en state der hedder "Brugerinput afventes". Denne state beskriver systemet når, brugergrænsefladen er i hovedmenuen. Her kan brugeren gøre 2 ting. Enten trykke på "Åbn nu" og få vinen åbnet med det samme, eller trykke på planlæg åbning, indtaste et åbningstidspunkt, for derefter at få systemet til at tælle ned til åbningstidpunktet. Vælger brugeren planlægningsmenuen, kan brugeren selvfølgelig navigere i systemet imens der bliver talt ned. Derfor er der ført en pil tilbage til "Brugerinput afventes". Når timeren sættes i gang, begynder den at tælle et minut ned ad gangen. Når minut og time antallet til sammen går ned på 0 bryder systemet ud af denne state og ind i en ny state der hedder "Afventer besked". I denne state ventes der på en besked fra PSoC'en. PSoC'en kan komme med 3 forskellige beskeder. Den første er at der ingen flaske er i systemet. Dette vil udløse et advarselsvindue på brugergrænsefladen. Den anden besked er at den indsatte flaske er ugyldig, hvilket også vil udløse et advarselsvindue. Den sidste besked man kan få er at flasken godkendes. Alle disse states fører brugeren tilbage til hovedmenuen ved at brugeren trykker OK på vinduet.
