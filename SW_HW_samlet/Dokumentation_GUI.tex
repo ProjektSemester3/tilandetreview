@@ -101,6 +101,28 @@ For minutter ser det således ud:
 
 Da hele produktet ikke er fuldt udviklet er det ikke muligt at fremvise nogle resultater. Man kan se på videoen at vi kommer til at tænde og slukke for dioden ved hjælp af brugergrænsefladen på devkittet. Videoen kan ses i bilaget.
 
+\subsubsection{Test med virtuel klasse}
+Problemer med SPI forbindelsen førte til implementeringen af en virtuel klasse der skulle være stub til test af modtagelse af kommandoer fra PSoC Master.
+Istedet for at læse fra et SPI device i /dev, blev der læst fra en txt fil istedet. Da devices bliver behandlet som filer i Linux, ville funktionalitet i den 
+virtuelle klasse ligge meget tæt på den egenlige implementering. Dermed kunne det testes om GUI kunne give status beskeder tilbage til brugeren. For 
+source koden til denne virtuelle klasse henvises til koden for GUI i bilag(reference til bilag).
+Herudner ses test af statusbeskeder fra PSoC Master med den virtuelle klasse.
+
+\begin{figure}[H]
+	\includegraphics[scale=1]{tex/Test/GUI-Test/Billeder/Test_Virtuel_klasse_invalid}
+	\caption{Test at virtuel klasse}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[scale=1]{tex/Test/GUI-Test/Billeder/Test_Virtuel_klasse_nobottle}
+	\caption{Test at virtuel klasse}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[scale=1]{tex/Test/GUI-Test/Billeder/Test_Virtuel_klasse_Valid}
+	\caption{Test at virtuel klasse}
+\end{figure}
+
 \section{Konklusion}
 
 Alle test gik som forventet, da dioden på PSoC'en kom til at tænde ved læsning som forventet. Yderligere er designet for brugergrænsefladen, og navigationen i den blevet som forventet. Dog blev designet ikke implementeret, da dette vil gøres i en senere itteration.
