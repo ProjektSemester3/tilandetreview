@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.23)  19 DEC 2016 22:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.8.23)  19 DEC 2016 22:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1152,7 +1152,7 @@ Package babel Info: Redefining danish shorthand "~
 
 
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <winePrep.png, 
-id=109, 744.7825pt x 626.34pt>
+id=121, 744.7825pt x 626.34pt>
 File: winePrep.png Graphic file (type png)
  <use winePrep.png>
 Package pdftex.def Info: winePrep.png used on input line 21.
@@ -1189,7 +1189,16 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 19.
  [1
 
-] (./Resume.tex
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 19.
+ [2] (./Resume.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -1203,30 +1212,13 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 14.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 14.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 14.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.14 \chapter
-             {Abstract} [1
 
-
-]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 14.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 14.
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
 
@@ -1239,9 +1231,24 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
- [2
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Forord} [1
+
 
 ]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+ [2]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -1255,7 +1262,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<KapitelStoerrelse.png, id=154, 240.14719pt x 192.72pt>
+<KapitelStoerrelse.png, id=175, 240.14719pt x 192.72pt>
 File: KapitelStoerrelse.png Graphic file (type png)
 
 <use KapitelStoerrelse.png>
@@ -1406,7 +1413,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
- <Usecasediagram.png, id=193, 622.325pt x 521.95pt>
+ <Usecasediagram.png, id=212, 622.325pt x 521.95pt>
 File: Usecasediagram.png Graphic file (type png)
 
 <use Usecasediagram.png>
@@ -1513,7 +1520,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 
-<tex/Arkitektur/Diagrammer/BDD_WinePrep.png, id=231, 765.86125pt x 289.08pt>
+<tex/Arkitektur/Diagrammer/BDD_WinePrep.png, id=250, 765.86125pt x 289.08pt>
 File: tex/Arkitektur/Diagrammer/BDD_WinePrep.png Graphic file (type png)
 
 <use tex/Arkitektur/Diagrammer/BDD_WinePrep.png>
@@ -1544,7 +1551,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 27.
 [13 <./tex/Arkitektur/Diagrammer/BDD_WinePrep.png>]
-<tex/Arkitektur/Diagrammer/Allokering_WinePrep_to_MC.png, id=248, 1195.46625pt 
+<tex/Arkitektur/Diagrammer/Allokering_WinePrep_to_MC.png, id=267, 1195.46625pt 
 x 642.4pt>
 File: tex/Arkitektur/Diagrammer/Allokering_WinePrep_to_MC.png Graphic file (typ
 e png)
@@ -1624,7 +1631,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--65
 
  []
 
-<tex/Design/L298.png, id=308, 757.83125pt x 402.50375pt>
+<tex/Design/L298.png, id=327, 757.83125pt x 402.50375pt>
 File: tex/Design/L298.png Graphic file (type png)
 
 <use tex/Design/L298.png>
@@ -1654,7 +1661,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 12.
 [17 <./tex/Design/L298.png>]
-<tex/Design/PSoC/Diagrammer/SD_Positionering.png, id=328, 1053.9375pt x 1234.61
+<tex/Design/PSoC/Diagrammer/SD_Positionering.png, id=347, 1053.9375pt x 1234.61
 25pt>
 File: tex/Design/PSoC/Diagrammer/SD_Positionering.png Graphic file (type png)
  <use tex/Design/PSoC/Diagrammer/SD_Positionering.png>
@@ -1692,7 +1699,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--32
 
  []
 
-<tex/Design/PSoC/AD_locate.jpg, id=339, 682.55pt x 732.7375pt>
+<tex/Design/PSoC/AD_locate.jpg, id=358, 682.55pt x 732.7375pt>
 File: tex/Design/PSoC/AD_locate.jpg Graphic file (type jpg)
 
 <use tex/Design/PSoC/AD_locate.jpg>
@@ -1744,7 +1751,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 10.
 [22]
-<tex/Design/PSoC/Diagrammer/SD_Aabningsmekanisme.png, id=365, 772.8875pt x 562.
+<tex/Design/PSoC/Diagrammer/SD_Aabningsmekanisme.png, id=384, 772.8875pt x 562.
 1pt>
 File: tex/Design/PSoC/Diagrammer/SD_Aabningsmekanisme.png Graphic file (type pn
 g)
@@ -1792,7 +1799,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
 
-<tex/Design/SPI/Clock_mode_SPI.png, id=377, 374.90062pt x 231.86626pt>
+<tex/Design/SPI/Clock_mode_SPI.png, id=396, 374.90062pt x 231.86626pt>
 File: tex/Design/SPI/Clock_mode_SPI.png Graphic file (type png)
 
 <use tex/Design/SPI/Clock_mode_SPI.png>
@@ -1826,7 +1833,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
 [25 <./tex/Design/SPI/Clock_mode_SPI.png>]
-<tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png, id=397, 697.60625pt x 350.3087
+<tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png, id=417, 697.60625pt x 350.3087
 5pt>
 File: tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png Graphic file (type png)
  <use tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png>
@@ -1834,7 +1841,7 @@ Package pdftex.def Info: tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png used on
  input line 9.
 (pdftex.def)             Requested size: 418.56697pt x 210.18686pt.
 
-<tex/Design/GUI/Fotos/CountThread.png, id=399, 111.91812pt x 97.36375pt>
+<tex/Design/GUI/Fotos/CountThread.png, id=419, 111.91812pt x 97.36375pt>
 File: tex/Design/GUI/Fotos/CountThread.png Graphic file (type png)
 
 <use tex/Design/GUI/Fotos/CountThread.png>
@@ -1842,7 +1849,7 @@ Package pdftex.def Info: tex/Design/GUI/Fotos/CountThread.png used on input lin
 e 18.
 (pdftex.def)             Requested size: 111.91785pt x 97.3635pt.
 
-<tex/Design/GUI/Fotos/MainWindow.png, id=401, 149.05687pt x 215.80624pt>
+<tex/Design/GUI/Fotos/MainWindow.png, id=421, 149.05687pt x 215.80624pt>
 File: tex/Design/GUI/Fotos/MainWindow.png Graphic file (type png)
 
 <use tex/Design/GUI/Fotos/MainWindow.png>
@@ -1859,7 +1866,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 29.
  [26 <./tex/Design/GUI/Fotos/Tom_klassediagram_GUI.png> <./tex/Design/GUI/Fotos
 /CountThread.png>]
-<tex/Design/GUI/Fotos/ReadWrite.png, id=410, 106.89937pt x 54.70438pt>
+<tex/Design/GUI/Fotos/ReadWrite.png, id=430, 106.89937pt x 54.70438pt>
 File: tex/Design/GUI/Fotos/ReadWrite.png Graphic file (type png)
 
 <use tex/Design/GUI/Fotos/ReadWrite.png>
@@ -1871,7 +1878,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-<tex/Design/GUI/Fotos/sm.png, id=413, 476.78125pt x 311.66437pt>
+<tex/Design/GUI/Fotos/sm.png, id=433, 476.78125pt x 311.66437pt>
 File: tex/Design/GUI/Fotos/sm.png Graphic file (type png)
 
 <use tex/Design/GUI/Fotos/sm.png>
@@ -1930,7 +1937,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 36.
  (./tex/Implementering/Implementering_til_projektrapport/Implementering.tex
-<tex/Implementering/Implementering_til_projektrapport/Pololu-A4988.png, id=437,
+<tex/Implementering/Implementering_til_projektrapport/Pololu-A4988.png, id=456,
  344.28625pt x 262.9825pt>
 File: tex/Implementering/Implementering_til_projektrapport/Pololu-A4988.png Gra
 phic file (type png)
@@ -1992,7 +1999,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
 [31]
-<tex/TeImRe/SPI/Realisering_devkit_psoc.jpg, id=470, 2348.775pt x 4175.6pt>
+<tex/TeImRe/SPI/Realisering_devkit_psoc.jpg, id=489, 2348.775pt x 4175.6pt>
 File: tex/TeImRe/SPI/Realisering_devkit_psoc.jpg Graphic file (type jpg)
 
 <use tex/TeImRe/SPI/Realisering_devkit_psoc.jpg>
@@ -2029,7 +2036,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--6
  []
 
 
-<tex/Test/Motor-sensor/Bipolar_test_opstilling.jpg, id=484, 4175.6pt x 2348.775
+<tex/Test/Motor-sensor/Bipolar_test_opstilling.jpg, id=503, 4175.6pt x 2348.775
 pt>
 File: tex/Test/Motor-sensor/Bipolar_test_opstilling.jpg Graphic file (type jpg)
 
@@ -2051,7 +2058,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 11.
 [33]
-<tex/Test/Motor-sensor/HW_stativ_test.jpg, id=494, 2999.205pt x 5331.92pt>
+<tex/Test/Motor-sensor/HW_stativ_test.jpg, id=514, 2999.205pt x 5331.92pt>
 File: tex/Test/Motor-sensor/HW_stativ_test.jpg Graphic file (type jpg)
 
 <use tex/Test/Motor-sensor/HW_stativ_test.jpg>
@@ -2081,7 +2088,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 13.
 [35 <./tex/Test/Motor-sensor/HW_stativ_test.jpg>]
-<tex/TeImRe/SPI/SPI_testAnalog.jpg, id=510, 4175.6pt x 2348.775pt>
+<tex/TeImRe/SPI/SPI_testAnalog.jpg, id=529, 4175.6pt x 2348.775pt>
 File: tex/TeImRe/SPI/SPI_testAnalog.jpg Graphic file (type jpg)
 
 <use tex/TeImRe/SPI/SPI_testAnalog.jpg>
@@ -2113,7 +2120,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
 [36 <./tex/TeImRe/SPI/SPI_testAnalog.jpg>]
-<tex/Test/Motor-sensor/Sensor_10cm.png, id=524, 261.97874pt x 46.67438pt>
+<tex/Test/Motor-sensor/Sensor_10cm.png, id=543, 261.97874pt x 46.67438pt>
 File: tex/Test/Motor-sensor/Sensor_10cm.png Graphic file (type png)
 
 <use tex/Test/Motor-sensor/Sensor_10cm.png>
@@ -2131,7 +2138,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 4.
 
 [37 <./tex/Test/Motor-sensor/Sensor_10cm.png>]
-<tex/TeImRe/SPI/Analog_devkit_echo_psoc_1.png, id=538, 605.26125pt x 97.86563pt
+<tex/TeImRe/SPI/Analog_devkit_echo_psoc_1.png, id=557, 605.26125pt x 97.86563pt
 >
 File: tex/TeImRe/SPI/Analog_devkit_echo_psoc_1.png Graphic file (type png)
  <use tex/TeImRe/SPI/Analog_devkit_echo_psoc_1.png>
@@ -2139,7 +2146,7 @@ Package pdftex.def Info: tex/TeImRe/SPI/Analog_devkit_echo_psoc_1.png used on i
 nput line 8.
 (pdftex.def)             Requested size: 363.15953pt x 58.71982pt.
 
-<tex/TeImRe/SPI/Logic_analyzer.png, id=540, 1926.19624pt x 353.32pt>
+<tex/TeImRe/SPI/Logic_analyzer.png, id=559, 1926.19624pt x 353.32pt>
 File: tex/TeImRe/SPI/Logic_analyzer.png Graphic file (type png)
 
 <use tex/TeImRe/SPI/Logic_analyzer.png>
@@ -2151,7 +2158,7 @@ Overfull \hbox (16.23242pt too wide) in paragraph at lines 22--23
 [][] 
  []
 
-<tex/TeImRe/SPI/Terminal_spi_slave.png, id=541, 869.2475pt x 312.16624pt>
+<tex/TeImRe/SPI/Terminal_spi_slave.png, id=560, 869.2475pt x 312.16624pt>
 File: tex/TeImRe/SPI/Terminal_spi_slave.png Graphic file (type png)
 
 <use tex/TeImRe/SPI/Terminal_spi_slave.png>
@@ -2170,7 +2177,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
  [38 <./tex/TeImRe/SPI/Analog_devkit_echo_psoc_1.png> <./tex/TeImRe/SPI/Logic_a
 nalyzer.png>]
-<tex/Test/GUI-Test/Billeder/test_GUI.png, id=556, 375.90437pt x 157.58875pt>
+<tex/Test/GUI-Test/Billeder/test_GUI.png, id=575, 375.90437pt x 157.58875pt>
 File: tex/Test/GUI-Test/Billeder/test_GUI.png Graphic file (type png)
 
 <use tex/Test/GUI-Test/Billeder/test_GUI.png>
@@ -2183,7 +2190,7 @@ Overfull \hbox (6.90344pt too wide) in paragraph at lines 6--7
  []
 
 
-<tex/Test/GUI-Test/Billeder/Test_Virtuel_klasse_invalid.png, id=558, 359.09157p
+<tex/Test/GUI-Test/Billeder/Test_Virtuel_klasse_invalid.png, id=577, 359.09157p
 t x 197.98969pt>
 File: tex/Test/GUI-Test/Billeder/Test_Virtuel_klasse_invalid.png Graphic file (
 type png)
@@ -2253,6 +2260,198 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--10
+
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 13.
+[42
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 14.
+
+
+LaTeX Warning: Reference `UC1' on page 43 undefined on input line 17.
+
+
+LaTeX Warning: Reference `UC1' on page 43 undefined on input line 17.
+
+
+LaTeX Warning: Reference `UC1' on page 43 undefined on input line 30.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\T1/cmr/bx/n/10.95 Forventet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/cmr/bx/n/10.95 ob-ser-va-
+ []
+
+
+Overfull \hbox (1.31421pt too wide) in paragraph at lines 41--41
+\T1/cmr/bx/n/10.95 tion/resultat| 
+ []
+
+
+Overfull \hbox (1.31421pt too wide) in paragraph at lines 41--41
+\T1/cmr/bx/n/10.95 tion/resultat|  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\T1/cmr/bx/n/10.95 Vurdering
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+[]|\T1/cmr/m/n/10.95 Vinflasken
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/cmr/m/n/10.95 af sy-ste-met,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/cmr/m/n/10.95 og bru-ger
+ []
+
+
+Underfull \hbox (badness 7486) in paragraph at lines 41--41
+\T1/cmr/m/n/10.95 med-del-es via
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
+\T1/cmr/m/n/10.95 bru-ger-græn-se-
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 45.
+
+LaTeX Warning: Reference `UC2' on page 43 undefined on input line 49.
+
+
+LaTeX Warning: Reference `UC2' on page 43 undefined on input line 49.
+
+
+LaTeX Warning: Reference `UC2' on page 43 undefined on input line 60.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\T1/cmr/bx/n/10.95 Forventet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/cmr/bx/n/10.95 ob-ser-va-
+ []
+
+
+Overfull \hbox (1.31421pt too wide) in paragraph at lines 68--68
+\T1/cmr/bx/n/10.95 tion/resultat| 
+ []
+
+
+Overfull \hbox (1.31421pt too wide) in paragraph at lines 68--68
+\T1/cmr/bx/n/10.95 tion/resultat|  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\T1/cmr/bx/n/10.95 Vurdering
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\T1/cmr/m/n/10.95 Undermenuen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/cmr/m/n/10.95 plan-læg åb-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/cmr/m/n/10.95 bru-ger-græn-se-
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 68--68
+[]|\T1/cmr/m/n/10.95 Den indstil-le-
+ []
+
+
+Underfull \hbox (badness 6842) in paragraph at lines 68--68
+\T1/cmr/m/n/10.95 de tid vi-ses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\T1/cmr/m/n/10.95 Hovedmenuen
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 68--68
+\T1/cmr/m/n/10.95 vi-ses og det
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/cmr/m/n/10.95 valg-te klok-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/cmr/m/n/10.95 bru-ger-græn-se-
+ []
+
+
+Underfull \hbox (badness 4467) in paragraph at lines 68--68
+[]|\T1/cmr/m/n/10.95 Vinflasken er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/cmr/m/n/10.95 bru-ger via
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/cmr/m/n/10.95 bru-ger-græn-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/cmr/m/n/10.95 se-fla-den om
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\T1/cmr/m/n/10.95 at vi-nen er
+ []
+
 ) (./fremtidigt_arbejde.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
@@ -2262,9 +2461,18 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
- [42
+ [43
 
 ]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+ [44]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -2297,7 +2505,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 26.
-[43
+[45
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 27--32
@@ -2313,7 +2521,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
- [44]
+ [46]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -2341,7 +2549,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 25.
-[45
+[47
 
 ])
 Package babel Info: Redefining danish shorthand "|
@@ -2352,7 +2560,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 58.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 58.
- [46]
+ [48]
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -2362,7 +2570,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0669D047B9BA0EE8DE10822A275BBFB2;1277.
+(rerunfilecheck)             Checksum: B9106B6702C15279028DFC76819B3550;1478.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2370,10 +2581,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 18014 strings out of 493013
- 301137 string characters out of 6136993
- 393837 words of memory out of 5000000
- 21081 multiletter control sequences out of 15000+600000
+ 18029 strings out of 493013
+ 301300 string characters out of 6136993
+ 401077 words of memory out of 5000000
+ 21088 multiletter control sequences out of 15000+600000
  19864 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,12n,44p,10459b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2396,10 +2607,10 @@ ve/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2016/te
 xmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb><c:/texlive/2016/texmf-dist/f
 onts/type1/public/cm-super/sfti1095.pfb><c:/texlive/2016/texmf-dist/fonts/type1
 /public/cm-super/sftt0900.pfb>
-Output written on main.pdf (49 pages, 9613378 bytes).
+Output written on main.pdf (52 pages, 9609384 bytes).
 PDF statistics:
- 714 PDF objects out of 1000 (max. 8388607)
- 593 compressed objects within 6 object streams
- 191 named destinations out of 1000 (max. 500000)
- 323 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 746 PDF objects out of 1000 (max. 8388607)
+ 621 compressed objects within 7 object streams
+ 199 named destinations out of 1000 (max. 500000)
+ 347 words of extra memory for PDF output out of 10000 (max. 10000000)
 
