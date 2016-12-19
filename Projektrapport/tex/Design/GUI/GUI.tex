@@ -1,5 +1,7 @@
 \subsubsection{GUI}
-Programmet QT blev anvendt til at designe og implementere brugergrænsefladen. Udfordringerne bestod primært i, at kendskabet til programmet QT ikke var særligt stort. Da QT selv skaber klasserne og metoderne er det svært at beskrive disse på forhånd. Derfor blev det besluttet at klasserne først skulle udarbejdes efter at brugergrænsefladen var designet.
+Programmet QT blev anvendt til at designe og implementere brugergrænsefladen. Udfordringerne i brugen af dette værktøj bestod primært i, at kendskabet til programmet ikke var særligt stort. \\
+
+Da QT selv skaber klasserne og metoderne er det svært at beskrive disse på forhånd. Derfor blev det besluttet at klasserne først skulle udarbejdes efter at brugergrænsefladen var designet.
 
 Det endelige klassediagram der blev udarbejdet kan ses illustreret på figur \ref{kd}. Dette klassediagram indeholder 5 forskellige klasser.
 
@@ -9,7 +11,6 @@ Det endelige klassediagram der blev udarbejdet kan ses illustreret på figur \re
 	\label{kd}
 \end{figure}
 
-Her kan det ses at der er oprettet to forskellige klasser til read og write funktionerne, som sørger for kommunikationen med PSoC.
 
 For at holde styr på den indtastede og den resterende tid er der blev oprettet en Count klasse. Denne count klasse er implementeret som en domainklasse da det er her den resterende tid for vinåbningen gemmes. Det er denne klasse som skal sørge for at tiden tælles ned når den startes. Illustrationen af countklassen kan ses på figur \ref{CT_CD}.
 
@@ -19,13 +20,15 @@ For at holde styr på den indtastede og den resterende tid er der blev oprettet 
 	\label{CT_CD}
 \end{figure}
 
-Der er 3 klasser for \textbf{Brugergrænsefladen}. Der er en klasse for MainWindow, hvor alle funktionerne er defineret. MainWindow er klassen som sørger for at vise den grafiske brugergrænseflade. Det er her alle trykknap funktionerne er defineret. Klassen ses illustreret på figur \ref{MW_CD}. 
+Der er 3 klasser for brugergrænsefladen. Der er en klasse for MainWindow, hvor alle funktionerne for den grafiske del af brugergrænsefladen er defineret.  Det er her alle trykknap funktionerne er defineret. Klassen ses illustreret på figur \ref{MW_CD}. 
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=1]{tex/Design/GUI/Fotos/MainWindow}}
 	\caption{MainWindow klasse illustreret}
 	\label{MW_CD}
 \end{figure}
+
+Der er yderligere blevet implementeret en klasse til at sende og modtage kommandoer fra PSoC. Dette er gjort, fordi at det skal være muligt at kunne teste denne klasse for sig. Yderligere giver fås et større overblik hvis funktionerne er fordelt over de rigtige klasser. Dette vil medføre til at systemet har en lav kobling, hvilket fører til at man let kan ændre, tilføje og rette i koden. Klassen ReadWrite indholder 2 funktioner. En til at læse fra PSoC og en til at skrive til den.
 
 For at se hele klasse diagrammet med alle metoder henvises der til bilag\footnote{Se GUI\_CD}.
 
@@ -37,4 +40,26 @@ Brugergrænsefladen er state styret. Derfor har det været nødvendigt at lave e
 	\label{sm}
 \end{figure}
 
-Som illustreret i figur \ref{sm} starter systemet i en state der hedder "Brugerinput afventes". Denne state beskriver systemet når, brugergrænsefladen er i hovedmenuen. Her kan brugeren gøre 2 ting. Enten trykke på "Åbn nu" og få vinen åbnet med det samme, eller trykke på "Planlæg åbning", indtaste et åbningstidspunkt, for derefter at få systemet til at tælle ned til åbningstidpunktet. Vælger brugeren planlægningsmenuen, kan brugeren navigere i systemet imens, der bliver talt ned. Derfor er der ført en pil tilbage til "Brugerinput afventes". Når timeren sættes i gang, begynder den at tælle et minut ned ad gangen. Når minut og time antallet til sammen går ned på 0 bryder systemet ud af denne state og ind i en ny state der hedder "Afventer besked". I denne state ventes der på en besked fra PSoC'en. PSoC'en kan komme med 3 forskellige beskeder. Den første er at der ingen flaske er i systemet. Dette vil udløse et advarselsvindue på brugergrænsefladen. Den anden besked er at den indsatte flaske er ugyldig, hvilket også vil udløse et advarselsvindue. Den sidste besked man kan få er at flasken godkendes. Alle disse states fører brugeren tilbage til hovedmenuen ved at brugeren trykker OK på vinduet.
+I følgende afsnit vil de forskellige states som er illustreret på figur \ref{sm} blive beskrevet.
+
+\textbf{Brugerinput afventes}\\
+Når systemet starter op vil brugeren befinde sig i denne state. Her vil brugergrænsefladens hovedmenu vises. Brugeren vil herfra have muligheden om enten at trykke på "Åbn nu" eller at planlægge åbningen ved at trykke på "Planlæg åbning".\\
+
+\textbf{Nedtælling startet}\\
+Hvis brugeren vælger vælger en tid i planlægningsmenuen og trykker på bekræft vil denne state aktiveres. Her vil den indtastede tid konverteres til minutter og nedtællingen fra den konverterede tid startes. Når nedtællingen når 0 brydes der ud af denne state. Imens systemet er i denne state er det muligt for brugeren at navigere i systemet og gå tilbage til hovedmenuen ved at trykke tilbage på brugergrænsefladen.\\
+
+\textbf{Afventer besked}\\
+Når brugeren vælger menupunktet "Åbn nu" eller tiden tælles ned til 0 sættes cmd til at være REGISTRER_FLASKE og denne state aktiveres. I denne state ventes der på svar fra PSoC. Systemet kan her modtage 3 forskellige cmd's: INVALID_BOTTLE, VALID_BOTTLE og NO_BOTTLE. Den besked som systemet modtager vil være den der sættes i cmd.\\
+
+\textbf{Ugyldig flaske}\\
+Hvis cmd blev sat til INVALID_BOTTLE aktiveres denne state. Her modtager brugeren en besked om at flasken er invalid.\\
+
+\textbf{Ingen flaske}\\
+Hvis cmd blev sat til NO_BOTTLE aktiveres denne state. Her modtager brugeren en besked om at en vinflaske skal indsættes.
+\\
+
+\textbf{Åbning fuldført}\\
+Hvis cmd blev sat til VALID_BOTTLE aktiveres denne state. Her modtager brugeren en besked om at en vinflasken er godkendt, og at åbningen påbegyndes.\\
+
+
+De tre sidste states fører brugeren tilbage til hovedmenuen ved at brugeren trykker OK på vinduet.
