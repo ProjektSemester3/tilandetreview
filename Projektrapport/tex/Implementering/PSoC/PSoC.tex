@@ -7,7 +7,7 @@ Sekvensdiagrammerne i figur \ref{sd:Pos} og \ref{sd:Aab} og de dertil beskrevne 
 Til at måle sensorerne benyttes en SAR-ADC, som, efter hvert sample, returnerer en værdi i \textit{counts}. For at sammenligne med databladet for GP2Y0A21YK\footnote{Indsæt reference til datablad} konverteres disse værdier til mV. Dermed kan det fastslås, hvorvidt en flaske er registreret eller ej, ud fra afstanden forbundet med den målte spænding.
 \\
 \textbf{Motorer} \\
-Motorerne styres vha. et PWM-signal, som går fra en given GPIO-pen ud til STEP-inputtet på A4988-driveren, som tæller et step op for hver rising edge på PWM-signalet, samt to digitale signaler, der går til henholdsvis ENABLE- og DIRECTION-inputtene på driveren. PWM-signalet er implementeret med en frekvens på 400 Hz (periode på 2.5 ms), da dette giver motorerne tid til at aflade mellem hvert step\footnote{Se bilag}. \\
+Motorerne styres vha. et PWM-signal, som går fra en given GPIO-pin ud til STEP-inputtet på A4988-driveren, som tæller et step op for hver rising edge på PWM-signalet, samt to digitale signaler, der går til henholdsvis ENABLE- og DIRECTION-inputtene på driveren. \\
 \\
 \textbf{Knapper} \\
 Knapperne er implementeret som interrupts der trigger på rising edge. Heri skiftes værdien af en global variabel. \\

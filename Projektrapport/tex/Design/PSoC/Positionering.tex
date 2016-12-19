@@ -7,7 +7,7 @@ Ovennævnte grænseflader, samt de i sektion \ref{sub:Pos} nævnte motorer og se
 \textbf{DevKit\_SPI}, hvorigennem kommunikationen med \textbf{Brugergrænsefladen} foregår. \\
 \textbf{PSoC\_SPI}, hvorigennem kommunikationen med \textbf{Åbningscontrolleren} foregår. \\
 \textbf{MotorsXY}, som styrer motorerne for x- og y-akserne, hvis funktionalitet er identisk. \\
-\textbf{MotorZ}, som styrer motoren for z-aksen. \\
+\textbf{MotorZ}, som styrer motorerne for z-aksen. \\
 \textbf{Sensors}, som styrer sensorerne. \\
 
 \myparagraph{Sekvensdiagram}
@@ -24,7 +24,7 @@ Sekvensdiagrammet i figur \ref{sd:Pos} viser, hvordan der kommunikeres mellem kl
 Noget, som ikke er vist i sekvensdiagrammet, er fejlscenarier. Disse findes for de metoder, hvor der i diagrammet returneres \textit{SUCCESS}. I disse tilfælde resettes motorerne, og \textbf{Positionscontrolleren} sender en statusbesked til \textbf{Brugergrænsefladen} om den pågældende fejl.
 
 \myparagraph{Funktionsbeskrivelse}
-Programmets overordnede funktionalitet ikke videre kompliceret, dog kan der for især locate(X)/locate(Y) findes grund til nærmere beskrivelse.
+Programmets overordnede funktionalitet er ikke videre kompliceret, dog kan der for især locate(X)/locate(Y) findes grund til nærmere beskrivelse.
 \\
 \\
 \textbf{locate(AXIS)} \\

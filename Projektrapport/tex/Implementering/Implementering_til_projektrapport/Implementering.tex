@@ -1,13 +1,12 @@
 \subsection{Hardware}
 \label{HW_Implementering}
-På figur \ref{fig:Pololu-A4988} ses hvordan Pololu-A4988 opsættes til PSoC 5LP og en motor. I den endelige impementering er antallet af Pololu-A4988 motor drivere og motorer i forholdet 1:1. Driveren fungerer som bindeled mellem PSoC 5LP og motoren. Tabel \ref{tab:Pololu-A4988_pin_configuration} viser pin konfigureringen fra Pololu-A4988 til henholdsvis PSoC 5LP og 28BYJ-48. Rækkefølgen af pins i tabellen svarer til billedet fra figur \ref{fig:Pololu-A4988} læst fra øverste venstre hjørne. MS1, MS2 og MS3 er ikke forbundet til noget. RESET og SLEEP er forbundet til hinanden.
+På figur \ref{fig:Pololu-A4988} ses hvordan Pololu-A4988 opsættes til PSoC 5LP og en motor. I den endelige impementering er antallet af Pololu-A4988 motor drivere og motorer i forholdet 1:1. Driveren fungerer som bindeled mellem PSoC 5LP og motoren. Tabel \ref{tab:Pololu-A4988_pin_configuration} viser pin konfigureringen fra Pololu-A4988 til henholdsvis PSoC 5LP og 28BYJ-48. Rækkefølgen af pins i tabellen svarer til billedet fra figur \ref{fig:Pololu-A4988} læst fra øverste venstre hjørne. MS1, MS2 og MS3 bestemmer step-mode. Disse er ikke forbundet til noget, da der skal køres med full-step\footnote{Se \url{https://www.pololu.com/product/1182} under Step (and microstep) size for en tabel, der viser, hvordan modes'ne vælges.}. RESET og SLEEP er forbundet til hinanden, så der er et konstant højt signal på begge.
 
 \begin{figure}[H]
 	\centerline{\includegraphics[scale=0.6]{tex/Implementering/Implementering_til_projektrapport/Pololu-A4988.png}}
-	\caption[]{Pololu-A4988}\footnotemark
+	\caption{Pololu-A4988}
 	\label{fig:Pololu-A4988}
 \end{figure}
-\footnotetext{https://forum.pololu.com/t/a4988-issue/6518}
 
 \begin{table}[H]
   \centering
@@ -33,7 +32,7 @@ På figur \ref{fig:Pololu-A4988} ses hvordan Pololu-A4988 opsættes til PSoC 5LP
   \hline
   1B & & X & \\
   \hline
-  VDD (5V) & & & X \\
+  VCC (5V) & & & X \\
   \hline
   GND & & & X \\
   \hline
@@ -42,10 +41,10 @@ På figur \ref{fig:Pololu-A4988} ses hvordan Pololu-A4988 opsættes til PSoC 5LP
 \end{table}
 
 \noindent
-VDD er altså spændingsforsyning som leverer både 5V og 10V til henholdsvis driveren og motoren.
+VCC er altså spændingsforsyning som leverer både 5V og 10V til henholdsvis driveren og motoren.
 \\
 \\
-Sensorerne har tre pins som alle er sat direkte til PSoC 5LP Master, som vist i tabel \ref{tab:Sensor_pin_konfigurering}.
+Sensorerne har tre pins som alle er sat direkte til \textbf{Positionscontrolleren}, som vist i tabel \ref{tab:Sensor_pin_konfigurering}.
 
 \begin{table}[H]
   \centering
@@ -53,11 +52,11 @@ Sensorerne har tre pins som alle er sat direkte til PSoC 5LP Master, som vist i 
   \hline
   \textbf{GP2Y0A21YK Sensor} & \textbf{PSoC 5LP}\\
   \hline 
-  $V_0$ & P[X:X] \\
+  $V_O$ & P3[1:0] \\
   \hline 
-  GND & P[X:X] \\
+  GND & GND \\
   \hline 
-  $V_CC$ & P[X:X] \\
+  $VCC$ & VCC \\
   \hline 
 \end{tabular}
 \caption{GP2Y0A21YK sensor implementeret med PSoC 5LP}\label{tab:Sensor_pin_konfigurering}

@@ -8,7 +8,7 @@ Med udgangspunkt i usecasene er systemets funktionalitet forsøgt brudt ned i mi
 	\label{BDD_WinePrep}
 \end{figure}
 
-\noindent\textbf{Brugergrænsefladen} betjenes af bruger og initierer usecasene som beskrevet i Krav (indsæt reference hertil).
+\noindent\textbf{Brugergrænsefladen} betjenes af bruger og initierer usecasene som beskrevet i Krav\footnote{Se kapitel\ref{chp:Krav}}.
 \\
 \\
 \textbf{Positionering} finder vinflaskens position og flytter \textbf{Åbningsmekanismen}, så den er klar til at åbne vinflasken.
@@ -20,7 +20,7 @@ Med udgangspunkt i usecasene er systemets funktionalitet forsøgt brudt ned i mi
 For at forstå den interne funktionalitet og kompleksitet i blokkene \textbf{Positionering} og \textbf{Åbningsmekanisme} er disse brudt yderligere ned.
 
 \subsubsection{Positionering}
-I forhold til den specificerede afgrænsning\footnote{Se kapitlet Afgrænsning} for projektet, kræves det, at \textbf{Positionering} skal operere på tre rumlige akser: to horizontalt vinkelrette (x og y) og én vertikal (z). Derudfra kan flaskens koordinater bestemmes. Da flaskens position er statisk, forløber detekteringen sig i bevægelse langs dennes akser. \textbf{Positionering} kan dermed opdeles i to moduler: ét modul tager sig af detektering af flasken, mens det andet tager sig af bevægelsen langs akserne.
+I forhold til den specificerede afgrænsning\footnote{Se kapitel \ref{chp:Afg}} for projektet, kræves det, at \textbf{Positionering} skal operere på tre rumlige akser: to horizontalt vinkelrette (x og y) og én vertikal (z). Derudfra kan flaskens koordinater bestemmes. Da flaskens position er statisk, forløber detekteringen sig i bevægelse langs dennes akser. \textbf{Positionering} kan dermed opdeles i to moduler: ét modul tager sig af detektering af flasken, mens det andet tager sig af bevægelsen langs akserne.
 
 \subsubsection{Åbningsmekanisme}
 Det at åbne en flaske kan brydes ned i to funktioner: \textbf{iskruning} i flaskens prop, og \textbf{proptrækning} af proppen. Derfor kan \textbf{Åbningsmekanismen} opdeles i to moduler, som tager sig af disse funktioner.

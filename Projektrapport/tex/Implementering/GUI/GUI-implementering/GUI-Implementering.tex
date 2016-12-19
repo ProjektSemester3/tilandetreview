@@ -1,13 +1,10 @@
 \subsubsection{GUI}
-
-Programmet QT blev valgt da der tidligere har været arbejdet med QT i forbindelse med andre semesterprojekter. 
-
 Sproget som brugergrænsefladen er skrevet i er C++ da det er dette sprog som teamet har haft størst erfaring med.
 
 For at kommunikere med SPI driveren som ligger på Devkit8000 er funktionerne fread() og fwrite() brugt. 
 
-PSOC er tidligere i koden blevet defineret som path’en på PSoC driven. I koden for read og write funktioner kan man se at OPEN\_BOTTLE, skrives til PSoC driveren ved hjælp af fwrite(). OPEN\_BOTTLE er tidligere blevet defineret som 5, hvilket i den anvendte protokol betyder at vinen skal åbnes. Det er samme kode der bruges til funktionen ”Planlæg åbning”. 
+PSoC er tidligere i koden blevet defineret som path’en på PSoC driveren. I koden for read og write funktioner kan man se at OPEN\_BOTTLE, skrives til PSoC driveren ved hjælp af fwrite(). OPEN\_BOTTLE er tidligere blevet defineret som 5, hvilket i den anvendte protokol betyder at vinen skal åbnes. Det er samme kode der bruges til funktionen ”Planlæg åbning”. 
 
-For læsning fra PSoC'en er funktionen fread() benyttet. Da der kan gå en del tid inden systemet får noget tilbage fra PSoC'en foregår læsningen i en tom for lykke som der kun kan brydes ud af hvis en af de 3 tideligere definerede svar modtages. Til visning af besked på brugergrænsefladen er QT's MessageBox klasse benyttet. 
+For læsning fra PSoC'en er funktionen fread() benyttet. Da der kan gå en del tid inden systemet får noget tilbage fra PSoC'en foregår læsningen i en tom for-løkke som der kun kan brydes ud af hvis en af de 3 tidligere definerede svar modtages. Til visning af besked på brugergrænsefladen er QT's MessageBox klasse benyttet. 
 
-For at få tiden talt ned og samtidigt displayet på skærmen er der blevet benyttet threads. Implementeringen af dette kan ses i dokumentationsbilaget x.
+For at få tiden talt ned og samtidigt displayet på skærmen er der blevet benyttet threads. Implementeringen af brugergrænsefladen og dens tilhørende sider kan ses i bilaget\footnote{Se vedlagt kode for GUI}.

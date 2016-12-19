@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {4.1}Akt\IeC {\o }rer}{8}{section.4.1}
 \contentsline {subsection}{Bruger}{8}{subsection*.2}
 \contentsline {subsection}{Vinflaske}{8}{subsection*.3}
-\contentsline {section}{\numberline {4.2}Use-cases}{8}{section.4.2}
+\contentsline {section}{\numberline {4.2}Usecases}{8}{section.4.2}
 \contentsline {subsection}{\IeC {\r A}bn vinflaske}{8}{subsection*.4}
 \contentsline {subsection}{Planl\IeC {\ae }g \IeC {\r a}bning}{8}{subsection*.5}
 \contentsline {section}{\numberline {4.3}Ikke-funktionelle krav}{9}{section.4.3}
@@ -37,7 +37,7 @@
 \contentsline {subsubsection}{Software}{20}{subsubsection*.22}
 \contentsline {paragraph}{Sekvensdiagram}{21}{paragraph*.23}
 \contentsline {paragraph}{Funktionsbeskrivelse}{21}{paragraph*.24}
-\contentsline {subsubsection}{Seriel kommunikation}{21}{subsubsection*.25}
+\contentsline {subsubsection}{Seriel kommunikation}{22}{subsubsection*.25}
 \contentsline {paragraph}{Devkit8000-PSoC Master}{22}{paragraph*.26}
 \contentsline {paragraph}{PSoC Master - PSoC Slave}{23}{paragraph*.27}
 \contentsline {subsubsection}{GUI}{23}{subsubsection*.28}
@@ -45,7 +45,7 @@
 \contentsline {subsection}{Hardware}{27}{subsection*.29}
 \contentsline {subsection}{Software}{28}{subsection*.30}
 \contentsline {subsubsection}{Positionering/\IeC {\r A}bningsmekanisme}{28}{subsubsection*.31}
-\contentsline {paragraph}{Hardware-gr\IeC {\ae }nseflade}{28}{paragraph*.32}
+\contentsline {paragraph}{Hardware-gr\IeC {\ae }nseflade}{29}{paragraph*.32}
 \contentsline {subsubsection}{Seriel kommunikation}{29}{subsubsection*.33}
 \contentsline {subsubsection}{GUI}{31}{subsubsection*.34}
 \contentsline {section}{\numberline {5.5}Test}{31}{section.5.5}
@@ -67,5 +67,5 @@
 \contentsline {subsubsection}{DevKit8000-PSoC Master}{38}{subsubsection*.48}
 \contentsline {subsubsection}{PSoC Master - PSoC Slave}{38}{subsubsection*.49}
 \contentsline {subsection}{GUI}{38}{subsection*.50}
-\contentsline {chapter}{\chapternumberline {6}Fremtidigt arbejde}{40}{chapter.6}
-\contentsline {chapter}{\chapternumberline {7}Konklusion}{42}{chapter.7}
+\contentsline {chapter}{\chapternumberline {6}Fremtidigt arbejde}{39}{chapter.6}
+\contentsline {chapter}{\chapternumberline {7}Konklusion}{41}{chapter.7}

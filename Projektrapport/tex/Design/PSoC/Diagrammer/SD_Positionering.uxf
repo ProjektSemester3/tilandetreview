@@ -5,7 +5,7 @@
     <id>UMLGeneric</id>
     <coordinates>
       <x>96</x>
-      <y>32</y>
+      <y>24</y>
       <w>80</w>
       <h>32</h>
     </coordinates>
@@ -17,7 +17,7 @@
     <id>Relation</id>
     <coordinates>
       <x>136</x>
-      <y>80</y>
+      <y>72</y>
       <w>248</w>
       <h>32</h>
     </coordinates>
@@ -29,7 +29,7 @@ readCommand(OPEN):void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>128</x>
-      <y>56</y>
+      <y>48</y>
       <w>24</w>
       <h>904</h>
     </coordinates>
@@ -40,7 +40,7 @@ readCommand(OPEN):void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>536</x>
-      <y>56</y>
+      <y>48</y>
       <w>24</w>
       <h>904</h>
     </coordinates>
@@ -51,7 +51,7 @@ readCommand(OPEN):void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>504</x>
-      <y>32</y>
+      <y>24</y>
       <w>80</w>
       <h>32</h>
     </coordinates>
@@ -63,7 +63,7 @@ readCommand(OPEN):void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>536</x>
-      <y>136</y>
+      <y>128</y>
       <w>16</w>
       <h>32</h>
     </coordinates>
@@ -75,7 +75,7 @@ bg=yellow</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>600</x>
-      <y>32</y>
+      <y>24</y>
       <w>80</w>
       <h>32</h>
     </coordinates>
@@ -87,7 +87,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>632</x>
-      <y>56</y>
+      <y>48</y>
       <w>24</w>
       <h>904</h>
     </coordinates>
@@ -98,7 +98,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>96</y>
+      <y>88</y>
       <w>280</w>
       <h>32</h>
     </coordinates>
@@ -110,7 +110,7 @@ startSensor(X):void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>368</x>
-      <y>80</y>
+      <y>72</y>
       <w>16</w>
       <h>568</h>
     </coordinates>
@@ -122,7 +122,7 @@ bg=yellow</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>296</x>
-      <y>32</y>
+      <y>24</y>
       <w>160</w>
       <h>32</h>
     </coordinates>
@@ -134,7 +134,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>120</y>
+      <y>112</y>
       <w>176</w>
       <h>32</h>
     </coordinates>
@@ -146,7 +146,7 @@ locate(X):int8</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>152</y>
+      <y>144</y>
       <w>176</w>
       <h>32</h>
     </coordinates>
@@ -158,7 +158,7 @@ SUCCESS</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>176</y>
+      <y>168</y>
       <w>280</w>
       <h>32</h>
     </coordinates>
@@ -170,7 +170,7 @@ stopSensor(X):void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>200</y>
+      <y>192</y>
       <w>280</w>
       <h>32</h>
     </coordinates>
@@ -182,7 +182,7 @@ startSensor(Y):void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>224</y>
+      <y>216</y>
       <w>176</w>
       <h>32</h>
     </coordinates>
@@ -194,7 +194,7 @@ locate(Y):int8</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>256</y>
+      <y>248</y>
       <w>176</w>
       <h>32</h>
     </coordinates>
@@ -206,7 +206,7 @@ SUCCESS</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>536</x>
-      <y>240</y>
+      <y>232</y>
       <w>16</w>
       <h>32</h>
     </coordinates>
@@ -218,18 +218,18 @@ bg=yellow</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>80</x>
-      <y>8</y>
+      <y>0</y>
       <w>808</w>
       <h>944</h>
     </coordinates>
-    <panel_attributes>CD (Positionering) UC1: Åbn Vinflaske &amp; UC2: Planlæg Åbning</panel_attributes>
+    <panel_attributes>SD (Positionering) UC1: Åbn Vinflaske &amp; UC2: Planlæg Åbning</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>368</x>
-      <y>56</y>
+      <y>48</y>
       <w>24</w>
       <h>904</h>
     </coordinates>
@@ -240,7 +240,7 @@ bg=yellow</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>696</x>
-      <y>32</y>
+      <y>24</y>
       <w>80</w>
       <h>32</h>
     </coordinates>
@@ -252,7 +252,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>728</x>
-      <y>56</y>
+      <y>48</y>
       <w>24</w>
       <h>904</h>
     </coordinates>
@@ -263,7 +263,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>280</y>
+      <y>272</y>
       <w>368</w>
       <h>32</h>
     </coordinates>
@@ -275,7 +275,7 @@ positionZ(UNDER_TOP):void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>728</x>
-      <y>296</y>
+      <y>288</y>
       <w>16</w>
       <h>24</h>
     </coordinates>
@@ -287,7 +287,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>328</y>
+      <y>320</y>
       <w>272</w>
       <h>32</h>
     </coordinates>
@@ -299,7 +299,7 @@ confirmHeight(UNDER_TOP):int8</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>632</x>
-      <y>344</y>
+      <y>336</y>
       <w>16</w>
       <h>32</h>
     </coordinates>
@@ -311,7 +311,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>360</y>
+      <y>352</y>
       <w>272</w>
       <h>32</h>
     </coordinates>
@@ -323,7 +323,7 @@ SUCCESS</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>464</y>
+      <y>456</y>
       <w>272</w>
       <h>32</h>
     </coordinates>
@@ -335,7 +335,7 @@ SUCCESS</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>432</y>
+      <y>424</y>
       <w>272</w>
       <h>32</h>
     </coordinates>
@@ -347,7 +347,7 @@ confirmHeight(ABOVE_TOP):int8</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>632</x>
-      <y>448</y>
+      <y>440</y>
       <w>16</w>
       <h>32</h>
     </coordinates>
@@ -359,7 +359,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>384</y>
+      <y>376</y>
       <w>368</w>
       <h>32</h>
     </coordinates>
@@ -371,7 +371,7 @@ positionZ(ABOVE_TOP):void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>728</x>
-      <y>400</y>
+      <y>392</y>
       <w>16</w>
       <h>24</h>
     </coordinates>
@@ -383,7 +383,7 @@ bg=yellow</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>792</x>
-      <y>32</y>
+      <y>24</y>
       <w>80</w>
       <h>32</h>
     </coordinates>
@@ -395,7 +395,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>824</x>
-      <y>56</y>
+      <y>48</y>
       <w>24</w>
       <h>904</h>
     </coordinates>
@@ -406,7 +406,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>616</y>
+      <y>608</y>
       <w>464</w>
       <h>32</h>
     </coordinates>
@@ -418,7 +418,7 @@ sendCommand(OPEN):void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>824</x>
-      <y>632</y>
+      <y>624</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -430,7 +430,7 @@ bg=yellow</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>824</x>
-      <y>688</y>
+      <y>680</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -442,7 +442,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>688</y>
+      <y>680</y>
       <w>464</w>
       <h>32</h>
     </coordinates>
@@ -454,7 +454,7 @@ readStatus(BOTTLE_OPENED):void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>368</x>
-      <y>688</y>
+      <y>680</y>
       <w>16</w>
       <h>152</h>
     </coordinates>
@@ -466,7 +466,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>496</y>
+      <y>488</y>
       <w>280</w>
       <h>32</h>
     </coordinates>
@@ -478,7 +478,7 @@ stopSensor(Y):void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>528</y>
+      <y>520</y>
       <w>176</w>
       <h>32</h>
     </coordinates>
@@ -490,7 +490,7 @@ positionOpMech():void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>536</x>
-      <y>544</y>
+      <y>536</y>
       <w>16</w>
       <h>24</h>
     </coordinates>
@@ -502,7 +502,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>712</y>
+      <y>704</y>
       <w>176</w>
       <h>32</h>
     </coordinates>
@@ -514,7 +514,7 @@ reset():void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>536</x>
-      <y>728</y>
+      <y>720</y>
       <w>16</w>
       <h>24</h>
     </coordinates>
@@ -526,7 +526,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>880</y>
+      <y>872</y>
       <w>464</w>
       <h>32</h>
     </coordinates>
@@ -538,7 +538,7 @@ readStatus(CORK_DISPOSED):void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>808</y>
+      <y>800</y>
       <w>464</w>
       <h>32</h>
     </coordinates>
@@ -550,7 +550,7 @@ sendCommand(DISPOSE):void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>824</x>
-      <y>824</y>
+      <y>816</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -562,7 +562,7 @@ bg=yellow</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>824</x>
-      <y>880</y>
+      <y>872</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -574,7 +574,7 @@ bg=yellow</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>368</x>
-      <y>880</y>
+      <y>872</y>
       <w>16</w>
       <h>56</h>
     </coordinates>
@@ -586,7 +586,7 @@ bg=yellow</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>128</x>
-      <y>80</y>
+      <y>72</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -598,7 +598,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>136</x>
-      <y>904</y>
+      <y>896</y>
       <w>248</w>
       <h>32</h>
     </coordinates>
@@ -610,7 +610,7 @@ updateStatus(READY_TO_DRINK):void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>128</x>
-      <y>920</y>
+      <y>912</y>
       <w>16</w>
       <h>16</h>
     </coordinates>
@@ -622,7 +622,7 @@ bg=yellow</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>728</x>
-      <y>584</y>
+      <y>576</y>
       <w>16</w>
       <h>24</h>
     </coordinates>
@@ -634,7 +634,7 @@ bg=yellow</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>568</y>
+      <y>560</y>
       <w>368</w>
       <h>32</h>
     </coordinates>
@@ -646,7 +646,7 @@ lockBottle():void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>760</y>
+      <y>752</y>
       <w>368</w>
       <h>32</h>
     </coordinates>
@@ -658,7 +658,7 @@ reset():void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>728</x>
-      <y>776</y>
+      <y>768</y>
       <w>16</w>
       <h>24</h>
     </coordinates>

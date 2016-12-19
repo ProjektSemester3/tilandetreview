@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>248</y>
+      <w>240</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controller&gt;&gt;
+UC1/UC2 (PSoC-Master)
+--
++ xHomeStop: static uint8
++ xEndStop: static uint8
++ yHomeStop: static uint8
++ yEndStop: static uint8
+-
++ readCommand(cmd:uint8): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>424</y>
+      <w>200</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;boundary&gt;&gt;
+MotorsXY
+--
+- xStepCount: uint16
+- yStepCount: uint16
+- xCentre: uint16
+- yCentre: uint16
+-
++ locate(axis:uint8): int8
++ positionXY(): void
++ reset(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>752</x>
+      <y>288</y>
+      <w>192</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;boundary&gt;&gt;
+Sensor
+--
+-
++ startSensor(axis: uint8): void
++ stopSensor(axis: uint8): void
++ confirmHeight(location: uint8): int8</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>232</x>
+      <y>368</y>
+      <w>184</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;boundary&gt;&gt;
+DevKit_SPI
+--
+-
++ updateStatus(status: uint8): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>248</x>
+      <y>120</y>
+      <w>168</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;domain&gt;&gt;
+SPI Protocol
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>136</y>
+      <w>184</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;boundary&gt;&gt;
+PSoC_SPI
+--
+-
++ updateStatus(status: uint8): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>184</y>
+      <w>24</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>184</y>
+      <w>72</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>344</y>
+      <w>88</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;90.0;50.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>344</y>
+      <w>24</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>688</x>
+      <y>312</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>224</x>
+      <y>96</y>
+      <w>736</w>
+      <h>480</h>
+    </coordinates>
+    <panel_attributes>CD (PSoC) UC1: Åbn Vinflaske &amp; UC2: Planlæg åbning</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

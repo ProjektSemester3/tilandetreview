@@ -1,7 +1,7 @@
 \subsection{Positionering}
 \label{sub:Pos}
 Positionering består af 2 sensorer som drives af aktuatorer på de tre akser. Én motor på henholdsvis x og y flytter disse to akser mens to motorer driver z-aksen. \\
-Som set i allokeringsdiagrammet\footnote{Figur \ref{Allokering_WinePrep} i kapitel \ref{sec:Arkitektur}} benyttes en PSoC til at styre disse motorer og sensorer. Det forudsættes, at der til at kontrollere, at bestemte punkter på akserne er nået, benyttes trykknapper, som, når disse påtrykkes, igangsætter en interruptrutine på PSoC'ene.
+Som set i allokeringsdiagrammet\footnote{Figur \ref{Allokering_WinePrep} i kapitel \ref{sec:Arkitektur}} benyttes en PSoC til at styre disse motorer og sensorer. Det forudsættes, at der til at kontrollere, om bestemte punkter på akserne er nået, benyttes trykknapper. Når disse påtrykkes, igangsættes en interruptrutine på PSoC'ene.
 
 \subsubsection{Hardware}
 \label{pos_hw}
@@ -9,7 +9,7 @@ Som set i allokeringsdiagrammet\footnote{Figur \ref{Allokering_WinePrep} i kapit
 At lokalisere flasken kræver en type af sensor. Embedded Stocks udvalg var begrænset så valget stod mellem to typer af afstandsmålere som enten vha. lys eller ultralyd kan detektere et objekt.
 \\
 \\
-Tabel \ref{tab:Sensor_precision} viser forskellen i præcision for afstandsmåling mellem ultralydssensoren, HC-SR04, og  lasersensoren, GP2Y0A21YK. Præcisionskravet er 1 mm for at \textbf{Åbningsmekanismen} har det mest centreret punkt på proppen at åbne.
+Tabel \ref{tab:Sensor_precision} viser forskellen i præcision for afstandsmåling mellem ultralydssensoren, HC-SR04, og  lasersensoren, GP2Y0A21YK\footnote{Se kapitlet Test afsnit om lasersensor}. Præcisionskravet er 1 mm for at \textbf{Åbningsmekanismen} har det mest centrerede punkt på proppen at åbne.
 
 \begin{table}[H]
 	\centering
@@ -17,9 +17,9 @@ Tabel \ref{tab:Sensor_precision} viser forskellen i præcision for afstandsmåli
   		\hline
    		& Faktisk præcision \\
   		\hline 
-  		HC-SR04 & 300 mm\footnote{\href{https://www.elextra.dk/main.aspx?page=article&artno=H16466}{Blablabla}} \\
+  		HC-SR04 & 3 mm \\
   		\hline
-  		GP2Y0A21YK  & 2,57 mm\footnote{Se kapitlet Test afsnit om lasersensor} \\
+  		GP2Y0A21YK  & 2,57 mm \\
   		\hline
 	\end{tabular}
 	\caption{De to sensores præcision}
@@ -27,7 +27,7 @@ Tabel \ref{tab:Sensor_precision} viser forskellen i præcision for afstandsmåli
 \end{table}
 
 \noindent
-Tabellen udmundede i et fravalg af HC-SR04 sensoren fordi dennes præcision er meget unøjagtig. Da begge sensorer ikke opfylder kravet måtte en anden løsning om præcision findes. Denne kan ses under afsnittet om Aksestyring.
+Tabellen udmundede i et fravalg af HC-SR04\footnote{Se \url{https://www.elextra.dk/main.aspx?page=article&artno=H16466}} sensoren fordi dennes præcision er mere unøjagtig. Da begge sensorer ikke opfylder kravet måtte en anden løsning om præcision findes. Denne kan ses under afsnittet om Aksestyring.
 \\
 \\
 Sensorens ansvar er derfor kun at registrere om der er et objekt eller ej. Ved at sammenligne afstanden, målt i volt\footnote{Datablad for GP2Y0A21YK}, med et referencepunkt som er konstant\footnote{Dokumentation for Konstruktion} er det muligt at detektere for en flaske.
@@ -51,14 +51,14 @@ Valget af denne motor begrænser hastigheden hvormed akserne bliver flyttet ford
 Momentet for motoren er dog relativt svagt, som kan ses under kapitlet Test, hvor den unipolære motor ikke har tilstrækkelig moment til at drive akserne uden små ophold. Udfordringen med motorens moment løses ved at ændre den til bipolær.
 
 \myparagraph{Bipolær motor}
-Med baggrund i Biot-Savars lov er det udledt at B-feltet i en spole er proportional med antallet af viklinger i spolen, som ses i ligning \ref{eq:Biot_Savars}. For uddybning af denne udledning henvises til dokumentationen for bipolære motorer.
+Med baggrund i Biot-Savarts lov er det udledt at B-feltet i en spole er proportional med antallet af viklinger i spolen, som ses i ligning \ref{eq:Biot_Savars}. For uddybning af denne udledning henvises til bilag\footnote{Se Biot-Savarts lov}.
 
 \begin{equation} \label{eq:Biot_Savars}
 	B = \frac{\mu_0 \cdot i}{2 \cdot r} \cdot N
 \end{equation}
 
 \noindent
-Hvis teorien fra Biot-Savars lov overføres til 28BYJ-48 betyder det, at motoren burde få det dobbelte moment ved, at fjerne den røde lednings forbindelse til resten af motoren således, at motoren får to hele spoler i stedet for fire halve. Motoren burde så have den dobbelte længde spole og dermed antages spolen at have dobbelt så mange viklinger. I tabel \ref{tab:motor_moment}, i kapitlet Test, er det faktiske moment noteret, hvor det ses at momentet blev mere end fordoblet ved at omdanne 28BYJ-48 til bipolær.
+Hvis teorien fra Biot-Savarts lov overføres til 28BYJ-48 betyder det, at motoren burde få det dobbelte moment ved, at fjerne den røde lednings forbindelse til resten af motoren således, at motoren får to hele spoler i stedet for fire halve. Motoren burde så have den dobbelte længde spole og dermed antages spolen at have dobbelt så mange viklinger. I tabel \ref{tab:motor_moment}, i kapitlet Test, er det faktiske moment noteret, hvor det ses at momentet blev mere end fordoblet ved at omdanne 28BYJ-48 til bipolær.
 \\
 \\
 Hver bipolær motor styres gennem to H-broer så det er muligt at vende strømmen, og dermed vende retningen på motoren. Det er først gjort gennem chippen L298\footnote{Datablad for L298} hvis datablad har været udgangspunkt for to designede og implementerede vero boards som blev udarbejdet. Figur \ref{fig:L298} viser de to H-broer som L298 indeholder.
@@ -70,4 +70,4 @@ Hver bipolær motor styres gennem to H-broer så det er muligt at vende strømme
 \end{figure}
 
 \noindent
-Da boardsene aldrig kom til at fungere blev motor drivere af typen Pololu-A4988\footnote{Datablad for Pololu-A4988} taget i brug. Driveren følger samme princip som L298 med to H-broer, men motoren styres gennem et PWM-signal, en enable pin og en direction pin. Se databladet for Pololu-A4988 for yderligere information.
+Da boardsene aldrig kom til at fungere blev motor drivere af typen Pololu-A4988\footnote{Datablad for Pololu-A4988} taget i brug. Driveren følger samme princip som L298 med to H-broer, men motoren styres gennem et PWM-signal, en enable pin og en direction pin.

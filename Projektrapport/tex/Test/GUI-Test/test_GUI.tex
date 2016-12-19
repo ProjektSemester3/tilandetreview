@@ -17,7 +17,7 @@ kommandoen blev sendt ud. Da touchfunktionen ikke har været optimal på Devkit8
 Der var problemer med modtagelse af kommandoer fra SPI. For at teste om GUI var korrekt implementeret, blev der lavet en virtuel klasse som fungerede som en 
 stub. Denne klasse skulle simulere skrivning/læsning af data til/fra SPI device driveren. Istedet for at læse fra et SPI device i /dev, blev der læst fra en txt 
 fil istedet. Da devices bliver behandlet som filer i Linux, ville funktionalitet i den virtuelle klasse ligge meget tæt på den egenlige implementering. Dermed 
-kunne det testes om GUI kunne give status beskeder tilbage til brugeren, selvom SPI forbindelsen ikke var tilgængelig. På figur xx ses hvordan GUI meddeler 
+kunne det testes om GUI kunne give status beskeder tilbage til brugeren, selvom SPI forbindelsen ikke var tilgængelig. På figur \ref{PAA} ses hvordan GUI meddeler 
 bruger statusbeskeder på baggrund af den kommando som blev indlæst fra txt filen.
 
 \begin{figure}[H]
