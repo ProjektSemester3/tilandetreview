@@ -28,7 +28,13 @@ Der er 3 klasser for brugergrænsefladen. Der er en klasse for MainWindow, hvor 
 	\label{MW_CD}
 \end{figure}
 
-Der er yderligere blevet implementeret en klasse til at sende og modtage kommandoer fra PSoC. Dette er gjort, fordi at det skal være muligt at kunne teste denne klasse for sig. Yderligere giver fås et større overblik hvis funktionerne er fordelt over de rigtige klasser. Dette vil medføre til at systemet har en lav kobling, hvilket fører til at man let kan ændre, tilføje og rette i koden. Klassen ReadWrite indholder 2 funktioner. En til at læse fra PSoC og en til at skrive til den.
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=1]{tex/Design/GUI/Fotos/ReadWrite}}
+	\caption{ReadWrite klasse illustreret}
+	\label{RW_CD}
+\end{figure}
+Der er yderligere blevet implementeret en klasse til at sende og modtage kommandoer fra PSoC. Dette er gjort, fordi at det skal være muligt at kunne teste denne klasse for sig.
+Klassen kan ses på figur \label{RW_CD} Yderligere fås et større overblik hvis funktionerne er fordelt over de rigtige klasser. Dette vil føre til at systemet har en lav kobling, hvilket fører til at man let kan ændre, tilføje og rette i koden. Klassen ReadWrite indholder 2 funktioner. En til at læse fra PSoC og en til at skrive til den.
 
 For at se hele klasse diagrammet med alle metoder henvises der til bilag\footnote{Se GUI\_CD}.
 

@@ -64,11 +64,14 @@
 \contentsline {subsubsection}{PSoC Master - PSoC Slave}{38}{subsubsection*.44}
 \contentsline {subsection}{GUI}{39}{subsection*.45}
 \contentsline {section}{\numberline {7.7}Diskussion af resultater}{40}{section.7.7}
-\contentsline {subsection}{Diskussion af resultater}{40}{subsection*.46}
-\contentsline {subsubsection}{Motorer og sensorer}{40}{subsubsection*.47}
-\contentsline {subsection}{Seriel kommunikation}{41}{subsection*.48}
-\contentsline {subsubsection}{DevKit8000-PSoC Master}{41}{subsubsection*.49}
-\contentsline {subsubsection}{PSoC Master - PSoC Slave}{41}{subsubsection*.50}
-\contentsline {subsection}{GUI}{41}{subsection*.51}
-\contentsline {chapter}{\chapternumberline {8}Fremtidigt arbejde}{43}{chapter.8}
-\contentsline {chapter}{\chapternumberline {9}Konklusion}{45}{chapter.9}
+\contentsline {subsection}{Motorer og sensorer}{40}{subsection*.46}
+\contentsline {subsection}{Seriel kommunikation}{41}{subsection*.47}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{41}{subsubsection*.48}
+\contentsline {subsubsection}{PSoC Master - PSoC Slave}{41}{subsubsection*.49}
+\contentsline {subsection}{GUI}{41}{subsection*.50}
+\contentsline {chapter}{\chapternumberline {8}Integrationstest}{42}{chapter.8}
+\contentsline {chapter}{\chapternumberline {9}Accepttest Specifikation}{43}{chapter.9}
+\contentsline {section}{\numberline {9.1}Test af Use-case 1}{43}{section.9.1}
+\contentsline {section}{\numberline {9.2}Test af use-case 2}{44}{section.9.2}
+\contentsline {chapter}{\chapternumberline {10}Fremtidigt arbejde}{45}{chapter.10}
+\contentsline {chapter}{\chapternumberline {11}Konklusion}{47}{chapter.11}
