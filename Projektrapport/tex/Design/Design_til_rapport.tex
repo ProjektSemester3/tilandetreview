@@ -1,7 +1,10 @@
 \subsection{Positionering}
-Positionering består af 2 sensorer som drives af aktuatorer på de tre akser. Én motor på henholdsvis x og y flytter disse to akser mens to motorer driver z-aksen.
+\label{sub:Pos}
+Positionering består af 2 sensorer som drives af aktuatorer på de tre akser. Én motor på henholdsvis x og y flytter disse to akser mens to motorer driver z-aksen. \\
+Som set i allokeringsdiagrammet\footnote{Figur \ref{Allokering_WinePrep} i kapitel \ref{sec:Arkitektur}} benyttes en PSoC til at styre disse motorer og sensorer. Det forudsættes, at der til at kontrollere, at bestemte punkter på akserne er nået, benyttes trykknapper, som, når disse påtrykkes, igangsætter en interruptrutine på PSoC'ene.
 
 \subsubsection{Hardware}
+\label{pos_hw}
 \myparagraph{Detektering}
 At lokalisere flasken kræver en type af sensor. Embedded Stocks udvalg var begrænset så valget stod mellem to typer af afstandsmålere som enten vha. lys eller ultralyd kan detektere et objekt.
 \\
