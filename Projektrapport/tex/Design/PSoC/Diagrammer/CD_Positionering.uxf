@@ -4,29 +4,31 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>456</x>
-      <y>248</y>
+      <x>440</x>
+      <y>232</y>
       <w>240</w>
-      <h>104</h>
+      <h>136</h>
     </coordinates>
     <panel_attributes>&lt;&lt;controller&gt;&gt;
-UC1/UC2 (PSoC-Master)
+UC1/UC2 (Positionscontroller)
 --
 + xHomeStop: static uint8
 + xEndStop: static uint8
 + yHomeStop: static uint8
 + yEndStop: static uint8
++ zHomeStop: static uint8
++ zEndStop: static uint8
 -
-+ readCommand(cmd:uint8): void</panel_attributes>
++ readCommand(cmd: uint8): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>456</x>
+      <x>440</x>
       <y>424</y>
       <w>200</w>
-      <h>144</h>
+      <h>136</h>
     </coordinates>
     <panel_attributes>&lt;&lt;boundary&gt;&gt;
 MotorsXY
@@ -36,16 +38,16 @@ MotorsXY
 - xCentre: uint16
 - yCentre: uint16
 -
-+ locate(axis:uint8): int8
-+ positionXY(): void
++ locate(axis: uint8): int8
++ positionOpMech(): void
 + reset(): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>752</x>
-      <y>288</y>
+      <x>736</x>
+      <y>208</y>
       <w>192</w>
       <h>80</h>
     </coordinates>
@@ -61,7 +63,7 @@ Sensor
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>232</x>
+      <x>216</x>
       <y>368</y>
       <w>184</w>
       <h>56</h>
@@ -76,7 +78,7 @@ DevKit_SPI
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>248</x>
+      <x>232</x>
       <y>120</y>
       <w>168</w>
       <h>104</h>
@@ -91,8 +93,8 @@ SPI Protocol
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>480</x>
-      <y>136</y>
+      <x>464</x>
+      <y>128</y>
       <w>184</w>
       <h>56</h>
     </coordinates>
@@ -100,73 +102,100 @@ SPI Protocol
 PSoC_SPI
 --
 -
-+ updateStatus(status: uint8): void</panel_attributes>
++ sendCommand(cmd: uint8): void</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>544</x>
+      <y>176</y>
+      <w>24</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>184</y>
+      <w>72</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>360</y>
+      <w>88</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;90.0;30.0;90.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>560</x>
-      <y>184</y>
+      <y>360</y>
       <w>24</w>
       <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>408</x>
-      <y>184</y>
-      <w>72</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;70.0;10.0;70.0;80.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>408</x>
-      <y>344</y>
-      <w>88</w>
+      <x>672</x>
+      <y>248</y>
+      <w>80</w>
       <h>56</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;50.0;90.0;50.0;90.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>576</x>
-      <y>344</y>
-      <w>24</w>
-      <h>96</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>688</x>
-      <y>312</y>
-      <w>80</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>80.0;10.0;40.0;10.0;40.0;50.0;10.0;50.0</additional_attributes>
   </element>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>224</x>
+      <x>208</x>
       <y>96</y>
       <w>736</w>
-      <h>480</h>
+      <h>472</h>
     </coordinates>
-    <panel_attributes>CD (PSoC) UC1: Åbn Vinflaske &amp; UC2: Planlæg åbning</panel_attributes>
+    <panel_attributes>CD (Positionering) UC1: Åbn Vinflaske &amp; UC2: Planlæg åbning</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>712</x>
+      <y>368</y>
+      <w>200</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;boundary&gt;&gt;
+MotorZ
+--
+-
++ positionZ(position: uint8): void
++ lockBottle(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>328</y>
+      <w>80</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>80.0;50.0;80.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
