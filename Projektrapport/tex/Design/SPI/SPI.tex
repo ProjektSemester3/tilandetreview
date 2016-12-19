@@ -1,6 +1,6 @@
 \subsubsection{Seriel kommunikation}
 \label{sub:SPI}
-SPI blev anvendt som seriel kommunikation imellem de logiske enheder pga. den kendskab gruppen allerede havde fra HAL øvelse 6\footnote{Se Hal6}. SPI er en 4 kablet
+SPI blev anvendt som seriel kommunikation imellem de logiske enheder pga. den kendskab gruppen allerede havde fra HAL øvelse 6\footnote{Se \url{https://redmine-server.ase.au.dk/courses/projects/i3hal_e2016_stroustrups_disciple/wiki/Exercise_6}}. SPI er en 4 kablet
 forbindelse, hvor to hardware enheder indgår i et master-slave forhold. Overførelse af databits initieres af master, og læsning/skrivning foregår samtidigt 
 over de to forbindelser MISO (master in/slave out) og MOSI (master out/slave in). Klok frekvensen på master enheden er forbundet til slave, og det er denne 
 som bestemmer hastigheden for dataoverførelse. Den fjerde og sidste forbindelse er slave select, i og med flere slaver kan tilsluttes samme master, bruges 
