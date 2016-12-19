@@ -45,6 +45,8 @@ Ved indtrædelse i metoden nulstilles en tæller \textit{stepCount}, som tæller
 
 \textbf{confirmHeight(POSITION)} skal registrere med y-sensoren om en flaske kan registreres i den givne højde alt efter den medgivne parameter (UNDER\_TOP: flaske skal registreres, ABOVE\_TOP: flaske skal ej registreres).
 
-\textbf{positionXY()} skal ud fra forudbestemte værdier køre motorerne et vis antal steps mod åbningsmekanismens centrum.
+\textbf{positionOpMech()} skal ud fra forudbestemte værdier køre motorerne et vis antal steps mod åbningsmekanismens centrum.
+
+\textbf{lockBottle()} skal sænke \textbf{Åbningsmekanismen} ned over flasken, indtil den rammer en trykknap, således at flasken låses fast i dens givne position. Derved sikres det, at flasken ikke vælter under åbningen.
 
 \textbf{reset()} kører motorerne indtil deres respektive trykknap ved startpositionen er påtrykt.

@@ -1,0 +1,69 @@
+\chapter{Integrationstest}
+
+De implementerede delelementer for WinePrep blev samlet med henblik på at teste en samlet prototype. Denne prototype indeholdt
+funktionalitet til bevægelse af x/y/z akserne, og detektering af en vinflaske. Herudover blev brugergrænsefladen forbundet til 
+resten af systemet, hvorfra det var muligt at igangsætte disse funktionaliteter. \\
+
+For at kunne teste denne prototype, var den fysiske rammer en nødvendighed. Dennes konstruktionen viste sig dog at have en del
+ujævnheder pga. dårligt designede 3D-prints. Dette betød at motorerne for X/Y akserne ikke kunne trække de bånd som skulle 
+bevæge sensorerne. \\
+
+Nedenfor ses accepttest af hovedscenarierne for usecase 1 og 2. Udvidelser til usecasene er ikke medtaget. 
+
+\chapter{Accepttest Specifikation}
+\section{Test af Use-case 1}
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation \nameref{UC1}: Hovedscenarie}
+	\label{ATUC1:Hovedscenarie}
+	%Se Tabel \ref{ATUC2:Hovedscenarie} på side \pageref{ATUC2:Hovedscenarie}
+	\begin{tabularx}{360pt}{ TX  TX }\hline
+		\rowcolor{white}	
+		\textbf{Use-case under test} & \nameref{UC1} \\
+		\rowcolor{lightgray}
+		\textbf{Scenarie} & Hovedscenarie \\\rowcolor{white}	
+		\textbf{Prækondition} &
+		En gyldig type vinflaske er korrekt anbragt i maskinen og systemet er klar til brug. Desuden
+		er vinflasken uåbnet og forseglingen er fjernet
+ \\
+		\hline
+	\end{tabularx}
+	\begin{tabularx}{360pt}{  p{26pt} TX  TX TX  TX}
+		\textbf{Step} & \textbf{Handling} & \textbf{Forventet observation/resultat} & \textbf{Faktisk observation/resultat} & \textbf{Vurdering (OK/FAIL)}\\
+		1 & Tryk på Åbn nu på
+		brugergrænsefladen & Vinflasken låses og åbnes af
+		systemet, og bruger
+		meddeles via
+		brugergrænsefladen
+		om, at vinen er åbnet &
+		Motorer til X/Y akserne igangsættes, men akserne bevæges ikke. Z akserne bevæges. Detektering af vinflaske ikke mulig. Ingen besked til bruger & FAIL \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+
+\section{Test af use-case 2}
+
+\begin{table}[H]
+	\centering
+	\caption{Accepttestspecifikation \nameref{UC2} Hovedscenarie}
+	\label{ATUC2:Hovedscenarie}
+	%Se Tabel \ref{ATUC2:Hovedscenarie} på side \pageref{ATUC2:Hovedscenarie}
+	\begin{tabularx}{360pt}{ TX TX }\hline
+		\rowcolor{lightgray}	
+		\textbf{Use-case under test} & \nameref{UC2} \\
+		\rowcolor{white}
+		\textbf{Scenarie} & Hovedscenarie \\\rowcolor{lightgray}	
+		\textbf{Prækondition} &
+		En gyldig type vinflaske er korrekt anbragt i maskinen og systemet er klar til brug. Desuden er vinflasken uåbnet og forseglingen er fjernet \\
+		\hline
+	\end{tabularx}
+	\begin{tabularx}{360pt}{ p{26pt} TX TX TX TX}
+		\textbf{Step} & \textbf{Handling} & \textbf{Forventet observation/resultat} & \textbf{Faktisk observation/resultat} & \textbf{Vurdering (OK/FAIL)}\\
+		1 & Tryk på planlæg åbning på brugergrænsefladen & Undermenuen planlæg åbning vises på brugergrænsefladen & Undermenuen vises & OK \\
+		2 & Indstil på brugergrænsefladen klokkeslættet 2 timer frem & Den indstillede tid vises til det valgte klokkeslæt & Klokkeslættet vises & OK \\
+		3 & Tryk på bekræft & Hovedmenuen vises og det valgte klokkeslæt vises i aktuel info på brugergrænsefladen & Det valgte klokkenslet vises i aktuel info & OK  \\
+		4 & Vent 2 timer & Vinflasken er åben og systemet meddeler bruger via brugergrænsefladen om at vinen er drikkeklar & Vinflasken er ikke åben, og der er ingen beskeder til brugeren & FAIL  \\
+		\hline
+	\end{tabularx}
+\end{table}

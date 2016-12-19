@@ -49,17 +49,17 @@ Når systemet starter op vil brugeren befinde sig i denne state. Her vil brugerg
 Hvis brugeren vælger vælger en tid i planlægningsmenuen og trykker på bekræft vil denne state aktiveres. Her vil den indtastede tid konverteres til minutter og nedtællingen fra den konverterede tid startes. Når nedtællingen når 0 brydes der ud af denne state. Imens systemet er i denne state er det muligt for brugeren at navigere i systemet og gå tilbage til hovedmenuen ved at trykke tilbage på brugergrænsefladen.\\
 
 \textbf{Afventer besked}\\
-Når brugeren vælger menupunktet "Åbn nu" eller tiden tælles ned til 0 sættes cmd til at være REGISTRER_FLASKE og denne state aktiveres. I denne state ventes der på svar fra PSoC. Systemet kan her modtage 3 forskellige cmd's: INVALID_BOTTLE, VALID_BOTTLE og NO_BOTTLE. Den besked som systemet modtager vil være den der sættes i cmd.\\
+Når brugeren vælger menupunktet "Åbn nu" eller tiden tælles ned til 0 sættes cmd til at være REGISTRER\_FLASKE og denne state aktiveres. I denne state ventes der på svar fra PSoC. Systemet kan her modtage 3 forskellige cmd's: INVALID\_BOTTLE, VALID\_BOTTLE og NO\_BOTTLE. Den besked som systemet modtager vil være den der sættes i cmd.\\
 
 \textbf{Ugyldig flaske}\\
-Hvis cmd blev sat til INVALID_BOTTLE aktiveres denne state. Her modtager brugeren en besked om at flasken er invalid.\\
+Hvis cmd blev sat til INVALID\_BOTTLE aktiveres denne state. Her modtager brugeren en besked om at flasken er invalid.\\
 
 \textbf{Ingen flaske}\\
-Hvis cmd blev sat til NO_BOTTLE aktiveres denne state. Her modtager brugeren en besked om at en vinflaske skal indsættes.
+Hvis cmd blev sat til NO\_BOTTLE aktiveres denne state. Her modtager brugeren en besked om at en vinflaske skal indsættes.
 \\
 
 \textbf{Åbning fuldført}\\
-Hvis cmd blev sat til VALID_BOTTLE aktiveres denne state. Her modtager brugeren en besked om at en vinflasken er godkendt, og at åbningen påbegyndes.\\
+Hvis cmd blev sat til VALID\_BOTTLE aktiveres denne state. Her modtager brugeren en besked om at en vinflasken er godkendt, og at åbningen påbegyndes.\\
 
 
 De tre sidste states fører brugeren tilbage til hovedmenuen ved at brugeren trykker OK på vinduet.

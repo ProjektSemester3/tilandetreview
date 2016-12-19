@@ -22,7 +22,7 @@
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-readCommand(OPEN):void</panel_attributes>
+readCommand(OPEN_BOTTLE):void</panel_attributes>
     <additional_attributes>290.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -411,7 +411,7 @@ bg=yellow</panel_attributes>
       <h>32</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
-sendCommand(OPEN):void</panel_attributes>
+sendCommand(OPEN_BOTTLE):void</panel_attributes>
     <additional_attributes>560.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -491,30 +491,6 @@ positionOpMech():void</panel_attributes>
     <coordinates>
       <x>536</x>
       <y>536</y>
-      <w>16</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>
-bg=yellow</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>376</x>
-      <y>704</y>
-      <w>176</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
-reset():void</panel_attributes>
-    <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>536</x>
-      <y>720</y>
       <w>16</w>
       <h>24</h>
     </coordinates>
@@ -646,7 +622,7 @@ lockBottle():void</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>376</x>
-      <y>752</y>
+      <y>712</y>
       <w>368</w>
       <h>32</h>
     </coordinates>
@@ -658,6 +634,30 @@ reset():void</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>728</x>
+      <y>728</y>
+      <w>16</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>376</x>
+      <y>752</y>
+      <w>176</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+reset():void</panel_attributes>
+    <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>536</x>
       <y>768</y>
       <w>16</w>
       <h>24</h>
