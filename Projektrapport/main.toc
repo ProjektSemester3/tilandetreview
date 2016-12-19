@@ -1,72 +1,74 @@
 \select@language {danish}
 \contentsline {chapter}{Indhold}{i}{section*.1}
-\contentsline {chapter}{\chapternumberline {1}Forord}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}L\IeC {\ae }sevejledning}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Hovedansvarsomr\IeC {\r a}der}{2}{section.1.2}
-\contentsline {chapter}{\chapternumberline {2}Indledning}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}WinePrep}{3}{section.2.1}
-\contentsline {chapter}{\chapternumberline {3}Afgr\IeC {\ae }nsning}{5}{chapter.3}
-\contentsline {chapter}{\chapternumberline {4}Krav}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}Akt\IeC {\o }rer}{8}{section.4.1}
-\contentsline {subsection}{Bruger}{8}{subsection*.2}
-\contentsline {subsection}{Vinflaske}{8}{subsection*.3}
-\contentsline {section}{\numberline {4.2}Usecases}{8}{section.4.2}
-\contentsline {subsection}{\IeC {\r A}bn vinflaske}{8}{subsection*.4}
-\contentsline {subsection}{Planl\IeC {\ae }g \IeC {\r a}bning}{8}{subsection*.5}
-\contentsline {section}{\numberline {4.3}Ikke-funktionelle krav}{9}{section.4.3}
-\contentsline {chapter}{\chapternumberline {5}Realisering}{10}{chapter.5}
-\contentsline {section}{\numberline {5.1}Metode}{10}{section.5.1}
-\contentsline {section}{\numberline {5.2}Systemarkitektur}{11}{section.5.2}
-\contentsline {subsubsection}{Positionering}{11}{subsubsection*.6}
-\contentsline {subsubsection}{\IeC {\r A}bningsmekanisme}{12}{subsubsection*.7}
-\contentsline {subsection}{Allokering}{12}{subsection*.8}
-\contentsline {section}{\numberline {5.3}Design}{13}{section.5.3}
-\contentsline {subsection}{Positionering}{13}{subsection*.9}
-\contentsline {subsubsection}{Hardware}{13}{subsubsection*.10}
-\contentsline {paragraph}{Detektering}{13}{paragraph*.11}
-\contentsline {paragraph}{Aksestyring}{14}{paragraph*.12}
-\contentsline {paragraph}{Unipol\IeC {\ae }r motor}{14}{paragraph*.13}
-\contentsline {paragraph}{Bipol\IeC {\ae }r motor}{14}{paragraph*.14}
-\contentsline {subsubsection}{Software}{15}{subsubsection*.15}
-\contentsline {paragraph}{Sekvensdiagram}{16}{paragraph*.16}
-\contentsline {paragraph}{Funktionsbeskrivelse}{18}{paragraph*.17}
-\contentsline {subsection}{\IeC {\r A}bningsmekanisme}{20}{subsection*.18}
-\contentsline {subsubsection}{Hardware}{20}{subsubsection*.19}
-\contentsline {paragraph}{Iskruning}{20}{paragraph*.20}
-\contentsline {paragraph}{Proptr\IeC {\ae }kning}{20}{paragraph*.21}
-\contentsline {subsubsection}{Software}{20}{subsubsection*.22}
-\contentsline {paragraph}{Sekvensdiagram}{21}{paragraph*.23}
-\contentsline {paragraph}{Funktionsbeskrivelse}{21}{paragraph*.24}
-\contentsline {subsubsection}{Seriel kommunikation}{22}{subsubsection*.25}
-\contentsline {paragraph}{Devkit8000-PSoC Master}{22}{paragraph*.26}
-\contentsline {paragraph}{PSoC Master - PSoC Slave}{23}{paragraph*.27}
-\contentsline {subsubsection}{GUI}{23}{subsubsection*.28}
-\contentsline {section}{\numberline {5.4}Implementering}{27}{section.5.4}
-\contentsline {subsection}{Hardware}{27}{subsection*.29}
-\contentsline {subsection}{Software}{29}{subsection*.30}
-\contentsline {subsubsection}{Positionering/\IeC {\r A}bningsmekanisme}{29}{subsubsection*.31}
-\contentsline {paragraph}{Hardware-gr\IeC {\ae }nseflade}{29}{paragraph*.32}
-\contentsline {subsubsection}{Seriel kommunikation}{30}{subsubsection*.33}
-\contentsline {subsubsection}{GUI}{31}{subsubsection*.34}
-\contentsline {section}{\numberline {5.5}Test}{31}{section.5.5}
-\contentsline {subsection}{Motorer og sensorer}{31}{subsection*.35}
-\contentsline {subsection}{Seriel kommunikation}{33}{subsection*.36}
-\contentsline {subsubsection}{DevKit8000-PSoC Master}{33}{subsubsection*.37}
-\contentsline {subsubsection}{PSoC Master - PSoC Slave}{33}{subsubsection*.38}
-\contentsline {subsection}{GUI}{34}{subsection*.39}
-\contentsline {subsubsection}{Test med virtuel klasse}{34}{subsubsection*.40}
-\contentsline {section}{\numberline {5.6}Resultater}{35}{section.5.6}
-\contentsline {subsection}{Motorer og sensorer}{35}{subsection*.41}
-\contentsline {subsection}{Seriel kommunikation}{35}{subsection*.42}
-\contentsline {subsubsection}{DevKit8000-PSoC Master}{35}{subsubsection*.43}
-\contentsline {subsubsection}{PSoC Master - PSoC Slave}{36}{subsubsection*.44}
-\contentsline {subsection}{GUI}{37}{subsection*.45}
-\contentsline {section}{\numberline {5.7}Diskussion af resultater}{38}{section.5.7}
-\contentsline {subsection}{Diskussion af resultater}{38}{subsection*.46}
-\contentsline {subsubsection}{Motorer og sensorer}{38}{subsubsection*.47}
-\contentsline {subsection}{Seriel kommunikation}{38}{subsection*.48}
-\contentsline {subsubsection}{DevKit8000-PSoC Master}{38}{subsubsection*.49}
-\contentsline {subsubsection}{PSoC Master - PSoC Slave}{39}{subsubsection*.50}
-\contentsline {subsection}{GUI}{39}{subsection*.51}
-\contentsline {chapter}{\chapternumberline {6}Fremtidigt arbejde}{40}{chapter.6}
-\contentsline {chapter}{\chapternumberline {7}Konklusion}{42}{chapter.7}
+\contentsline {chapter}{\chapternumberline {1}Resume}{1}{chapter.1}
+\contentsline {chapter}{\chapternumberline {2}Abstract}{2}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Forord}{3}{chapter.3}
+\contentsline {section}{\numberline {3.1}L\IeC {\ae }sevejledning}{3}{section.3.1}
+\contentsline {section}{\numberline {3.2}Hovedansvarsomr\IeC {\r a}der}{4}{section.3.2}
+\contentsline {chapter}{\chapternumberline {4}Indledning}{5}{chapter.4}
+\contentsline {section}{\numberline {4.1}WinePrep}{5}{section.4.1}
+\contentsline {chapter}{\chapternumberline {5}Afgr\IeC {\ae }nsning}{7}{chapter.5}
+\contentsline {chapter}{\chapternumberline {6}Krav}{9}{chapter.6}
+\contentsline {section}{\numberline {6.1}Akt\IeC {\o }rer}{10}{section.6.1}
+\contentsline {subsection}{Bruger}{10}{subsection*.2}
+\contentsline {subsection}{Vinflaske}{10}{subsection*.3}
+\contentsline {section}{\numberline {6.2}Usecases}{10}{section.6.2}
+\contentsline {subsection}{\IeC {\r A}bn vinflaske}{10}{subsection*.4}
+\contentsline {subsection}{Planl\IeC {\ae }g \IeC {\r a}bning}{10}{subsection*.5}
+\contentsline {section}{\numberline {6.3}Ikke-funktionelle krav}{11}{section.6.3}
+\contentsline {chapter}{\chapternumberline {7}Realisering}{12}{chapter.7}
+\contentsline {section}{\numberline {7.1}Metode}{12}{section.7.1}
+\contentsline {section}{\numberline {7.2}Systemarkitektur}{13}{section.7.2}
+\contentsline {subsubsection}{Positionering}{13}{subsubsection*.6}
+\contentsline {subsubsection}{\IeC {\r A}bningsmekanisme}{14}{subsubsection*.7}
+\contentsline {subsection}{Allokering}{14}{subsection*.8}
+\contentsline {section}{\numberline {7.3}Design}{15}{section.7.3}
+\contentsline {subsection}{Positionering}{15}{subsection*.9}
+\contentsline {subsubsection}{Hardware}{15}{subsubsection*.10}
+\contentsline {paragraph}{Detektering}{15}{paragraph*.11}
+\contentsline {paragraph}{Aksestyring}{16}{paragraph*.12}
+\contentsline {paragraph}{Unipol\IeC {\ae }r motor}{16}{paragraph*.13}
+\contentsline {paragraph}{Bipol\IeC {\ae }r motor}{16}{paragraph*.14}
+\contentsline {subsubsection}{Software}{17}{subsubsection*.15}
+\contentsline {paragraph}{Sekvensdiagram}{18}{paragraph*.16}
+\contentsline {paragraph}{Funktionsbeskrivelse}{20}{paragraph*.17}
+\contentsline {subsection}{\IeC {\r A}bningsmekanisme}{22}{subsection*.18}
+\contentsline {subsubsection}{Hardware}{22}{subsubsection*.19}
+\contentsline {paragraph}{Iskruning}{22}{paragraph*.20}
+\contentsline {paragraph}{Proptr\IeC {\ae }kning}{22}{paragraph*.21}
+\contentsline {subsubsection}{Software}{22}{subsubsection*.22}
+\contentsline {paragraph}{Sekvensdiagram}{23}{paragraph*.23}
+\contentsline {paragraph}{Funktionsbeskrivelse}{23}{paragraph*.24}
+\contentsline {subsubsection}{Seriel kommunikation}{24}{subsubsection*.25}
+\contentsline {paragraph}{Devkit8000-PSoC Master}{24}{paragraph*.26}
+\contentsline {paragraph}{PSoC Master - PSoC Slave}{25}{paragraph*.27}
+\contentsline {subsubsection}{GUI}{25}{subsubsection*.28}
+\contentsline {section}{\numberline {7.4}Implementering}{29}{section.7.4}
+\contentsline {subsection}{Hardware}{29}{subsection*.29}
+\contentsline {subsection}{Software}{31}{subsection*.30}
+\contentsline {subsubsection}{Positionering/\IeC {\r A}bningsmekanisme}{31}{subsubsection*.31}
+\contentsline {paragraph}{Hardware-gr\IeC {\ae }nseflade}{31}{paragraph*.32}
+\contentsline {subsubsection}{Seriel kommunikation}{32}{subsubsection*.33}
+\contentsline {subsubsection}{GUI}{33}{subsubsection*.34}
+\contentsline {section}{\numberline {7.5}Test}{33}{section.7.5}
+\contentsline {subsection}{Motorer og sensorer}{33}{subsection*.35}
+\contentsline {subsection}{Seriel kommunikation}{35}{subsection*.36}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{35}{subsubsection*.37}
+\contentsline {subsubsection}{PSoC Master - PSoC Slave}{35}{subsubsection*.38}
+\contentsline {subsection}{GUI}{36}{subsection*.39}
+\contentsline {subsubsection}{Test med virtuel klasse}{36}{subsubsection*.40}
+\contentsline {section}{\numberline {7.6}Resultater}{37}{section.7.6}
+\contentsline {subsection}{Motorer og sensorer}{37}{subsection*.41}
+\contentsline {subsection}{Seriel kommunikation}{38}{subsection*.42}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{38}{subsubsection*.43}
+\contentsline {subsubsection}{PSoC Master - PSoC Slave}{38}{subsubsection*.44}
+\contentsline {subsection}{GUI}{39}{subsection*.45}
+\contentsline {section}{\numberline {7.7}Diskussion af resultater}{40}{section.7.7}
+\contentsline {subsection}{Diskussion af resultater}{40}{subsection*.46}
+\contentsline {subsubsection}{Motorer og sensorer}{40}{subsubsection*.47}
+\contentsline {subsection}{Seriel kommunikation}{41}{subsection*.48}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{41}{subsubsection*.49}
+\contentsline {subsubsection}{PSoC Master - PSoC Slave}{41}{subsubsection*.50}
+\contentsline {subsection}{GUI}{41}{subsection*.51}
+\contentsline {chapter}{\chapternumberline {8}Fremtidigt arbejde}{43}{chapter.8}
+\contentsline {chapter}{\chapternumberline {9}Konklusion}{45}{chapter.9}
