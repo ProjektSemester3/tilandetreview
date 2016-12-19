@@ -33,7 +33,7 @@ SPI undersøttes naturligvis af DK8k, men for at kunne etablere forbindelsen til
 Denne driver indeholder blandt andet den korrekte opsætning for forbindelsen samt implementeringen af SPI-metoderne til at sende/modtage data.
 Der skal også skrives en character device driver, der gør det muligt for et program i userspace at tilgå SPI driveren. 
 Vi har i dette projekt anvendt den SPI-driver, som er blevet udleveret på redmine i faget HAL. Alt information omkring opsætningen for SPI-forbindelse 
-måtte derfor udledes fra det PSoC-Creator program som medfulgte. Heraf kunne det det konstateres at spi device driveren var op sat til at gøre med 
+måtte derfor udledes fra det PSoC-Creator program som medfulgte. Heraf kunne det det konstateres at spi device driveren var op sat til at køre med 
 clock mode CPHA = 1 og CPOL = 1, og 16 databits. 
 SPI-driver-modulerne indsættes blot på DK8k, og der laves de nødvendige device-noder. Disse noder er nødvendige for at kunne kommunikere mellem user- og 
 kernelspace. 

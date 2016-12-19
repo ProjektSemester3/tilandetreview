@@ -5,7 +5,13 @@ Rapporten er udarbejdet på baggrund af den dokumentation, som kan findes i bila
 
 \section{Læsevejledning}
 Det er tiltænkt at rapporten skal læses i kronologisk rækkefølge, dog kan afsnittene omkring implementering og test af delsystemerne læses
-uafhængigt af hinanden. De forskellige dele er inddelt i kapitler. Hvert kapitel indeholder sektioner med dertil hørende undersektioner. Disse er alle nummererede.
+uafhængigt af hinanden. De forskellige dele er inddelt i kapitler. Hvert kapitel indeholder sektioner med dertil hørende undersektioner. Disse er alle nummererede.\\
+
+\chapter{Kapitel overskrift}
+\section{Sektion overskift}
+\subsection{Undersektion overskrift}
+
+\noindent
 Der vil blive brugt initialer på gruppens medlemmer til angivelse af, hvem rapportens sektioner er skrevet af: \\
 \\
 Mikkel Busk Espersen (MBS), \\
@@ -21,16 +27,21 @@ Tabel xx viser fordelingen af hovedansvarsområder for produktet fordelt på gru
 medlemmers specialistviden og kernekompetencer indenfor produktudviklingen. Enkelte sekundære felter er tomme, dette betyder at ingen har været sekundær på 
 emnet.\\
 
-\begin{tabular}{| l | c | c |}
-\hline
-Emne & Primær & Sekundær\\\hline
-Brugergrænseflade (GUI) & AS & HVB\\\hline
-SPI DevKit-PSoC & HVB & JMH\\\hline
-SPI PSoC-PSoC & HVB, JMH & \\\hline
-PSoC software sensor & JMH & MBE\\\hline
-PSoC software sensor & JMH & MBE\\\hline
-Bipolære motorer & MBE & JMH\\\hline
-Unipolære motorer & MBE & JMH\\\hline
-DC motor & MBE & \\\hline
-Konstruktion og mekanik & AS & HVB\\\hline
-\end{tabular}
+\begin{table}
+	\centering
+	\begin{tabular}{| l | c | c |}
+		\hline
+		Emne & Primær & Sekundær\\\hline
+		Brugergrænseflade (GUI) & AS & HVB\\\hline
+		SPI DevKit-PSoC & HVB & JMH\\\hline
+		SPI PSoC-PSoC & HVB, JMH & \\\hline
+		PSoC software sensor & JMH & MBE\\\hline
+		PSoC software sensor & JMH & MBE\\\hline
+		Bipolære motorer & MBE & JMH\\\hline
+		Unipolære motorer & MBE & JMH\\\hline
+		DC motor & MBE & \\\hline
+		Konstruktion og mekanik & AS & HVB\\\hline
+	\end{tabular}
+	\caption{Fordeling af hovedansvarsområder}
+	\label{tab:ansvar}
+\end{table}
