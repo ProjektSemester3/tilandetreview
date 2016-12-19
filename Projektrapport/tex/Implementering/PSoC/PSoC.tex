@@ -1,13 +1,18 @@
-\subsubsection{Motor-/sensorstyring}
-Klasserne fra klassediagrammet blev implementeret i form af hver deres headerfil efter princippet om høj samhørighed - lav kobling. \textit{main}-funktionen blev formet som en state-machine, der vha. en switch påkaldte de metoder, der skulle udføres på et givent tidspunkt i eksekveringen af programmet i henhold til sekvensdiagrammet (figur \ref{SD_PSoC}). Disse switches' cases bestemtes ud fra de kommandoer/beskeder, de enkelte PSoC's modtog fra hinanden eller DevKit8000. Der er ligeledes blevet oprettet en seperat \textit{status}-fil, som indeholder adskillige kommandoer/beskeder og forkortelser, der bruges igennem programmet, for at holde koden overskuelig og øge læsbarheden af denne.
+\subsubsection{Positionering/Åbningsmekanisme}
+Sekvensdiagrammerne i figur \ref{sd:Pos} og \ref{sd:Aab} og de dertil beskrevne klasser er blevet implementeret i form af hver deres headerfil. Disse klasser kunne med fordel være blevet implementeret som structs, hvor relevant information om den pågældende vinflaske kunne gemmes og benyttes, men da der i denne iteration kun kan behandles én type af flasker, er der i stedet benyttet globale konstanter. \textit{main}-funktionen er formet som en state-machine, som beskrevet i sektionen for \textbf{Seriel kommunikation} nedenunder. Der er blevet oprettet en seperat \textit{status}-fil, som indeholder kommandoer/beskeder for SPI-kommunikationen, forudbestemte konstanter for bl.a. antallet af steps, der må tælles op for en given motor, og forkortelser, der bruges igennem programmet, for at holde koden overskuelig og øge læsbarheden af denne.
 
-\myparagraph{Hardware-grænseflade} \\
+\myparagraph{Hardware-grænseflade}
 \\
 \textbf{Sensorer} \\
-Til at måle sensorerne benyttedes en SAR-ADC, som, efter hvert sample, returnerede en værdi i \textit{counts}. For at sammenligne med (GRAF FRA SENSOR-DATABLAD) konverteredes disse værdier til mV. Dermed kunne der fastslås, hvor vidt en flaske var registreret, ud fra afstanden forbundet med den målte spænding.
-
+Til at måle sensorerne benyttes en SAR-ADC, som, efter hvert sample, returnerer en værdi i \textit{counts}. For at sammenligne med databladet for GP2Y0A21YK\footnote{Indsæt reference til datablad} konverteres disse værdier til mV. Dermed kan det fastslås, hvorvidt en flaske er registreret eller ej, ud fra afstanden forbundet med den målte spænding.
+\\
 \textbf{Motorer} \\
-Motorerne styredes vha. et PWM-signal, som gik fra en given GPIO-pen ud til STEP-inputtet på A4988-driveren, som talte et step op for hver rising edge på PWM-signalet, samt to digitale signaler, der gik til henholdsvis ENABLE- og DIRECTION-inputtene på driveren. \\
+Motorerne styres vha. et PWM-signal, som går fra en given GPIO-pen ud til STEP-inputtet på A4988-driveren, som tæller et step op for hver rising edge på PWM-signalet, samt to digitale signaler, der går til henholdsvis ENABLE- og DIRECTION-inputtene på driveren. PWM-signalet er implementeret med en frekvens på 400 Hz (periode på 2.5 ms), da dette giver motorerne tid til at aflade mellem hvert step\footnote{Se bilag}. \\
 \\
 \textbf{Knapper} \\
-Knapperne implementeredes som interrupts der trigger på rising edge. Disse var hovedårsagen til, at der skulle min. 2 PSoS's, da hvert interrupt optager en port på PSoC'en, som kun har 6 til rådighed, mens der var behov for 8.
+Knapperne er implementeret som interrupts der trigger på rising edge. Heri skiftes værdien af en global variabel. \\
+\\
+Adskillige af de metoder, der er beskrevet i design-fasen, er implementeret således, at der sendes et PWM-signal til en given motor, mens der i en while-løkke læses fra en sensor og/eller forefindes et delay, som bruges til at kontrollere antallet af tagne steps. Denne løkke fortsætter i visse tilfælde så længe, der ikke er trykket på en given knap, ved at bruge en global variabel som guard.
+\\
+\\
+For nærmere inspektion af koden se bilag\footnote{Navn på fil i bilag}.

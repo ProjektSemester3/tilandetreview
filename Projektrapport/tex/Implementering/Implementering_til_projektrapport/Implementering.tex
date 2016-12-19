@@ -1,10 +1,9 @@
-\chapter{Implementering}
-\section{Hardware}
+\subsection{Hardware}
 \label{HW_Implementering}
 På figur \ref{fig:Pololu-A4988} ses hvordan Pololu-A4988 opsættes til PSoC 5LP og en motor. I den endelige impementering er antallet af Pololu-A4988 motor drivere og motorer i forholdet 1:1. Driveren fungerer som bindeled mellem PSoC 5LP og motoren. Tabel \ref{tab:Pololu-A4988_pin_configuration} viser pin konfigureringen fra Pololu-A4988 til henholdsvis PSoC 5LP og 28BYJ-48. Rækkefølgen af pins i tabellen svarer til billedet fra figur \ref{fig:Pololu-A4988} læst fra øverste venstre hjørne. MS1, MS2 og MS3 er ikke forbundet til noget. RESET og SLEEP er forbundet til hinanden.
 
 \begin{figure}[H]
-	\centerline{\includegraphics[scale=0.6]{Pololu-A4988.png}}
+	\centerline{\includegraphics[scale=0.6]{tex/Implementering/Implementering_til_projektrapport/Pololu-A4988.png}}
 	\caption[]{Pololu-A4988}\footnotemark
 	\label{fig:Pololu-A4988}
 \end{figure}
