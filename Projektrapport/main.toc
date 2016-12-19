@@ -43,29 +43,30 @@
 \contentsline {subsubsection}{GUI}{23}{subsubsection*.28}
 \contentsline {section}{\numberline {5.4}Implementering}{27}{section.5.4}
 \contentsline {subsection}{Hardware}{27}{subsection*.29}
-\contentsline {subsection}{Software}{28}{subsection*.30}
-\contentsline {subsubsection}{Positionering/\IeC {\r A}bningsmekanisme}{28}{subsubsection*.31}
+\contentsline {subsection}{Software}{29}{subsection*.30}
+\contentsline {subsubsection}{Positionering/\IeC {\r A}bningsmekanisme}{29}{subsubsection*.31}
 \contentsline {paragraph}{Hardware-gr\IeC {\ae }nseflade}{29}{paragraph*.32}
-\contentsline {subsubsection}{Seriel kommunikation}{29}{subsubsection*.33}
+\contentsline {subsubsection}{Seriel kommunikation}{30}{subsubsection*.33}
 \contentsline {subsubsection}{GUI}{31}{subsubsection*.34}
 \contentsline {section}{\numberline {5.5}Test}{31}{section.5.5}
 \contentsline {subsection}{Motorer og sensorer}{31}{subsection*.35}
 \contentsline {subsection}{Seriel kommunikation}{33}{subsection*.36}
 \contentsline {subsubsection}{DevKit8000-PSoC Master}{33}{subsubsection*.37}
 \contentsline {subsubsection}{PSoC Master - PSoC Slave}{33}{subsubsection*.38}
-\contentsline {subsection}{GUI}{33}{subsection*.39}
+\contentsline {subsection}{GUI}{34}{subsection*.39}
 \contentsline {subsubsection}{Test med virtuel klasse}{34}{subsubsection*.40}
 \contentsline {section}{\numberline {5.6}Resultater}{35}{section.5.6}
 \contentsline {subsection}{Motorer og sensorer}{35}{subsection*.41}
-\contentsline {subsection}{Seriel kommunikation}{36}{subsection*.42}
-\contentsline {subsubsection}{DevKit8000-PSoC Master}{36}{subsubsection*.43}
+\contentsline {subsection}{Seriel kommunikation}{35}{subsection*.42}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{35}{subsubsection*.43}
 \contentsline {subsubsection}{PSoC Master - PSoC Slave}{36}{subsubsection*.44}
-\contentsline {section}{\numberline {5.7}Diskussion af resultater}{37}{section.5.7}
-\contentsline {subsection}{Diskussion af resultater}{37}{subsection*.45}
-\contentsline {subsubsection}{Motorer og sensorer}{37}{subsubsection*.46}
-\contentsline {subsection}{Seriel kommunikation}{38}{subsection*.47}
-\contentsline {subsubsection}{DevKit8000-PSoC Master}{38}{subsubsection*.48}
-\contentsline {subsubsection}{PSoC Master - PSoC Slave}{38}{subsubsection*.49}
-\contentsline {subsection}{GUI}{38}{subsection*.50}
-\contentsline {chapter}{\chapternumberline {6}Fremtidigt arbejde}{39}{chapter.6}
-\contentsline {chapter}{\chapternumberline {7}Konklusion}{41}{chapter.7}
+\contentsline {subsection}{GUI}{37}{subsection*.45}
+\contentsline {section}{\numberline {5.7}Diskussion af resultater}{38}{section.5.7}
+\contentsline {subsection}{Diskussion af resultater}{38}{subsection*.46}
+\contentsline {subsubsection}{Motorer og sensorer}{38}{subsubsection*.47}
+\contentsline {subsection}{Seriel kommunikation}{38}{subsection*.48}
+\contentsline {subsubsection}{DevKit8000-PSoC Master}{38}{subsubsection*.49}
+\contentsline {subsubsection}{PSoC Master - PSoC Slave}{39}{subsubsection*.50}
+\contentsline {subsection}{GUI}{39}{subsection*.51}
+\contentsline {chapter}{\chapternumberline {6}Fremtidigt arbejde}{40}{chapter.6}
+\contentsline {chapter}{\chapternumberline {7}Konklusion}{42}{chapter.7}
