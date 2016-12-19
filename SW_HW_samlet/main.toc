@@ -6,41 +6,42 @@
 \contentsline {subsection}{Skitsering af brugergr\IeC {\ae }nseflade}{1}{section*.2}
 \contentsline {subsection}{F\IeC {\o }rste udgave af brugergr\IeC {\ae }nseflade}{2}{section*.3}
 \contentsline {section}{\numberline {1.3}Test}{4}{section.1.3}
+\contentsline {subsubsection}{Test med virtuel klasse}{6}{section*.5}
 \contentsline {section}{\numberline {1.4}Konklusion}{6}{section.1.4}
-\contentsline {chapter}{\chapternumberline {2}Dokumentation for SPI forbindelse imellem Devit8000 og PSoC}{7}{chapter.2}
+\contentsline {chapter}{\chapternumberline {2}Dokumentation for seriel kommunikation}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Indledning}{7}{section.2.1}
 \contentsline {section}{\numberline {2.2}Design og implementering}{8}{section.2.2}
 \contentsline {section}{\numberline {2.3}Test}{13}{section.2.3}
-\contentsline {subsection}{Test af SPI forbindelse mellem MASTER og PSoC-slave}{13}{section*.5}
-\contentsline {subsection}{Test af SPI-forbindelse imellem DK8k og MASTER}{15}{section*.6}
+\contentsline {subsection}{Test af SPI forbindelse mellem MASTER og PSoC-slave}{13}{section*.6}
+\contentsline {subsection}{Test af SPI-forbindelse imellem DK8k og MASTER}{14}{section*.7}
 \contentsline {section}{\numberline {2.4}Resultater}{16}{section.2.4}
-\contentsline {subsection}{Resultater af test for PSoC-PSoC SPI}{16}{section*.7}
-\contentsline {subsection}{Resultater af test for Devkit-PSoC SPI}{17}{section*.8}
+\contentsline {subsection}{Resultater af test for PSoC-PSoC SPI}{16}{section*.8}
+\contentsline {subsection}{Resultater af test for Devkit-PSoC SPI}{17}{section*.9}
 \contentsline {section}{\numberline {2.5}Diskussion}{17}{section.2.5}
-\contentsline {chapter}{\chapternumberline {3}Motorstyring p\IeC {\r a} x- og y-akser samt sensor detektering}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Indledning}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}Design og implementering}{19}{section.3.2}
-\contentsline {subsection}{PSoC}{20}{section*.9}
-\contentsline {subsubsection}{Sensor}{20}{section*.10}
-\contentsline {subsubsection}{Motor}{23}{section*.11}
-\contentsline {subsection}{ULN2003AN board}{24}{section*.12}
-\contentsline {section}{\numberline {3.3}Test}{25}{section.3.3}
-\contentsline {section}{\numberline {3.4}Resultater}{28}{section.3.4}
-\contentsline {section}{\numberline {3.5}Diskussion}{29}{section.3.5}
-\contentsline {chapter}{\chapternumberline {4}Bipol\IeC {\ae }re steppermotorer}{30}{chapter.4}
-\contentsline {section}{\numberline {4.1}Indledning}{30}{section.4.1}
-\contentsline {section}{\numberline {4.2}Teori}{30}{section.4.2}
-\contentsline {subsection}{Bipolar Stepper Motor}{30}{section*.13}
-\contentsline {section}{\numberline {4.3}Design}{32}{section.4.3}
-\contentsline {section}{\numberline {4.4}Implementering}{34}{section.4.4}
-\contentsline {section}{\numberline {4.5}Test og resultater}{36}{section.4.5}
-\contentsline {section}{\numberline {4.6}Konklusion}{36}{section.4.6}
-\contentsline {chapter}{\chapternumberline {5}SPI-protokol}{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}Kommandoer}{37}{section.5.1}
-\contentsline {subsection}{Fra DK8k til MASTER}{37}{section*.14}
-\contentsline {subsection}{Fra MASTER til TOP}{37}{section*.15}
-\contentsline {subsection}{Fra MASTER til BOTTOM}{38}{section*.16}
-\contentsline {section}{\numberline {5.2}Feedback}{38}{section.5.2}
-\contentsline {subsection}{Fra MASTER til DK8k}{38}{section*.17}
-\contentsline {subsection}{Fra TOP til MASTER}{38}{section*.18}
-\contentsline {subsection}{Fra BOTTOM til MASTER}{39}{section*.19}
+\contentsline {chapter}{\chapternumberline {3}Motorstyring p\IeC {\r a} x- og y-akser samt sensor detektering}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Indledning}{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}Design og implementering}{18}{section.3.2}
+\contentsline {subsection}{PSoC}{19}{section*.10}
+\contentsline {subsubsection}{Sensor}{19}{section*.11}
+\contentsline {subsubsection}{Motor}{22}{section*.12}
+\contentsline {subsection}{ULN2003AN board}{23}{section*.13}
+\contentsline {section}{\numberline {3.3}Test}{24}{section.3.3}
+\contentsline {section}{\numberline {3.4}Resultater}{27}{section.3.4}
+\contentsline {section}{\numberline {3.5}Diskussion}{28}{section.3.5}
+\contentsline {chapter}{\chapternumberline {4}Bipol\IeC {\ae }re steppermotorer}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Indledning}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Teori}{29}{section.4.2}
+\contentsline {subsection}{Bipolar Stepper Motor}{29}{section*.14}
+\contentsline {section}{\numberline {4.3}Design}{31}{section.4.3}
+\contentsline {section}{\numberline {4.4}Implementering}{33}{section.4.4}
+\contentsline {section}{\numberline {4.5}Test og resultater}{35}{section.4.5}
+\contentsline {section}{\numberline {4.6}Konklusion}{35}{section.4.6}
+\contentsline {chapter}{\chapternumberline {5}SPI-protokol}{36}{chapter.5}
+\contentsline {section}{\numberline {5.1}Kommandoer}{36}{section.5.1}
+\contentsline {subsection}{Fra DK8k til MASTER}{36}{section*.15}
+\contentsline {subsection}{Fra MASTER til TOP}{36}{section*.16}
+\contentsline {subsection}{Fra MASTER til BOTTOM}{36}{section*.17}
+\contentsline {section}{\numberline {5.2}Feedback}{37}{section.5.2}
+\contentsline {subsection}{Fra MASTER til DK8k}{37}{section*.18}
+\contentsline {subsection}{Fra TOP til MASTER}{37}{section*.19}
+\contentsline {subsection}{Fra BOTTOM til MASTER}{37}{section*.20}
